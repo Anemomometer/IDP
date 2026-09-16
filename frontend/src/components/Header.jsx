@@ -5,9 +5,9 @@ export function Header({ activeTab, setActiveTab }) {
     { id: 'ingest', label: '1. Ingest & Search', icon: '🔍' },
     { id: 'abstract', label: '2. Abstract Detail', icon: '📄' },
     { id: 'relation', label: '3. Relation View', icon: '🔗' },
-    { id: 'database', label: '4. Evidence DB', icon: '🗄️' },
+    { id: 'database', label: '4. Evidence DB', icon: '📊' },
     { id: 'review', label: '5. Review Queue', icon: '✅' },
-    { id: 'eval', label: '6. Evaluation', icon: '📊' },
+    { id: 'eval', label: '6. Evaluation', icon: '📈' },
   ];
 
   return (
