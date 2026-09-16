@@ -1,0 +1,212 @@
+================================================================================
+          MULTI-TASK BIOMEDICAL NLP LITERATURE PIPELINE
+                  FULL TECHNICAL IMPLEMENTATION PLAN
+================================================================================
+
+1. EXECUTIVE SUMMARY & PROJECT OBJECTIVE
+--------------------------------------------------------------------------------
+Clinical trial literature published in PubMed contains crucial medical findings,
+drug treatments, sample sizes, and trial outcomes buried inside dense, unstructured
+abstract prose. Manual tagging by researchers does not scale, and keyword search
+fails to capture clinical context (e.g., distinguishing between a drug treating a
+disease vs. a finding being negated or conditional).
+
+This project implements an end-to-end, multi-task biomedical NLP system that:
+  1. Pulls live abstracts directly from the NCBI PubMed API.
+  2. Uses a single shared Biomedical Transformer Encoder (PubMedBERT) to perform
+     three parallel NLP tasks simultaneously:
+       - Named Entity Recognition (NER): Disease, Drug, Sample Size, Endpoint.
+       - Relation Extraction (RE): Drug -> Disease (TREATS), Drug -> Cohort,
+         Outcome links.
+       - Assertion Detection: Classifies findings as Present, Negated, or Conditional.
+  3. Stores every extracted entity, relation, and assertion with confidence scores
+     in a structured SQLite database.
+  4. Provides an interactive Web Analytics Dashboard with Human-in-the-Loop (HITL)
+     color-coded review and automated Precision / Recall / F1 validation scoring.
+
+
+2. SYSTEM ARCHITECTURE & DATAFLOW
+--------------------------------------------------------------------------------
+
+[ NCBI PubMed API (E-utilities) ]
+               │
+               ▼
+   [ PubMed Abstract Ingestion ] ──> Raw Title, Abstract, Journal, PubDate, PMID
+               │
+               ▼
+┌───────────────────────────────────────────────┐
+│     Shared Biomedical Encoder (PubMedBERT)    │
+│  (microsoft/BiomedNLP-PubMedBERT-base-uncased)│
+└───────────────────────┬───────────────────────┘
+                        │
+       ┌────────────────┼────────────────┐
+       ▼                ▼                ▼
+┌──────────────┐ ┌──────────────┐ ┌──────────────┐
+│  NER Head    │ │Relation Head │ │Assertion Head│
+│(Token Class) │ │ (Pair Class) │ │(Span Class)  │
+└──────┬───────┘ └──────┬───────┘ └──────┬───────┘
+       │                │                │
+       └────────────────┼────────────────┘
+                        │
+                        ▼
+         [ Structured Evidence Aggregator ]
+                        │
+                        ▼
+             [ SQLite Database Store ]
+             (evidence_store.db)
+                        │
+                        ▼
+     ┌─────────────────────────────────────┐
+     │  Interactive Web Dashboard (React)  │
+     ├─────────────────────────────────────┤
+     │ • Live PubMed Search Bar            │
+     │ • Highlighting Abstract Inspector   │
+     │ • Color-coded HITL Review (Edit/OK) │
+     │ • Database Query & Export (CSV/JSON)│
+     │ • Validation & Metrics (P/R/F1/CM)  │
+     └─────────────────────────────────────┘
+
+
+3. ROADMAP & MILESTONE BREAKDOWN
+--------------------------------------------------------------------------------
+Milestone 1 (20% - Foundation):
+  - Setup repository structure & virtual environment.
+  - Define SQLite schema (`abstracts`, `entities`, `relations`, `assertions`).
+  - Create gold-standard benchmark annotation schema and initial JSON datasets.
+
+Milestone 2 (30% - Core NLP Engine):
+  - Implement PyTorch Multi-Task PubMedBERT model (`MultiTaskBioBERT`).
+  - Build individual heads: Token classification (NER), Pairwise entity relation
+    classifier (RE), and Contextual assertion classifier (Assertion).
+  - Implement rule-based heuristics & pattern fallbacks for robust extraction.
+
+Milestone 3 (50% - Integrated System):
+  - Connect NCBI PubMed API (`esearch`, `efetch`) for live abstract pulling.
+  - Integrate NLP extraction pipeline into a unified REST API using FastAPI/Flask.
+  - Build initial React UI for PubMed search and raw text processing.
+
+Milestone 4 (80% - Complete App & HITL Review):
+  - Implement color-coded inline text highlighting for entities in React UI.
+  - Add Human-in-the-Loop review tools (Accept, Reject, Modify tags).
+  - Add SQLite database explorer with search, filter, and CSV/JSON export.
+  - Implement automated P/R/F1 scoring and Confusion Matrix rendering.
+
+Milestone 5 (100% - Final Evaluation & Delivery):
+  - End-to-end evaluation against held-out benchmark PubMed abstracts.
+  - Final visual & functional polish.
+  - Project documentation, report generation, and presentation materials.
+
+
+4. DETAILED DATABASE SCHEMA (SQLite)
+--------------------------------------------------------------------------------
+The database schema (`evidence_store.db`) consists of 5 core tables:
+
+1. `abstracts`
+   - pmid (TEXT, PRIMARY KEY): NCBI PubMed ID
+   - title (TEXT): Article title
+   - abstract_text (TEXT): Full abstract prose
+   - journal (TEXT): Journal name
+   - pub_date (TEXT): Publication year/date
+   - created_at (TIMESTAMP): Ingestion timestamp
+
+2. `entities`
+   - id (INTEGER, PRIMARY KEY AUTOINCREMENT)
+   - pmid (TEXT, FOREIGN KEY -> abstracts.pmid)
+   - entity_text (TEXT): Exact phrase (e.g. "Pembrolizumab")
+   - entity_type (TEXT): DISEASE | DRUG | SAMPLE_SIZE | ENDPOINT
+   - start_char (INTEGER): Character start offset in abstract
+   - end_char (INTEGER): Character end offset in abstract
+   - confidence (REAL): Model confidence score (0.0 to 1.0)
+   - status (TEXT): PREDICTED | VERIFIED | REJECTED | EDITED
+
+3. `relations`
+   - id (INTEGER, PRIMARY KEY AUTOINCREMENT)
+   - pmid (TEXT, FOREIGN KEY -> abstracts.pmid)
+   - source_entity_id (INTEGER, FOREIGN KEY -> entities.id)
+   - target_entity_id (INTEGER, FOREIGN KEY -> entities.id)
+   - relation_type (TEXT): TREATS | PREVENTS | TESTED_IN | ASSOCIATED_WITH | AFFECTS_OUTCOME
+   - confidence (REAL): Model confidence score
+
+4. `assertions`
+   - id (INTEGER, PRIMARY KEY AUTOINCREMENT)
+   - pmid (TEXT, FOREIGN KEY -> abstracts.pmid)
+   - target_entity_id (INTEGER, FOREIGN KEY -> entities.id)
+   - status (TEXT): PRESENT | NEGATED | CONDITIONAL
+   - confidence (REAL): Model confidence score
+
+5. `evaluation_benchmarks`
+   - id (INTEGER, PRIMARY KEY AUTOINCREMENT)
+   - run_timestamp (TIMESTAMP)
+   - ner_precision (REAL), ner_recall (REAL), ner_f1 (REAL)
+   - re_precision (REAL), re_recall (REAL), re_f1 (REAL)
+   - assertion_precision (REAL), assertion_recall (REAL), assertion_f1 (REAL)
+   - confusion_matrix_json (TEXT): JSON matrix representation
+
+
+5. MULTI-TASK MODEL ARCHITECTURE (PyTorch + PubMedBERT)
+--------------------------------------------------------------------------------
+A single shared transformer model (`microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext`)
+acts as the encoder backbone to produce shared contextual embeddings H = BERT(tokens).
+
+Three task heads branch off the shared representation H:
+
+1. NER Head:
+   - Linear layer: Projection from hidden state (768) -> number of BIO labels.
+   - Outputs token-level entity tags: B-DISEASE, I-DISEASE, B-DRUG, I-DRUG,
+     B-SAMPLE_SIZE, I-SAMPLE_SIZE, B-ENDPOINT, I-ENDPOINT, O.
+
+2. Relation Extraction Head:
+   - Concatenates representation of Entity 1 (e.g. Drug) and Entity 2 (e.g. Disease).
+   - Linear layer: Projection from [H_e1; H_e2] (1536) -> relation classes.
+   - Classes: TREATS, PREVENTS, TESTED_IN, ASSOCIATED_WITH, AFFECTS_OUTCOME, NO_RELATION.
+
+3. Assertion Detection Head:
+   - Takes entity contextual token sequence window representation.
+   - Linear layer: Projection from H_window (768) -> 3 assertion classes.
+   - Classes: PRESENT ("patients responded"), NEGATED ("no significant improvement"),
+     CONDITIONAL ("if combined with chemotherapy").
+
+
+6. WEB DASHBOARD USER INTERFACE SPECIFICATION
+--------------------------------------------------------------------------------
+The Web App is built using React + Vite with a dark emerald/teal aesthetic theme:
+
+- Header / Nav: Project Title, Ingestion Status, Database Counts, Tab Switching.
+- Tab 1: Live Ingestion & NLP Processing
+  - Search input for PubMed queries or text box for pasting custom abstracts.
+  - Ingest button that pulls PubMed metadata and runs multi-task extraction.
+  - Rendered Abstract with inline entity highlighting:
+      - Disease: Red / Coral highlight
+      - Drug: Cyan / Teal highlight
+      - Sample Size: Purple / Indigo highlight
+      - Endpoint: Emerald / Green highlight
+  - Interactive Human-in-the-Loop review popover when clicking any highlighted entity
+    (allows user to verify, change entity type, or delete).
+- Tab 2: Extracted Relations & Assertion Cards
+  - Cards showing source entity -> relation arrow -> target entity.
+  - Assertion badge attached to each finding (PRESENT, NEGATED, CONDITIONAL).
+- Tab 3: SQLite Database Explorer
+  - Tabular view of all ingested abstracts and extracted data.
+  - Filters by disease, drug name, assertion type, or min confidence score.
+  - Buttons to export current view as CSV or JSON.
+- Tab 4: Model Evaluation & Benchmarking
+  - Real-time display of Precision, Recall, and F1 scores across NER, RE, and Assertion.
+  - Interactive 3x3 Confusion Matrix visualization for assertion detection.
+
+
+7. VERIFICATION & VALIDATION METHODOLOGY
+--------------------------------------------------------------------------------
+1. Gold-Standard Ground Truth Dataset:
+   - A curated benchmark set of annotated PubMed abstracts is loaded.
+2. Metrics Calculated:
+   - Precision = True Positives / (True Positives + False Positives)
+   - Recall = True Positives / (True Positives + False Negatives)
+   - F1 Score = 2 * (Precision * Recall) / (Precision + Recall)
+3. Multi-Class Confusion Matrix:
+   - Evaluates prediction overlap against true labels for Assertion Detection
+     (Present vs Negated vs Conditional).
+
+
+================================================================================
+                             END OF PLAN DOCUMENT
+================================================================================
