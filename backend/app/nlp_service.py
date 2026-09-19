@@ -1,5 +1,6 @@
 import re
-from typing import Dict, Any, List, Tuple
+from typing import Any
+
 
 class RuleNLPProcessor:
     """
@@ -45,7 +46,7 @@ class RuleNLPProcessor:
         "under condition", "subject to", "provided that", "when administered with"
     ]
 
-    def process_abstract(self, text: str, extraction_method: str = "model") -> Dict[str, Any]:
+    def process_abstract(self, text: str, extraction_method: str = "model") -> dict[str, Any]:
         """
         Extracts entities, relations, and assertions from abstract text.
         """

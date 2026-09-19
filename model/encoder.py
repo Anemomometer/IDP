@@ -1,6 +1,7 @@
 import torch
-import torch.nn as nn
-from transformers import AutoModel, AutoTokenizer
+from torch import nn
+from transformers import AutoModel
+
 
 class SharedBiomedicalEncoder(nn.Module):
     """

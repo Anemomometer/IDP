@@ -113,7 +113,7 @@ export function EvaluationDashboard() {
             Per-Class {activeTask} Performance Breakdown
           </h3>
           <div className="table-container">
-            <table className="data-table">
+            <table className="table">
               <thead>
                 <tr>
                   <th>Class / Label</th>

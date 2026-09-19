@@ -1,16 +1,16 @@
 import json
-from fastapi import APIRouter, Depends, HTTPException
+
+from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
-from typing import List, Dict, Any
 
 from ..database import get_db
-from ..models_db import EvaluationRun
 from ..evaluation_service import EvaluationHarness
+from ..models_db import EvaluationRun
 
 router = APIRouter(prefix="/api/evaluation", tags=["Evaluation Dashboard"])
 harness = EvaluationHarness()
 
-@router.get("", response_model=List[dict])
+@router.get("", response_model=list[dict])
 def list_evaluation_runs(limit: int = 10, db: Session = Depends(get_db)):
     """
     Lists versioned evaluation runs stored in SQLite.
@@ -44,8 +44,8 @@ def get_latest_evaluation(db: Session = Depends(get_db)):
         "task": latest.task,
         "run_timestamp": latest.run_timestamp.isoformat(),
         "dataset_version": latest.dataset_version,
-        "metrics": json.loads(latest.metrics_json),
-        "confusion_matrix": json.loads(latest.confusion_matrix_json)
+        "metrics": json.loads(latest.metrics_json) if latest.metrics_json else {},
+        "confusion_matrix": json.loads(latest.confusion_matrix_json) if latest.confusion_matrix_json else {}
     }
 
 @router.post("/run")

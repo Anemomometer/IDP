@@ -1,7 +1,10 @@
 from datetime import datetime
-from sqlalchemy import Column, Integer, String, Float, Text, DateTime, ForeignKey, Index
+
+from sqlalchemy import Column, DateTime, Float, ForeignKey, Index, Integer, String, Text
 from sqlalchemy.orm import relationship
+
 from .database import Base
+
 
 class Abstract(Base):
     __tablename__ = "abstracts"

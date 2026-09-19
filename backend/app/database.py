@@ -1,6 +1,7 @@
 import os
+
 from sqlalchemy import create_engine, event
-from sqlalchemy.orm import sessionmaker, declarative_base
+from sqlalchemy.orm import declarative_base, sessionmaker
 
 DB_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "data", "evidence.db")
 os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)

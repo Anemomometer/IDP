@@ -1,18 +1,17 @@
 import os
-import time
 import re
+import time
 import xml.etree.ElementTree as ET
-from typing import List, Dict, Any, Optional
-import urllib.parse
+from typing import Any
+
 import httpx
+
 
 class PubMedAPIError(Exception):
     """Base exception for PubMed API failures."""
-    pass
 
 class PubMedRateLimitError(PubMedAPIError):
     """Raised when NCBI rate limits are hit (429 / 503 / throttling)."""
-    pass
 
 class PubMedClient:
     """
@@ -22,7 +21,7 @@ class PubMedClient:
     ESEARCH_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
     EFETCH_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi"
 
-    def __init__(self, api_key: Optional[str] = None):
+    def __init__(self, api_key: str | None = None):
         self.api_key = api_key or os.environ.get("NCBI_API_KEY")
         # NCBI limits: 3 req/sec unauthenticated, 10 req/sec with API key
         self.min_interval = 0.11 if self.api_key else 0.35
@@ -34,7 +33,7 @@ class PubMedClient:
             time.sleep(self.min_interval - elapsed)
         self.last_request_time = time.time()
 
-    def search(self, query: str, max_results: int = 10) -> List[str]:
+    def search(self, query: str, max_results: int = 10) -> list[str]:
         """
         Runs ESearch query to get matching PMIDs.
         """
@@ -63,9 +62,9 @@ class PubMedClient:
         except httpx.TimeoutException:
             raise PubMedAPIError("PubMed API request timed out. Please check network connection.")
         except httpx.RequestError as exc:
-            raise PubMedAPIError(f"PubMed network request failed: {str(exc)}")
+            raise PubMedAPIError(f"PubMed network request failed: {exc!s}")
 
-    def fetch_abstracts(self, pmids: List[str]) -> List[Dict[str, Any]]:
+    def fetch_abstracts(self, pmids: list[str]) -> list[dict[str, Any]]:
         """
         Runs EFetch for a list of PMIDs and returns parsed abstract dicts.
         """
@@ -94,7 +93,7 @@ class PubMedClient:
         except httpx.TimeoutException:
             raise PubMedAPIError("PubMed API request timed out during EFetch.")
         except httpx.RequestError as exc:
-            raise PubMedAPIError(f"PubMed EFetch network request failed: {str(exc)}")
+            raise PubMedAPIError(f"PubMed EFetch network request failed: {exc!s}")
 
     def normalize_text(self, text: str) -> str:
         """
@@ -108,7 +107,7 @@ class PubMedClient:
         clean = re.sub(r'\s+', ' ', clean).strip()
         return clean
 
-    def _parse_xml_abstracts(self, xml_content: str) -> List[Dict[str, Any]]:
+    def _parse_xml_abstracts(self, xml_content: str) -> list[dict[str, Any]]:
         abstracts = []
         try:
             root = ET.fromstring(xml_content)

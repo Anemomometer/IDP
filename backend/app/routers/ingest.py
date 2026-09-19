@@ -1,12 +1,11 @@
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from typing import List
 
 from ..database import get_db
-from ..models_db import Abstract, Entity, Relation, Assertion
-from ..schemas import IngestRequest, IngestResponse
-from ..pubmed_service import PubMedClient, PubMedAPIError, PubMedRateLimitError
+from ..models_db import Abstract, Assertion, Entity, Relation
 from ..nlp_service import RuleNLPProcessor
+from ..pubmed_service import PubMedAPIError, PubMedClient, PubMedRateLimitError
+from ..schemas import IngestRequest, IngestResponse
 
 router = APIRouter(prefix="/api/ingest", tags=["Ingestion"])
 pubmed_client = PubMedClient()

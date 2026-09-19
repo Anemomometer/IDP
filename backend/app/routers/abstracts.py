@@ -1,14 +1,18 @@
+
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session, joinedload
-from typing import List
 
 from ..database import get_db
-from ..models_db import Abstract, Entity, Relation, Assertion
-from ..schemas import AbstractDetailResponse, EntitySchema, RelationSchema, AssertionSchema
+from ..models_db import Abstract, Entity, Relation
+from ..schemas import (
+    AbstractDetailResponse,
+    EntitySchema,
+    RelationSchema,
+)
 
 router = APIRouter(prefix="/api/abstracts", tags=["Abstracts"])
 
-@router.get("", response_model=List[dict])
+@router.get("", response_model=list[dict])
 def list_abstracts(limit: int = 20, db: Session = Depends(get_db)):
     """
     Returns a list of recent ingested abstracts.

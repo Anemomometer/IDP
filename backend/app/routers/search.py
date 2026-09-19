@@ -1,21 +1,21 @@
+
 from fastapi import APIRouter, Depends, Query
 from sqlalchemy.orm import Session, aliased
-from typing import Optional, List
 
 from ..database import get_db
-from ..models_db import Abstract, Entity, Relation, Assertion
-from ..schemas import SearchResponse, SearchItem
+from ..models_db import Abstract, Assertion, Entity, Relation
+from ..schemas import SearchItem, SearchResponse
 
 router = APIRouter(prefix="/api/search", tags=["Search & Evidence Database"])
 
 @router.get("", response_model=SearchResponse)
 def search_evidence(
-    drug: Optional[str] = Query(None, description="Drug name query"),
-    disease: Optional[str] = Query(None, description="Disease name query"),
-    relation_type: Optional[str] = Query(None, description="Relation type (Drug→Disease, Drug→Cohort, Outcome-link)"),
-    assertion_type: Optional[str] = Query(None, description="Assertion type (Positive, Negated, Conditional)"),
+    drug: str | None = Query(None, description="Drug name query"),
+    disease: str | None = Query(None, description="Disease name query"),
+    relation_type: str | None = Query(None, description="Relation type (Drug→Disease, Drug→Cohort, Outcome-link)"),
+    assertion_type: str | None = Query(None, description="Assertion type (Positive, Negated, Conditional)"),
     min_confidence: float = Query(0.0, ge=0.0, le=1.0, description="Minimum confidence threshold"),
-    review_status: Optional[str] = Query(None, description="Review status filter"),
+    review_status: str | None = Query(None, description="Review status filter"),
     page: int = Query(1, ge=1),
     page_size: int = Query(20, ge=1, le=100),
     db: Session = Depends(get_db)

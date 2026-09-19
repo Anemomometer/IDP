@@ -1,8 +1,10 @@
+
 import torch
-import torch.nn as nn
-from typing import Dict, Any, Optional
+from torch import nn
+
 from .encoder import SharedBiomedicalEncoder
-from .heads import NERHead, RelationExtractionHead, AssertionDetectionHead
+from .heads import AssertionDetectionHead, NERHead, RelationExtractionHead
+
 
 class MultiTaskClinicalModel(nn.Module):
     """
@@ -24,8 +26,8 @@ class MultiTaskClinicalModel(nn.Module):
         input_ids: torch.Tensor,
         attention_mask: torch.Tensor = None,
         token_type_ids: torch.Tensor = None,
-        subj_indices: Optional[torch.Tensor] = None,
-        obj_indices: Optional[torch.Tensor] = None
+        subj_indices: torch.Tensor | None = None,
+        obj_indices: torch.Tensor | None = None
     ):
         last_hidden, pooler_output = self.encoder(
             input_ids=input_ids,
@@ -73,11 +75,11 @@ class MultiTaskLoss(nn.Module):
 
     def forward(
         self,
-        predictions: Dict[str, torch.Tensor],
+        predictions: dict[str, torch.Tensor],
         ner_targets: torch.Tensor = None,
         re_targets: torch.Tensor = None,
         ad_targets: torch.Tensor = None
-    ) -> Dict[str, torch.Tensor]:
+    ) -> dict[str, torch.Tensor]:
 
         total_loss = 0.0
         loss_components = {}

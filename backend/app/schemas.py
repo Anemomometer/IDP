@@ -1,6 +1,8 @@
 from datetime import datetime
-from typing import List, Optional, Any, Dict
+from typing import Any
+
 from pydantic import BaseModel, Field
+
 
 # --- Ingestion ---
 class IngestRequest(BaseModel):
@@ -10,7 +12,7 @@ class IngestRequest(BaseModel):
 class IngestResponse(BaseModel):
     query: str
     total_fetched: int
-    abstract_ids: List[str]
+    abstract_ids: list[str]
     new_count: int
     existing_count: int
     message: str
@@ -50,9 +52,9 @@ class RelationSchema(BaseModel):
     confidence_score: float
     extraction_method: str = "model"
     review_status: str = "unreviewed"
-    subject_entity: Optional[EntitySchema] = None
-    object_entity: Optional[EntitySchema] = None
-    assertions: List[AssertionSchema] = []
+    subject_entity: EntitySchema | None = None
+    object_entity: EntitySchema | None = None
+    assertions: list[AssertionSchema] = []
 
     class Config:
         from_attributes = True
@@ -62,10 +64,10 @@ class AbstractDetailResponse(BaseModel):
     title: str
     raw_text: str
     normalized_text: str
-    source_query: Optional[str] = None
-    retrieved_at: Optional[datetime] = None
-    entities: List[EntitySchema] = []
-    relations: List[RelationSchema] = []
+    source_query: str | None = None
+    retrieved_at: datetime | None = None
+    entities: list[EntitySchema] = []
+    relations: list[RelationSchema] = []
 
     class Config:
         from_attributes = True
@@ -89,14 +91,14 @@ class SearchResponse(BaseModel):
     total: int
     page: int
     page_size: int
-    items: List[SearchItem]
+    items: list[SearchItem]
 
 # --- Review ---
 class ReviewRequest(BaseModel):
     target_table: str = Field(..., description="'entities' | 'relations' | 'assertions'")
     target_id: int
     status: str = Field(..., description="'approved' | 'corrected' | 'rejected'")
-    corrected_value: Optional[str] = None
+    corrected_value: str | None = None
     reviewed_by: str = "human_reviewer"
 
 class ReviewResponse(BaseModel):
@@ -112,8 +114,8 @@ class EvaluationRunSchema(BaseModel):
     task: str
     run_timestamp: datetime
     dataset_version: str
-    metrics: Dict[str, Any]
-    confusion_matrix: Optional[Dict[str, Any]] = None
+    metrics: dict[str, Any]
+    confusion_matrix: dict[str, Any] | None = None
 
     class Config:
         from_attributes = True

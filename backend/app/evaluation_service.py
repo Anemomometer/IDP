@@ -1,11 +1,13 @@
-import os
 import json
+import os
 from datetime import datetime
-from typing import Dict, Any, List
+from typing import Any
+
 from sqlalchemy.orm import Session
 
 from .models_db import EvaluationRun
 from .nlp_service import RuleNLPProcessor
+
 
 class EvaluationHarness:
     """
@@ -22,13 +24,13 @@ class EvaluationHarness:
         self.gold_standard_path = gold_standard_path
         self.processor = RuleNLPProcessor()
 
-    def load_gold_data(self) -> List[Dict[str, Any]]:
+    def load_gold_data(self) -> list[dict[str, Any]]:
         if not os.path.exists(self.gold_standard_path):
             return []
         with open(self.gold_standard_path, "r", encoding="utf-8") as f:
             return json.load(f)
 
-    def calculate_prf1(self, tp: int, fp: int, fn: int) -> Dict[str, float]:
+    def calculate_prf1(self, tp: int, fp: int, fn: int) -> dict[str, float]:
         precision = tp / (tp + fp) if (tp + fp) > 0 else 0.0
         recall = tp / (tp + fn) if (tp + fn) > 0 else 0.0
         f1 = (2 * precision * recall) / (precision + recall) if (precision + recall) > 0 else 0.0
@@ -41,7 +43,7 @@ class EvaluationHarness:
             "fn": fn
         }
 
-    def run_evaluation(self, db: Session = None, task: str = "ALL", dataset_version: str = "v1.0-gold") -> Dict[str, Any]:
+    def run_evaluation(self, db: Session = None, task: str = "ALL", dataset_version: str = "v1.0-gold") -> dict[str, Any]:
         gold_items = self.load_gold_data()
 
         # Target classes per task
@@ -82,12 +84,20 @@ class EvaluationHarness:
             pred_relations = pred.get("relations", [])
             pred_assertions = pred.get("assertions", [])
 
+            gold_ent_map = {e["entity_id"]: e["text_span"] for e in gold_entities}
+            pred_ent_map = {e["entity_id"]: e["text_span"] for e in pred_entities}
+
             for c in re_classes:
-                g_rels = set((r["subject_text"], r["object_text"]) for r in gold_relations if r.get("relation_type") == c)
-                # Map entity IDs to text for pred
-                ent_map = {e["entity_id"]: e["text_span"] for e in pred_entities}
-                p_rels = set((ent_map.get(r["subject_entity_id"]), ent_map.get(r["object_entity_id"]))
-                             for r in pred_relations if r.get("relation_type") == c)
+                g_rels = set(
+                    (r.get("subject_text") or gold_ent_map.get(r.get("subject_entity_id")),
+                     r.get("object_text") or gold_ent_map.get(r.get("object_entity_id")))
+                    for r in gold_relations if r.get("relation_type") == c
+                )
+                p_rels = set(
+                    (r.get("subject_text") or pred_ent_map.get(r.get("subject_entity_id")),
+                     r.get("object_text") or pred_ent_map.get(r.get("object_entity_id")))
+                    for r in pred_relations if r.get("relation_type") == c
+                )
 
                 tp = len(g_rels.intersection(p_rels))
                 fp = len(p_rels - g_rels)

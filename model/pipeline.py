@@ -1,6 +1,7 @@
-import re
+from typing import Any
+
 import pysbd
-from typing import Dict, Any, List, Tuple
+
 
 class ClinicalNLPProcessor:
     """
@@ -13,7 +14,7 @@ class ClinicalNLPProcessor:
         self.segmenter = pysbd.Segmenter(language="en", clean=False)
         self.use_gpu = use_gpu
 
-    def segment_sentences(self, text: str) -> List[Tuple[str, int, int]]:
+    def segment_sentences(self, text: str) -> list[tuple[str, int, int]]:
         """
         Segment text using biomedical-aware segmenter, returning (sentence_text, char_start, char_end).
         Preserves clinical abbreviations such as 'vs.', 'p<0.05', 'Fig. 1'.
@@ -38,7 +39,7 @@ class ClinicalNLPProcessor:
 
         return annotated_sents
 
-    def process(self, text: str, force_method: str = "model") -> Dict[str, Any]:
+    def process(self, text: str, force_method: str = "model") -> dict[str, Any]:
         """
         Executes multi-task extraction over segmented sentences.
         Returns entities, relations, and assertions with explicit extraction_method.

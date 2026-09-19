@@ -1,10 +1,10 @@
+from datetime import datetime
+
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from datetime import datetime
-from typing import List, Optional
 
 from ..database import get_db
-from ..models_db import Entity, Relation, Assertion, ReviewLog, Abstract
+from ..models_db import Abstract, Assertion, Entity, Relation, ReviewLog
 from ..schemas import ReviewRequest, ReviewResponse
 
 router = APIRouter(prefix="/api/review", tags=["Human-in-the-Loop Review"])
@@ -68,7 +68,7 @@ def submit_review(payload: ReviewRequest, db: Session = Depends(get_db)):
         updated_at=log_entry.reviewed_at
     )
 
-@router.get("/queue", response_model=List[dict])
+@router.get("/queue", response_model=list[dict])
 def get_review_queue(limit: int = 50, db: Session = Depends(get_db)):
     """
     Surfaces unreviewed relations sorted by lowest confidence first for Screen 5 Review Queue.

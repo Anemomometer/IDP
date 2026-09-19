@@ -1,25 +1,24 @@
 import csv
 import io
 import json
+
 from fastapi import APIRouter, Depends, Query, Response
-from fastapi.responses import StreamingResponse
 from sqlalchemy.orm import Session, aliased
-from typing import Optional
 
 from ..database import get_db
-from ..models_db import Abstract, Entity, Relation, Assertion
+from ..models_db import Abstract, Assertion, Entity, Relation
 
 router = APIRouter(prefix="/api/export", tags=["Export"])
 
 @router.get("")
 def export_evidence(
     format: str = Query("csv", pattern="^(csv|json)$"),
-    drug: Optional[str] = Query(None),
-    disease: Optional[str] = Query(None),
-    relation_type: Optional[str] = Query(None),
-    assertion_type: Optional[str] = Query(None),
+    drug: str | None = Query(None),
+    disease: str | None = Query(None),
+    relation_type: str | None = Query(None),
+    assertion_type: str | None = Query(None),
     min_confidence: float = Query(0.0, ge=0.0, le=1.0),
-    review_status: Optional[str] = Query(None),
+    review_status: str | None = Query(None),
     db: Session = Depends(get_db)
 ):
     """
