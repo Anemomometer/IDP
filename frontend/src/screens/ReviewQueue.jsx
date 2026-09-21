@@ -47,10 +47,13 @@ export function ReviewQueue() {
     <div>
       <div className="screen-header">
         <div>
-          <h1 className="screen-title">Screen 5: Human-in-the-Loop Review Queue</h1>
+          <h1 className="screen-title">Step 5: Check the AI's Work</h1>
           <p className="screen-subtitle">
-            Systematic workflow for reviewing low-confidence extractions sorted by lowest confidence first.
+            Review facts that the AI isn't completely sure about.
           </p>
+          <div style={{ marginTop: '0.75rem', padding: '0.75rem', background: 'var(--bg-surface)', borderRadius: 'var(--radius-sm)', borderLeft: '4px solid var(--accent-teal)', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+            <strong>How it works:</strong> Sometimes the AI gets confused by complex sentences. This page shows the lowest-confidence guesses. You act as the human supervisor to Approve, Correct, or Reject the AI's work to keep the database accurate.
+          </div>
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
@@ -100,9 +103,9 @@ export function ReviewQueue() {
               {/* Relation Extraction Card Details */}
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                  <span className="entity-highlight entity-drug">{item.subject_text}</span>
+                  <span className="entity-highlight entity-DRUG">{item.subject_text}</span>
                   <span style={{ fontWeight: 700, color: 'var(--accent-teal)' }}>→ {item.relation_type} →</span>
-                  <span className="entity-highlight entity-disease">{item.object_text}</span>
+                  <span className="entity-highlight entity-DISEASE">{item.object_text}</span>
                   <span className="badge badge-rule" style={{ marginLeft: '6px' }}>
                     Assertion: {item.assertion_type}
                   </span>
@@ -120,7 +123,7 @@ export function ReviewQueue() {
                     className="btn btn-secondary"
                     style={{ padding: '0.4rem 0.85rem', fontSize: '0.82rem' }}
                     onClick={() => {
-                      const newType = prompt('Enter corrected Relation Type (Drug→Disease, Drug→Cohort, Outcome-link):', item.relation_type);
+                      const newType = prompt('Enter corrected Relation Type (TREATS, TESTED_IN, MEASURED_BY):', item.relation_type);
                       if (newType) handleAction(item.relation_id, 'corrected', newType);
                     }}
                   >

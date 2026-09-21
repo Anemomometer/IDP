@@ -1,0 +1,30 @@
+Clinical Trial NLP: Tech Stack & Components Used
+
+1. Programming Languages
+- Python (3.10+): Used for the backend API, NLP inference, and model training pipelines.
+- JavaScript / HTML / CSS: Used for the frontend dashboard and user interface.
+- Node.js (v18+): Runtime environment for managing frontend dependencies and the Vite dev server.
+
+2. Backend Frameworks & Libraries (Python)
+- FastAPI (v0.109.0): High-performance web framework used to build the REST API.
+- Uvicorn: ASGI web server for running the FastAPI backend.
+- SQLAlchemy: Object Relational Mapper (ORM) for managing the database schema.
+- Pydantic: Used for data validation and API schema definition.
+- SQLite: Lightweight relational database used for the "Evidence Database" to store extractions.
+- Requests: Used to fetch data directly from the NCBI PubMed API.
+
+3. Frontend Frameworks & Libraries
+- React (v18.2): JavaScript library used for building the interactive Human-in-the-Loop review dashboard.
+- Vite (v5.0): Lightning-fast build tool and development server for the React app.
+- Axios: HTTP client used for making requests from the React frontend to the FastAPI backend.
+
+4. Machine Learning & NLP Stack
+- PyTorch: Deep learning framework powering the neural network architecture.
+- Transformers (Hugging Face): Used for the underlying biomedical language model encoder.
+- Custom Multi-Task NLP Pipeline featuring:
+  - NER (Named Entity Recognition): To identify DISEASE, DRUG, SAMPLE_SIZE, ENDPOINT.
+  - Relation Extraction: To link entities (e.g., TREATS, TESTED_IN, MEASURED_BY).
+  - Assertion Detection: To classify evidence modality (e.g., PRESENT_POSITIVE, ABSENT_NEGATED, CONDITIONAL).
+
+5. External APIs & Services
+- NCBI PubMed API: Used for live ingestion and search of biomedical literature and clinical trial abstracts.

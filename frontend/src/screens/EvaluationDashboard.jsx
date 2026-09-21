@@ -52,10 +52,13 @@ export function EvaluationDashboard() {
     <div>
       <div className="screen-header">
         <div>
-          <h1 className="screen-title">Screen 6: Evaluation Dashboard & Metrics</h1>
+          <h1 className="screen-title">Step 6: AI Accuracy Report</h1>
           <p className="screen-subtitle">
-            Automated evaluation harness scoring predictions against held-out gold-standard PubMed abstracts (data/gold_standard.json).
+            See how well the AI performs against a human-verified answer key.
           </p>
+          <div style={{ marginTop: '0.75rem', padding: '0.75rem', background: 'var(--bg-surface)', borderRadius: 'var(--radius-sm)', borderLeft: '4px solid var(--accent-teal)', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+            <strong>How it works:</strong> This page grades the AI. It compares the AI's answers against a 'Gold Standard' test set created by human doctors to tell you the exact accuracy (Precision and Recall) of the system.
+          </div>
         </div>
 
         <button className="btn" disabled={running} onClick={handleRunEvaluation}>
@@ -69,16 +72,15 @@ export function EvaluationDashboard() {
         </div>
       )}
 
-      {/* Task Selector Tabs */}
       <div className="nav-tabs" style={{ marginBottom: '1.5rem', width: 'fit-content' }}>
         <button className={`nav-btn ${activeTask === 'NER' ? 'active' : ''}`} onClick={() => setActiveTask('NER')}>
-          1. Named Entity Recognition (NER)
+          1. Highlighted Terms (NER)
         </button>
         <button className={`nav-btn ${activeTask === 'RE' ? 'active' : ''}`} onClick={() => setActiveTask('RE')}>
-          2. Relation Extraction (RE)
+          2. Medical Relationships (RE)
         </button>
         <button className={`nav-btn ${activeTask === 'AD' ? 'active' : ''}`} onClick={() => setActiveTask('AD')}>
-          3. Assertion Detection (AD)
+          3. Fact Check / Modality (AD)
         </button>
       </div>
 
@@ -160,14 +162,14 @@ export function EvaluationDashboard() {
 
             <div className="matrix-grid">
               <div className="matrix-cell header">True \ Pred</div>
-              <div className="matrix-cell header">Positive</div>
-              <div className="matrix-cell header">Negated</div>
-              <div className="matrix-cell header">Conditional</div>
+              <div className="matrix-cell header">PRESENT_POSITIVE</div>
+              <div className="matrix-cell header">ABSENT_NEGATED</div>
+              <div className="matrix-cell header">CONDITIONAL</div>
 
-              {['Positive', 'Negated', 'Conditional'].map((trueCls) => (
+              {['PRESENT_POSITIVE', 'ABSENT_NEGATED', 'CONDITIONAL'].map((trueCls) => (
                 <React.Fragment key={trueCls}>
                   <div className="matrix-cell header">{trueCls}</div>
-                  {['Positive', 'Negated', 'Conditional'].map((predCls) => (
+                  {['PRESENT_POSITIVE', 'ABSENT_NEGATED', 'CONDITIONAL'].map((predCls) => (
                     <div key={predCls} className="matrix-cell val">
                       {latestEval.confusion_matrix[trueCls] ? latestEval.confusion_matrix[trueCls][predCls] || 0 : 0}
                     </div>

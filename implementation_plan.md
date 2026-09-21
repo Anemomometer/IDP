@@ -4,9 +4,9 @@
 Build a full-stack system ("Clinical Trial NLP") based on patent US20250252261A1 that:
 1. Ingests PubMed abstracts live via NCBI E-utilities (`ESearch` + `EFetch`), normalizes text, and deduplicates by PMID.
 2. Extracts structured evidence using a PyTorch shared-encoder model (BioBERT/PubMedBERT-class backbone) with 3 joint task heads:
-   - **NER Head**: BIO tagging for Disease, Drug, Sample Size, Endpoint/Outcome.
-   - **Relation Extraction Head**: classifies entity pairs into `Drug→Disease`, `Drug→Cohort`, `Outcome-link`.
-   - **Assertion Detection Head**: classifies relations as `Positive`, `Negated`, or `Conditional`.
+   - **NER Head**: BIO tagging for DISEASE, DRUG, SAMPLE_SIZE, ENDPOINT.
+   - **Relation Extraction Head**: classifies entity pairs into `TREATS`, `TESTED_IN`, `MEASURED_BY`.
+   - **Assertion Detection Head**: classifies relations as `PRESENT_POSITIVE`, `ABSENT_NEGATED`, or `CONDITIONAL`.
 3. Persists records with confidence scores into SQLite (`abstracts`, `entities`, `relations`, `assertions`, `review_log`).
 4. Exposes REST API endpoints (`/api/ingest`, `/api/abstracts/{id}`, `/api/search`, `/api/export`, `/api/review`, `/api/evaluation`).
 5. Provides a React UI with 6 distinct screens (Ingest/Search, Abstract Detail with color-blind-safe inline highlighting & popovers, Relation View, Evidence Database, Review Queue, Evaluation Dashboard).
@@ -24,7 +24,7 @@ None at this stage. All requirements, taxonomies, schemas, API contracts, UI scr
 
 ### Data Pipeline & NLP Core (`model/`, `data/`)
 #### [NEW] [taxonomy.json](file:///d:/IDp/data/taxonomy.json)
-- JSON mapping for entity types (`Disease`, `Drug`, `Sample Size`, `Endpoint`), relation types (`Drug→Disease`, `Drug→Cohort`, `Outcome-link`), and assertion types (`Positive`, `Negated`, `Conditional`).
+- JSON mapping for entity types (`DISEASE`, `DRUG`, `SAMPLE_SIZE`, `ENDPOINT`), relation types (`TREATS`, `TESTED_IN`, `MEASURED_BY`), and assertion types (`PRESENT_POSITIVE`, `ABSENT_NEGATED`, `CONDITIONAL`).
 
 #### [NEW] [gold_standard.json](file:///d:/IDp/data/gold_standard.json)
 - Hand-annotated held-out test split of clinical abstracts with gold entity spans, relation pairs, and assertion labels.
@@ -96,7 +96,7 @@ None at this stage. All requirements, taxonomies, schemas, API contracts, UI scr
 - Screen 1: Query bar, "Fetch Abstracts" button with loading/error states, recent queries chips, result cards.
 
 #### [NEW] [AbstractDetail.jsx](file:///d:/IDp/frontend/src/screens/AbstractDetail.jsx)
-- Screen 2: Text renderer with character-accurate span highlights (Disease, Drug, Sample Size, Endpoint), assertion overlays (Positive = solid underline + check, Negated = strikethrough + red badge, Conditional = dashed + amber badge), hover popovers with numeric confidence, 3-click Approve/Correct/Reject actions, sidebar entity/relation list, always-visible legend.
+- Screen 2: Text renderer with character-accurate span highlights (DISEASE, DRUG, SAMPLE_SIZE, ENDPOINT), assertion overlays (PRESENT_POSITIVE = solid underline + check, ABSENT_NEGATED = strikethrough + red badge, CONDITIONAL = dashed + amber badge), hover popovers with numeric confidence, 3-click Approve/Correct/Reject actions, sidebar entity/relation list, always-visible legend.
 
 #### [NEW] [RelationView.jsx](file:///d:/IDp/frontend/src/screens/RelationView.jsx)
 - Screen 3: Table view of extracted entity pairs, assertion badges, confidence scores, relation filter chips; clicking row jumps to span in Abstract Detail.

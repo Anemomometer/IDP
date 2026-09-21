@@ -34,10 +34,13 @@ export function RelationView({ onJumpToAbstract }) {
     <div>
       <div className="screen-header">
         <div>
-          <h1 className="screen-title">Screen 3: Relation View</h1>
+          <h1 className="screen-title">Step 3: Medical Links (Relationships)</h1>
           <p className="screen-subtitle">
-            Inspect extracted clinical relationships independent of raw prose. Click any row to jump to highlighted text span in Abstract Detail.
+            A quick summary of how drugs, diseases, and outcomes are connected across the papers.
           </p>
+          <div style={{ marginTop: '0.75rem', padding: '0.75rem', background: 'var(--bg-surface)', borderRadius: 'var(--radius-sm)', borderLeft: '4px solid var(--accent-teal)', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+            <strong>How it works:</strong> Instead of reading full paragraphs, you can look at this table. It shows the direct medical relationships the AI found. For example, it shows if a Drug TREATS a Disease, or if it was NEGATED (meaning it didn't work).
+          </div>
         </div>
       </div>
 
@@ -53,9 +56,9 @@ export function RelationView({ onJumpToAbstract }) {
             onChange={(e) => setRelFilter(e.target.value)}
           >
             <option value="">All Relation Types</option>
-            <option value="Drug→Disease">Drug→Disease</option>
-            <option value="Drug→Cohort">Drug→Cohort</option>
-            <option value="Outcome-link">Outcome-link</option>
+            <option value="TREATS">TREATS</option>
+            <option value="TESTED_IN">TESTED_IN</option>
+            <option value="MEASURED_BY">MEASURED_BY</option>
           </select>
 
           <select
@@ -65,9 +68,9 @@ export function RelationView({ onJumpToAbstract }) {
             onChange={(e) => setAssFilter(e.target.value)}
           >
             <option value="">All Assertions</option>
-            <option value="Positive">Positive</option>
-            <option value="Negated">Negated</option>
-            <option value="Conditional">Conditional</option>
+            <option value="PRESENT_POSITIVE">PRESENT_POSITIVE</option>
+            <option value="ABSENT_NEGATED">ABSENT_NEGATED</option>
+            <option value="CONDITIONAL">CONDITIONAL</option>
           </select>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
@@ -133,14 +136,14 @@ export function RelationView({ onJumpToAbstract }) {
                         style={{
                           fontWeight: 600,
                           color:
-                            item.assertion_type === 'Negated'
+                            item.assertion_type === 'ABSENT_NEGATED'
                               ? '#ef4444'
-                              : item.assertion_type === 'Conditional'
+                              : item.assertion_type === 'CONDITIONAL'
                               ? '#f59e0b'
                               : '#10b981',
                         }}
                       >
-                        {item.assertion_type === 'Negated' ? '✗ ' : item.assertion_type === 'Conditional' ? '? ' : '✓ '}
+                        {item.assertion_type === 'ABSENT_NEGATED' ? '✗ ' : item.assertion_type === 'CONDITIONAL' ? '? ' : '✓ '}
                         {item.assertion_type}
                       </span>
                     </td>

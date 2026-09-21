@@ -58,10 +58,13 @@ export function EvidenceDatabase() {
     <div>
       <div className="screen-header">
         <div>
-          <h1 className="screen-title">Screen 4: Evidence Database (Search & Export)</h1>
+          <h1 className="screen-title">Step 4: Search All Extracted Data</h1>
           <p className="screen-subtitle">
-            Query the full accumulated evidence base across all ingested abstracts with multi-column AND logic.
+            Filter and search through all the medical facts the AI has ever found.
           </p>
+          <div style={{ marginTop: '0.75rem', padding: '0.75rem', background: 'var(--bg-surface)', borderRadius: 'var(--radius-sm)', borderLeft: '4px solid var(--accent-teal)', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+            <strong>How it works:</strong> Use this page like a search engine for medical facts. You can filter by a specific drug to see every disease it was tested against in our database.
+          </div>
         </div>
 
         <div style={{ display: 'flex', gap: '0.5rem' }}>
@@ -108,9 +111,9 @@ export function EvidenceDatabase() {
               onChange={(e) => handleFilterChange('relation_type', e.target.value)}
             >
               <option value="">All Relation Types</option>
-              <option value="Drug→Disease">Drug→Disease</option>
-              <option value="Drug→Cohort">Drug→Cohort</option>
-              <option value="Outcome-link">Outcome-link</option>
+              <option value="TREATS">TREATS</option>
+              <option value="TESTED_IN">TESTED_IN</option>
+              <option value="MEASURED_BY">MEASURED_BY</option>
             </select>
           </div>
 
@@ -122,9 +125,9 @@ export function EvidenceDatabase() {
               onChange={(e) => handleFilterChange('assertion_type', e.target.value)}
             >
               <option value="">All Assertions</option>
-              <option value="Positive">Positive</option>
-              <option value="Negated">Negated</option>
-              <option value="Conditional">Conditional</option>
+              <option value="PRESENT_POSITIVE">PRESENT_POSITIVE</option>
+              <option value="ABSENT_NEGATED">ABSENT_NEGATED</option>
+              <option value="CONDITIONAL">CONDITIONAL</option>
             </select>
           </div>
 
@@ -245,9 +248,9 @@ export function EvidenceDatabase() {
                       <span
                         style={{
                           color:
-                            item.assertion_type === 'Negated'
+                            item.assertion_type === 'ABSENT_NEGATED'
                               ? '#ef4444'
-                              : item.assertion_type === 'Conditional'
+                              : item.assertion_type === 'CONDITIONAL'
                               ? '#f59e0b'
                               : '#10b981',
                           fontWeight: 600,

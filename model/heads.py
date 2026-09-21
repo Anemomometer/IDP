@@ -10,10 +10,10 @@ class NERHead(nn.Module):
     """
     BIO_LABELS = [
         "O",
-        "B-Disease", "I-Disease",
-        "B-Drug", "I-Drug",
-        "B-Sample Size", "I-Sample Size",
-        "B-Endpoint", "I-Endpoint"
+        "B-DISEASE", "I-DISEASE",
+        "B-DRUG", "I-DRUG",
+        "B-SAMPLE_SIZE", "I-SAMPLE_SIZE",
+        "B-ENDPOINT", "I-ENDPOINT"
     ]
 
     def __init__(self, hidden_size: int = 768, num_labels: int = len(BIO_LABELS)):
@@ -35,9 +35,9 @@ class RelationExtractionHead(nn.Module):
     """
     RELATION_LABELS = [
         "NO_RELATION",
-        "Drug→Disease",
-        "Drug→Cohort",
-        "Outcome-link"
+        "TREATS",
+        "TESTED_IN",
+        "MEASURED_BY"
     ]
 
     def __init__(self, hidden_size: int = 768, num_classes: int = len(RELATION_LABELS)):
@@ -59,12 +59,12 @@ class RelationExtractionHead(nn.Module):
 
 class AssertionDetectionHead(nn.Module):
     """
-    Assertion status classifier head (Positive, Negated, Conditional).
+    Assertion status classifier head (PRESENT_POSITIVE, ABSENT_NEGATED, CONDITIONAL).
     """
     ASSERTION_LABELS = [
-        "Positive",
-        "Negated",
-        "Conditional"
+        "PRESENT_POSITIVE",
+        "ABSENT_NEGATED",
+        "CONDITIONAL"
     ]
 
     def __init__(self, hidden_size: int = 768, num_classes: int = len(ASSERTION_LABELS)):

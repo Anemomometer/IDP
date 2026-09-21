@@ -3,12 +3,12 @@ import { Network } from 'lucide-react';
 
 export function Header({ activeTab, setActiveTab }) {
   const tabs = [
-    { id: 'ingest', label: 'Ingest & Search', icon: '🔍' },
-    { id: 'abstract', label: 'Abstract Detail', icon: '📄' },
-    { id: 'relation', label: 'Relation View', icon: '🔗' },
-    { id: 'database', label: 'Evidence DB', icon: '📊' },
-    { id: 'review', label: 'Review Queue', icon: '✅' },
-    { id: 'eval', label: 'Evaluation', icon: '📈' },
+    { id: 'ingest', label: '1. Find Papers', icon: '🔍' },
+    { id: 'abstract', label: '2. View AI Highlights', icon: '📄' },
+    { id: 'relation', label: '3. Medical Links', icon: '🔗' },
+    { id: 'database', label: '4. Data Search', icon: '📊' },
+    { id: 'review', label: "5. Check AI's Work", icon: '✅' },
+    { id: 'eval', label: '6. AI Accuracy', icon: '📈' },
   ];
 
   return (

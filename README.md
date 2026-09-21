@@ -25,9 +25,9 @@ Clinical trial literature expands rapidly, making manual data extraction slow, u
 
 - **Live PubMed Ingestion**: Search and fetch biomedical literature directly from the NCBI PubMed API.
 - **Shared Biomedical Language Model Architecture**:
-  - **Named Entity Recognition (NER)**: Identifies `Disease`, `Drug`, `Sample Size`, and `Endpoint/Outcome` entities.
-  - **Relation Extraction (RE)**: Maps directed clinical links (`Drug → Disease`, `Drug → Cohort`, `Outcome Links`).
-  - **Assertion Detection (AD)**: Classifies evidence modality into `Positive`, `Negated`, or `Conditional`.
+  - **Named Entity Recognition (NER)**: Identifies `DISEASE`, `DRUG`, `SAMPLE_SIZE`, and `ENDPOINT` entities.
+  - **Relation Extraction (RE)**: Maps directed clinical links (`TREATS`, `TESTED_IN`, `MEASURED_BY`).
+  - **Assertion Detection (AD)**: Classifies evidence modality into `PRESENT_POSITIVE`, `ABSENT_NEGATED`, or `CONDITIONAL`.
 - **Confidence Scoring & Audit Trail**: Every entity, relation, and assertion is stored with model confidence metrics.
 - **Interactive Review Dashboard**:
   - Color-coded entity highlighting and inline span visualization.
@@ -46,9 +46,9 @@ flowchart TD
     B --> C[Shared Biomedical Language Encoder]
     
     subgraph Multi-Task NLP Pipeline
-        C --> D[NER Head\n(Disease, Drug, Sample Size, Endpoint)]
-        C --> E[Relation Extraction Head\n(Drug-Disease, Drug-Cohort, Outcomes)]
-        C --> F[Assertion Detection Head\n(Positive, Negated, Conditional)]
+        C --> D[NER Head\n(DISEASE, DRUG, SAMPLE_SIZE, ENDPOINT)]
+        C --> E[Relation Extraction Head\n(TREATS, TESTED_IN, MEASURED_BY)]
+        C --> F[Assertion Detection Head\n(PRESENT_POSITIVE, ABSENT_NEGATED, CONDITIONAL)]
     End
 
     D --> G[Confidence Scoring & Post-Processor]
@@ -162,7 +162,7 @@ The system includes a gold-standard evaluation harness located in `data/gold_sta
 Metrics measured across held-out splits:
 - **NER Metrics**: Span-level Micro and Macro Precision, Recall, and F1.
 - **Relation Metrics**: Pairwise extraction accuracy and relation classification F1.
-- **Assertion Metrics**: Confusion matrices across `Positive`, `Negated`, and `Conditional` classes.
+- **Assertion Metrics**: Confusion matrices across `PRESENT_POSITIVE`, `ABSENT_NEGATED`, and `CONDITIONAL` classes.
 
 ---
 

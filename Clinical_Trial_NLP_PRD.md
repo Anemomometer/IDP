@@ -51,9 +51,9 @@ Clinical trial literature is difficult to use at scale for three reasons:
 ### 4.1 In Scope
 - Ingestion of abstracts via the NCBI PubMed API (live, on-demand or scheduled).
 - A shared encoder architecture performing NER, RE, and Assertion Detection.
-- Entity types covering at minimum: **Disease, Drug, Sample Size, Endpoints/Outcomes**.
-- Relation types covering at minimum: **Drug→Disease, Drug→Cohort, Outcome links**.
-- Assertion classification: **Positive / Negated / Conditional**.
+- Entity types covering at minimum: **DISEASE, DRUG, SAMPLE_SIZE, ENDPOINT**.
+- Relation types covering at minimum: **TREATS, TESTED_IN, MEASURED_BY**.
+- Assertion classification: **PRESENT_POSITIVE / ABSENT_NEGATED / CONDITIONAL**.
 - Persistence layer: SQLite database with a defined schema for entities, relations, assertions, and confidence scores.
 - React-based analytics dashboard with:
   - Color-coded inline text highlighting of extracted entities/relations.
@@ -111,9 +111,9 @@ Instead of training three separate models, one encoder is shared across NER, Rel
 ### 5.3 Assertion-Aware Extraction
 - A key differentiator from typical clinical-text pipelines: most extractors treat every mention of a relationship as a positive/true finding.
 - This system explicitly classifies each finding as:
-  - **Positive** — the relation is affirmed in the text.
-  - **Negated** — the text explicitly denies the relation (e.g., "no significant improvement was observed").
-  - **Conditional** — the relation holds only under stated conditions (e.g., "only in patients with prior treatment failure").
+  - **PRESENT_POSITIVE** — the relation is affirmed in the text.
+  - **ABSENT_NEGATED** — the text explicitly denies the relation (e.g., "no significant improvement was observed").
+  - **CONDITIONAL** — the relation holds only under stated conditions (e.g., "only in patients with prior treatment failure").
 
 ### 5.4 Human-in-the-Loop Review
 - Every extraction is presented with **color-coded inline highlighting** in the source abstract.
@@ -128,9 +128,9 @@ Instead of training three separate models, one encoder is shared across NER, Rel
 |----|-------------|----------|
 | FR-1 | System shall query the NCBI PubMed API and retrieve abstracts matching a search term or ID list. | Must |
 | FR-2 | System shall run the shared encoder over each retrieved abstract to produce NER, RE, and AD outputs in a single pass. | Must |
-| FR-3 | System shall extract entities of type Disease, Drug, Sample Size, and Endpoint/Outcome, each with a confidence score. | Must |
-| FR-4 | System shall extract relations of type Drug→Disease, Drug→Cohort, and Outcome links, each with a confidence score. | Must |
-| FR-5 | System shall classify each extracted relation/finding as Positive, Negated, or Conditional. | Must |
+| FR-3 | System shall extract entities of type DISEASE, DRUG, SAMPLE_SIZE, and ENDPOINT, each with a confidence score. | Must |
+| FR-4 | System shall extract relations of type TREATS, TESTED_IN, and MEASURED_BY, each with a confidence score. | Must |
+| FR-5 | System shall classify each extracted relation/finding as PRESENT_POSITIVE, ABSENT_NEGATED, or CONDITIONAL. | Must |
 | FR-6 | System shall persist all extraction results (entities, relations, assertions, confidence scores, source abstract reference) into a SQLite database. | Must |
 | FR-7 | System shall provide a dashboard view that highlights entities/relations inline within the source abstract text, color-coded by type/assertion. | Must |
 | FR-8 | System shall provide a relation view showing extracted relationships independent of raw text. | Should |
@@ -160,13 +160,13 @@ Instead of training three separate models, one encoder is shared across NER, Rel
 - `abstract_id` (PMID), `title`, `raw_text`, `retrieved_date`
 
 **Entities**
-- `entity_id`, `abstract_id` (FK), `entity_type` (Disease/Drug/Sample Size/Endpoint), `text_span`, `char_start`, `char_end`, `confidence_score`
+- `entity_id`, `abstract_id` (FK), `entity_type` (DISEASE/DRUG/SAMPLE_SIZE/ENDPOINT), `text_span`, `char_start`, `char_end`, `confidence_score`
 
 **Relations**
-- `relation_id`, `abstract_id` (FK), `subject_entity_id` (FK), `object_entity_id` (FK), `relation_type` (Drug→Disease / Drug→Cohort / Outcome), `confidence_score`
+- `relation_id`, `abstract_id` (FK), `subject_entity_id` (FK), `object_entity_id` (FK), `relation_type` (TREATS / TESTED_IN / MEASURED_BY), `confidence_score`
 
 **Assertions**
-- `assertion_id`, `relation_id` (FK), `assertion_type` (Positive/Negated/Conditional), `confidence_score`
+- `assertion_id`, `relation_id` (FK), `assertion_type` (PRESENT_POSITIVE/ABSENT_NEGATED/CONDITIONAL), `confidence_score`
 
 **Review**
 - `review_id`, `target_id` (entity/relation/assertion), `reviewer_status` (unreviewed/approved/corrected/rejected), `corrected_value` (nullable), `reviewed_by`, `reviewed_at`

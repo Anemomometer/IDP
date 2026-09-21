@@ -1,0 +1,92 @@
+[
+    {
+        "pmid": "35657801",
+        "text": "A randomized clinical trial evaluated semaglutide in 529 patients with heart failure. The primary endpoint was reduction in cardiovascular events.",
+        "entities": [
+            {
+                "text": "semaglutide",
+                "label": "DRUG",
+                "start": 38,
+                "end": 49
+            },
+            {
+                "text": "529",
+                "label": "SAMPLE_SIZE",
+                "start": 53,
+                "end": 56
+            },
+            {
+                "text": "heart failure",
+                "label": "DISEASE",
+                "start": 71,
+                "end": 84
+            },
+            {
+                "text": "reduction in cardiovascular events",
+                "label": "ENDPOINT",
+                "start": 111,
+                "end": 145
+            }
+        ]
+    },
+    {
+        "pmid": "34525287",
+        "text": "Pembrolizumab was evaluated in 500 patients with untreated non-small cell lung cancer. The primary endpoint was overall survival.",
+        "entities": [
+            {
+                "text": "Pembrolizumab",
+                "label": "DRUG",
+                "start": 0,
+                "end": 13
+            },
+            {
+                "text": "500",
+                "label": "SAMPLE_SIZE",
+                "start": 31,
+                "end": 34
+            },
+            {
+                "text": "untreated non-small cell lung cancer",
+                "label": "DISEASE",
+                "start": 49,
+                "end": 85
+            },
+            {
+                "text": "overall survival",
+                "label": "ENDPOINT",
+                "start": 112,
+                "end": 128
+            }
+        ]
+    },
+    {
+        "pmid": "33285061",
+        "text": "Empagliflozin was evaluated in 500 patients with type 2 diabetes. The primary endpoint was reduction in blood glucose levels.",
+        "entities": [
+            {
+                "text": "Empagliflozi",
+                "label": "DRUG",
+                "start": 0,
+                "end": 12
+            },
+            {
+                "text": "500",
+                "label": "SAMPLE_SIZE",
+                "start": 31,
+                "end": 34
+            },
+            {
+                "text": "type 2 diabetes",
+                "label": "DISEASE",
+                "start": 49,
+                "end": 64
+            },
+            {
+                "text": "reduction in blood glucose levels",
+                "label": "ENDPOINT",
+                "start": 91,
+                "end": 124
+            }
+        ]
+    }
+]

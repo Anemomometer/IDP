@@ -15,6 +15,33 @@ class EvaluationHarness:
     Generates confusion matrices and per-class + macro-averaged P/R/F1 scores.
     """
 
+    # Normalization map: gold standard relation labels → evaluation class names
+    RE_LABEL_MAP = {
+        "DRUG→DISEASE": "TREATS",
+        "DRUG->DISEASE": "TREATS",
+        "DRUG_DISEASE": "TREATS",
+        "DRUG→COHORT": "TESTED_IN",
+        "DRUG->COHORT": "TESTED_IN",
+        "DRUG_COHORT": "TESTED_IN",
+        "OUTCOME-LINK": "MEASURED_BY",
+        "OUTCOME_LINK": "MEASURED_BY",
+        # Pass-through for already-normalized labels
+        "TREATS": "TREATS",
+        "TESTED_IN": "TESTED_IN",
+        "MEASURED_BY": "MEASURED_BY",
+    }
+
+    # Normalization map: gold standard assertion labels → evaluation class names
+    AD_LABEL_MAP = {
+        "POSITIVE": "PRESENT_POSITIVE",
+        "NEGATED": "ABSENT_NEGATED",
+        "NEGATIVE": "ABSENT_NEGATED",
+        # Pass-through for already-normalized labels
+        "PRESENT_POSITIVE": "PRESENT_POSITIVE",
+        "ABSENT_NEGATED": "ABSENT_NEGATED",
+        "CONDITIONAL": "CONDITIONAL",
+    }
+
     def __init__(self, gold_standard_path: str = None):
         if not gold_standard_path:
             gold_standard_path = os.path.join(
@@ -23,6 +50,16 @@ class EvaluationHarness:
             )
         self.gold_standard_path = gold_standard_path
         self.processor = RuleNLPProcessor()
+
+    def _normalize_re_label(self, label: str) -> str | None:
+        """Normalize a relation type label from gold or predicted data to a standard class name."""
+        normalized = label.upper().replace(" ", "_").replace("\u2192", "->")
+        return self.RE_LABEL_MAP.get(normalized)
+
+    def _normalize_ad_label(self, label: str) -> str | None:
+        """Normalize an assertion type label from gold or predicted data to a standard class name."""
+        normalized = label.upper().replace(" ", "_")
+        return self.AD_LABEL_MAP.get(normalized)
 
     def load_gold_data(self) -> list[dict[str, Any]]:
         if not os.path.exists(self.gold_standard_path):
@@ -47,9 +84,9 @@ class EvaluationHarness:
         gold_items = self.load_gold_data()
 
         # Target classes per task
-        ner_classes = ["Disease", "Drug", "Sample Size", "Endpoint"]
-        re_classes = ["Drug→Disease", "Drug→Cohort", "Outcome-link"]
-        ad_classes = ["Positive", "Negated", "Conditional"]
+        ner_classes = ["DISEASE", "DRUG", "SAMPLE_SIZE", "ENDPOINT"]
+        re_classes = ["TREATS", "TESTED_IN", "MEASURED_BY"]
+        ad_classes = ["PRESENT_POSITIVE", "ABSENT_NEGATED", "CONDITIONAL"]
 
         # Trackers
         ner_stats = {c: {"tp": 0, "fp": 0, "fn": 0} for c in ner_classes}
@@ -68,8 +105,8 @@ class EvaluationHarness:
 
             # --- NER Evaluation ---
             for c in ner_classes:
-                g_spans = set((e["char_start"], e["char_end"]) for e in gold_entities if e.get("entity_type") == c)
-                p_spans = set((e["char_start"], e["char_end"]) for e in pred_entities if e.get("entity_type") == c)
+                g_spans = set((e["char_start"], e["char_end"]) for e in gold_entities if e.get("entity_type", "").upper().replace(" ", "_") == c)
+                p_spans = set((e["char_start"], e["char_end"]) for e in pred_entities if e.get("entity_type", "").upper().replace(" ", "_") == c)
 
                 tp = len(g_spans.intersection(p_spans))
                 fp = len(p_spans - g_spans)
@@ -91,12 +128,12 @@ class EvaluationHarness:
                 g_rels = set(
                     (r.get("subject_text") or gold_ent_map.get(r.get("subject_entity_id")),
                      r.get("object_text") or gold_ent_map.get(r.get("object_entity_id")))
-                    for r in gold_relations if r.get("relation_type") == c
+                    for r in gold_relations if self._normalize_re_label(r.get("relation_type", "")) == c
                 )
                 p_rels = set(
                     (r.get("subject_text") or pred_ent_map.get(r.get("subject_entity_id")),
                      r.get("object_text") or pred_ent_map.get(r.get("object_entity_id")))
-                    for r in pred_relations if r.get("relation_type") == c
+                    for r in pred_relations if self._normalize_re_label(r.get("relation_type", "")) == c
                 )
 
                 tp = len(g_rels.intersection(p_rels))
@@ -109,11 +146,35 @@ class EvaluationHarness:
 
             # AD Evaluation & CM
             gold_assertions = item.get("gold_assertions", [])
+            
+            gold_rel_map = {}
+            for r in gold_relations:
+                sub_txt = r.get("subject_text") or gold_ent_map.get(r.get("subject_entity_id"))
+                obj_txt = r.get("object_text") or gold_ent_map.get(r.get("object_entity_id"))
+                rtype = self._normalize_re_label(r.get("relation_type", ""))
+                gold_rel_map[r.get("relation_id")] = (sub_txt, obj_txt, rtype)
+                
+            pred_rel_assert_map = {}
+            for pa in pred_assertions:
+                rel_id = pa.get("relation_id")
+                rel = next((pr for pr in pred_relations if pr.get("relation_id") == rel_id), None)
+                if rel:
+                    sub_txt = rel.get("subject_text") or pred_ent_map.get(rel.get("subject_entity_id"))
+                    obj_txt = rel.get("object_text") or pred_ent_map.get(rel.get("object_entity_id"))
+                    rtype = self._normalize_re_label(rel.get("relation_type", ""))
+                    pred_rel_assert_map[(sub_txt, obj_txt, rtype)] = self._normalize_ad_label(pa.get("assertion_type", "PRESENT_POSITIVE")) or "PRESENT_POSITIVE"
+
             for ga in gold_assertions:
-                true_label = ga.get("assertion_type", "Positive")
+                true_label = self._normalize_ad_label(ga.get("assertion_type", "PRESENT_POSITIVE"))
+                if not true_label: continue
+                
                 if true_label in ad_classes:
-                    # Match with first predicted assertion
-                    pred_label = pred_assertions[0]["assertion_type"] if pred_assertions else "Positive"
+                    rel_tuple = gold_rel_map.get(ga.get("relation_id"))
+                    
+                    pred_label = "PRESENT_POSITIVE" # Default if relation wasn't extracted
+                    if rel_tuple and rel_tuple in pred_rel_assert_map:
+                        pred_label = pred_rel_assert_map[rel_tuple]
+                        
                     if pred_label in ad_classes:
                         ad_cm[true_label][pred_label] += 1
                         if true_label == pred_label:

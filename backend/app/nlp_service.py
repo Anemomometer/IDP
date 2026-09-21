@@ -55,10 +55,10 @@ class RuleNLPProcessor:
 
         # 1. NER Extraction
         pattern_groups = [
-            ("Disease", self.DISEASE_PATTERNS),
-            ("Drug", self.DRUG_PATTERNS),
-            ("Sample Size", self.SAMPLE_SIZE_PATTERNS),
-            ("Endpoint", self.ENDPOINT_PATTERNS)
+            ("DISEASE", self.DISEASE_PATTERNS),
+            ("DRUG", self.DRUG_PATTERNS),
+            ("SAMPLE_SIZE", self.SAMPLE_SIZE_PATTERNS),
+            ("ENDPOINT", self.ENDPOINT_PATTERNS)
         ]
 
         seen_spans = set()
@@ -93,10 +93,10 @@ class RuleNLPProcessor:
         relations = []
         relation_id_counter = 1
 
-        drugs = [e for e in entities if e["entity_type"] == "Drug"]
-        diseases = [e for e in entities if e["entity_type"] == "Disease"]
-        sample_sizes = [e for e in entities if e["entity_type"] == "Sample Size"]
-        endpoints = [e for e in entities if e["entity_type"] == "Endpoint"]
+        drugs = [e for e in entities if e["entity_type"] == "DRUG"]
+        diseases = [e for e in entities if e["entity_type"] == "DISEASE"]
+        sample_sizes = [e for e in entities if e["entity_type"] == "SAMPLE_SIZE"]
+        endpoints = [e for e in entities if e["entity_type"] == "ENDPOINT"]
 
         # Drug -> Disease (Drug→Disease)
         for drug in drugs:
@@ -108,7 +108,7 @@ class RuleNLPProcessor:
                         "relation_id": relation_id_counter,
                         "subject_entity_id": drug["entity_id"],
                         "object_entity_id": disease["entity_id"],
-                        "relation_type": "Drug→Disease",
+                        "relation_type": "TREATS",
                         "confidence_score": rel_conf,
                         "extraction_method": extraction_method,
                         "review_status": "unreviewed"
@@ -124,7 +124,7 @@ class RuleNLPProcessor:
                         "relation_id": relation_id_counter,
                         "subject_entity_id": drug["entity_id"],
                         "object_entity_id": ss["entity_id"],
-                        "relation_type": "Drug→Cohort",
+                        "relation_type": "TESTED_IN",
                         "confidence_score": 0.86,
                         "extraction_method": extraction_method,
                         "review_status": "unreviewed"
@@ -140,7 +140,7 @@ class RuleNLPProcessor:
                         "relation_id": relation_id_counter,
                         "subject_entity_id": drug["entity_id"],
                         "object_entity_id": ep["entity_id"],
-                        "relation_type": "Outcome-link",
+                        "relation_type": "MEASURED_BY",
                         "confidence_score": 0.89,
                         "extraction_method": extraction_method,
                         "review_status": "unreviewed"
@@ -160,17 +160,17 @@ class RuleNLPProcessor:
             context_end = min(len(text), max(subj["char_end"], obj["char_end"]) + 50)
             context = text[context_start:context_end].lower()
 
-            assertion_type = "Positive"
+            assertion_type = "PRESENT_POSITIVE"
             if any(cue in context for cue in self.NEGATION_CUES):
-                assertion_type = "Negated"
+                assertion_type = "ABSENT_NEGATED"
             elif any(cue in context for cue in self.CONDITIONAL_CUES):
-                assertion_type = "Conditional"
+                assertion_type = "CONDITIONAL"
 
             assertions.append({
                 "assertion_id": assertion_id_counter,
                 "relation_id": rel["relation_id"],
                 "assertion_type": assertion_type,
-                "confidence_score": 0.90 if assertion_type == "Positive" else 0.82,
+                "confidence_score": 0.90 if assertion_type == "PRESENT_POSITIVE" else 0.82,
                 "extraction_method": extraction_method,
                 "review_status": "unreviewed"
             })

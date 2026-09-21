@@ -1,0 +1,3500 @@
+[
+    {
+        "pmid": "42699213",
+        "text": "We evaluated baseline hypertension prevalence and control and risk of major adverse cardiovascular events (MACEs) among people with HIV in REPRIEVE who had low to moderate traditional cardiovascular disease (CVD) risk. Hypertension at baseline was defined by (1) a preexisting diagnosis regardless of antihypertensive treatment or (2) systolic blood pressure ≥140 mm Hg and/or diastolic blood pressure ≥90 mm Hg without a prior diagnosis. We estimated the prevalence of the composite hypertension and control outcomes and calculated adjusted prevalence ratios controlling for traditional CVD risk factors using log binomial regression. We explored the relationship between hypertension and MACE using cause-specific Cox proportional hazards models. Of 7769 participants enrolled from 5 regions, the median age was 50 years, and 2419 (31%) were women. The prevalence of baseline hypertension was 36% (n = 2780) with geographic variation. Among these, 1911 (69%) individuals had a preexisting hypertension diagnosis; the remainder (n = 869, 31%) were undiagnosed. Region and traditional CVD risk factors were associated with hypertension prevalence, with obese and overweight body mass index having the highest adjusted prevalence ratios (1.80 [95% CI, 1.67-1.95] and 1.38 [95% CI, 1.28-1.49], respectively). Among those with preexisting hypertension, 40% were uncontrolled, with regional variation. Hypertension at baseline was associated with an increased hazard of MACE (hazard ratio, 2.00; 95% CI, 1.57-2.55) and key components of MACE, including myocardial infarction and stroke. Approximately 1 in 3 REPRIEVE participants had hypertension at baseline. Hypertension was frequently suboptimally controlled. These findings highlight the need for improved screening and optimized treatment of hypertension in people with HIV.",
+        "entities": [
+            {
+                "text": "hypertension",
+                "label": "DISEASE",
+                "start": 22,
+                "end": 34
+            },
+            {
+                "text": "major adverse cardiovascular events",
+                "label": "ENDPOINT",
+                "start": 70,
+                "end": 105
+            },
+            {
+                "text": "HIV",
+                "label": "DISEASE",
+                "start": 132,
+                "end": 135
+            },
+            {
+                "text": "cardiovascular disease",
+                "label": "DISEASE",
+                "start": 184,
+                "end": 206
+            },
+            {
+                "text": "Hypertension",
+                "label": "DISEASE",
+                "start": 219,
+                "end": 231
+            },
+            {
+                "text": "hypertension",
+                "label": "DISEASE",
+                "start": 484,
+                "end": 496
+            },
+            {
+                "text": "hypertension",
+                "label": "DISEASE",
+                "start": 673,
+                "end": 685
+            },
+            {
+                "text": "7769",
+                "label": "SAMPLE_SIZE",
+                "start": 752,
+                "end": 756
+            },
+            {
+                "text": "hypertension",
+                "label": "DISEASE",
+                "start": 878,
+                "end": 890
+            },
+            {
+                "text": "2780",
+                "label": "SAMPLE_SIZE",
+                "start": 904,
+                "end": 908
+            },
+            {
+                "text": "hypertension",
+                "label": "DISEASE",
+                "start": 991,
+                "end": 1003
+            },
+            {
+                "text": "869",
+                "label": "SAMPLE_SIZE",
+                "start": 1034,
+                "end": 1037
+            },
+            {
+                "text": "hypertension",
+                "label": "DISEASE",
+                "start": 1123,
+                "end": 1135
+            },
+            {
+                "text": "hypertension",
+                "label": "DISEASE",
+                "start": 1336,
+                "end": 1348
+            },
+            {
+                "text": "Hypertension",
+                "label": "DISEASE",
+                "start": 1398,
+                "end": 1410
+            },
+            {
+                "text": "myocardial infarction",
+                "label": "ENDPOINT",
+                "start": 1549,
+                "end": 1570
+            },
+            {
+                "text": "stroke",
+                "label": "ENDPOINT",
+                "start": 1575,
+                "end": 1581
+            },
+            {
+                "text": "hypertension",
+                "label": "DISEASE",
+                "start": 1630,
+                "end": 1642
+            },
+            {
+                "text": "Hypertension",
+                "label": "DISEASE",
+                "start": 1656,
+                "end": 1668
+            },
+            {
+                "text": "hypertension",
+                "label": "DISEASE",
+                "start": 1793,
+                "end": 1805
+            },
+            {
+                "text": "HIV",
+                "label": "DISEASE",
+                "start": 1821,
+                "end": 1824
+            }
+        ]
+    },
+    {
+        "pmid": "42697907",
+        "text": "Chronic kidney disease (CKD) affects approximately 10% of the global population, with limited therapeutic options to slow progression in moderate stages. The gut-kidney axis contributes to CKD progression, and probiotics are being investigated as potential therapeutic modulators. This double-blind, randomized, placebo-controlled trial investigated the effect of probiotic supplementation on CKD progression. Seventy-two patients with CKD stages 3 or 4 received either Lactobacillus plantarum (10",
+        "entities": [
+            {
+                "text": "Chronic kidney disease",
+                "label": "DISEASE",
+                "start": 0,
+                "end": 22
+            },
+            {
+                "text": "Lactobacillus plantarum",
+                "label": "INTERVENTION",
+                "start": 470,
+                "end": 493
+            }
+        ]
+    },
+    {
+        "pmid": "42697856",
+        "text": "In the NEURO-TTRansform clinical trial (NCT04136184), eplontersen improved neuropathy impairment and quality of life (QoL) through Week 66 versus the NEURO-TTR historical placebo in patients with hereditary transthyretin amyloidosis with polyneuropathy (ATTRv-PN). This analysis assessed the impact of baseline ATTRv-PN severity on eplontersen response in patients from NEURO-TTRansform. This post hoc analysis grouped patients into tertiles by baseline Neuropathy Impairment Score (NIS): T1 (least baseline impairment: 3.5 to < 27.5; n = 67), T2 (27.5 to < 55.0; n = 67), and T3 (55.0 to < 127.8; n = 66). Outcomes assessed were neuropathy impairment (modified NIS+7 [mNIS+7] and NIS, Neuropathy Symptom and Change, Polyneuropathy Disability), QoL (Norfolk QoL-Diabetic Neuropathy), physical functioning (36-Item Short-Form Health Survey Physical Component Summary), nutritional status (modified body mass index), and serum transthyretin levels; these were compared with NEURO-TTR historical placebo. Autonomic dysfunction (Composite Autonomic Symptom Score-31), disability (Rasch-built Overall Disability Scale), and walking speed (10-Meter Walk Test) were also assessed. Final assessments were carried out following 65/66 or 81/85 weeks of treatment. Mean mNIS+7 composite scores were maintained over 85 weeks with eplontersen (changes from baseline of -4.5 [T1], -1.3 [T2], and -2.6 [T3] points). Other disease parameter scores were similarly maintained or improved with eplontersen. Patients receiving placebo experienced disease worsening across outcomes. T1 mean disease scores were typically better than in T2 and T3. Consistent, sustained benefits of eplontersen were observed regardless of baseline ATTRv-PN severity. These findings strengthen the importance of early treatment initiation for patients with ATTRv-PN across the disease spectrum.",
+        "entities": [
+            {
+                "text": "eplontersen",
+                "label": "INTERVENTION",
+                "start": 54,
+                "end": 65
+            },
+            {
+                "text": "neuropathy impairment",
+                "label": "ENDPOINT",
+                "start": 75,
+                "end": 96
+            },
+            {
+                "text": "quality of life",
+                "label": "ENDPOINT",
+                "start": 101,
+                "end": 116
+            },
+            {
+                "text": "hereditary transthyretin amyloidosis",
+                "label": "DISEASE",
+                "start": 196,
+                "end": 232
+            },
+            {
+                "text": "polyneuropathy",
+                "label": "DISEASE",
+                "start": 238,
+                "end": 252
+            },
+            {
+                "text": "eplontersen",
+                "label": "INTERVENTION",
+                "start": 332,
+                "end": 343
+            },
+            {
+                "text": "Neuropathy Impairment",
+                "label": "ENDPOINT",
+                "start": 454,
+                "end": 475
+            },
+            {
+                "text": "67",
+                "label": "SAMPLE_SIZE",
+                "start": 539,
+                "end": 541
+            },
+            {
+                "text": "67",
+                "label": "SAMPLE_SIZE",
+                "start": 568,
+                "end": 570
+            },
+            {
+                "text": "66",
+                "label": "SAMPLE_SIZE",
+                "start": 602,
+                "end": 604
+            },
+            {
+                "text": "neuropathy impairment",
+                "label": "ENDPOINT",
+                "start": 630,
+                "end": 651
+            },
+            {
+                "text": "Neuropathy Symptom and Change",
+                "label": "ENDPOINT",
+                "start": 686,
+                "end": 715
+            },
+            {
+                "text": "Polyneuropathy Disability",
+                "label": "ENDPOINT",
+                "start": 717,
+                "end": 742
+            },
+            {
+                "text": "physical functioning",
+                "label": "ENDPOINT",
+                "start": 784,
+                "end": 804
+            },
+            {
+                "text": "nutritional status",
+                "label": "ENDPOINT",
+                "start": 868,
+                "end": 886
+            },
+            {
+                "text": "body mass index",
+                "label": "ENDPOINT",
+                "start": 897,
+                "end": 912
+            },
+            {
+                "text": "serum transthyretin levels",
+                "label": "ENDPOINT",
+                "start": 919,
+                "end": 945
+            },
+            {
+                "text": "Autonomic dysfunction",
+                "label": "ENDPOINT",
+                "start": 1002,
+                "end": 1023
+            },
+            {
+                "text": "disability",
+                "label": "ENDPOINT",
+                "start": 1064,
+                "end": 1074
+            },
+            {
+                "text": "Disability",
+                "label": "ENDPOINT",
+                "start": 1096,
+                "end": 1106
+            },
+            {
+                "text": "walking speed",
+                "label": "ENDPOINT",
+                "start": 1119,
+                "end": 1132
+            },
+            {
+                "text": "eplontersen",
+                "label": "INTERVENTION",
+                "start": 1318,
+                "end": 1329
+            },
+            {
+                "text": "eplontersen",
+                "label": "INTERVENTION",
+                "start": 1475,
+                "end": 1486
+            },
+            {
+                "text": "eplontersen",
+                "label": "INTERVENTION",
+                "start": 1660,
+                "end": 1671
+            }
+        ]
+    },
+    {
+        "pmid": "42695340",
+        "text": "Digital interventions offer scalable alternatives to traditional face-to-face diabetes education, but often face challenges related to inconsistent clinical effectiveness, and declining user engagement. However, whether a digital structured education program integrated with behavioral nudge tools can improve metabolic, behavioral, and psychological outcomes in adults with type 2 diabetes remains unclear. This study aimed to evaluate the effectiveness of a digital structured education program integrated with behavioral nudge tools in improving metabolic, behavioral, and psychological outcomes among adults with type 2 diabetes. This multicenter randomized controlled trial was conducted in the endocrinology departments of 4 hospitals in China. Adults with type 2 diabetes were randomly assigned to an intervention group receiving a digital structured education program integrated with behavioral nudge tools (n=146) or a control group receiving standard digital diabetes education (n=147). Assessments were conducted at baseline and 12-week follow-up. The primary outcome was hemoglobin A Among 293 participants (mean age 49.19, SD 10.02 y), 287 (97.9%) completed follow-up. At 12 weeks, the intervention group demonstrated significantly greater improvements than the control group in HbA Digital structured education integrated with behavioral nudge tools improved metabolic outcomes and strengthened psychological and behavioral determinants of self-management among adults with type 2 diabetes over a 12-week period. These findings suggest that a digital structured education program integrated with behavioral nudge tools may enhance diabetes self-management beyond standard digital diabetes education. Further studies with longer follow-up and real-world implementation are warranted to evaluate the sustainability, generalizability, and long-term clinical impact of this integrated intervention.",
+        "entities": [
+            {
+                "text": "digital structured education program integrated with behavioral nudge tools",
+                "label": "INTERVENTION",
+                "start": 222,
+                "end": 297
+            },
+            {
+                "text": "type 2 diabetes",
+                "label": "DISEASE",
+                "start": 375,
+                "end": 390
+            },
+            {
+                "text": "digital structured education program integrated with behavioral nudge tools",
+                "label": "INTERVENTION",
+                "start": 460,
+                "end": 535
+            },
+            {
+                "text": "type 2 diabetes",
+                "label": "DISEASE",
+                "start": 617,
+                "end": 632
+            },
+            {
+                "text": "type 2 diabetes",
+                "label": "DISEASE",
+                "start": 763,
+                "end": 778
+            },
+            {
+                "text": "digital structured education program integrated with behavioral nudge tools",
+                "label": "INTERVENTION",
+                "start": 839,
+                "end": 914
+            },
+            {
+                "text": "n=146",
+                "label": "SAMPLE_SIZE",
+                "start": 916,
+                "end": 921
+            },
+            {
+                "text": "standard digital diabetes education",
+                "label": "INTERVENTION",
+                "start": 952,
+                "end": 987
+            },
+            {
+                "text": "n=147",
+                "label": "SAMPLE_SIZE",
+                "start": 989,
+                "end": 994
+            },
+            {
+                "text": "293",
+                "label": "SAMPLE_SIZE",
+                "start": 1102,
+                "end": 1105
+            },
+            {
+                "text": "type 2 diabetes",
+                "label": "DISEASE",
+                "start": 1488,
+                "end": 1503
+            },
+            {
+                "text": "digital structured education program integrated with behavioral nudge tools",
+                "label": "INTERVENTION",
+                "start": 1557,
+                "end": 1632
+            },
+            {
+                "text": "standard digital diabetes education",
+                "label": "INTERVENTION",
+                "start": 1677,
+                "end": 1712
+            }
+        ]
+    },
+    {
+        "pmid": "42694165",
+        "text": "This study was designed as a single-blind randomized controlled trial to investigate the effects of hawthorn vinegar, black mulberry syrup, and green tea on oral mucositis and quality of life related to oral health in individuals with diabetes. Total of 120 participants were divided into four groups (hawthorn vinegar, black mulberry syrup, green tea, control;  Patients in the hawthorn vinegar group showed a decrease in oral mucositis and an increase in oral health-related quality of life at the interim measurement (day 7) and final test (day 14) measurements ( Although there was no difference between hawthorn vinegar and black mulberry syrup, they were found to be more effective than green tea in reducing oral mucositis and improving oral health-related quality of life, and all three complementary treatments were found to be effective. identifier [NCT06481254]. https://register.clinicaltrials.gov/prs/beta/studies/S000E5O000000043/recordSummary.",
+        "entities": [
+            {
+                "text": "hawthorn vinegar",
+                "label": "INTERVENTION",
+                "start": 100,
+                "end": 116
+            },
+            {
+                "text": "black mulberry syrup",
+                "label": "INTERVENTION",
+                "start": 118,
+                "end": 138
+            },
+            {
+                "text": "green tea",
+                "label": "INTERVENTION",
+                "start": 144,
+                "end": 153
+            },
+            {
+                "text": "oral mucositis",
+                "label": "ENDPOINT",
+                "start": 157,
+                "end": 171
+            },
+            {
+                "text": "quality of life",
+                "label": "ENDPOINT",
+                "start": 176,
+                "end": 191
+            },
+            {
+                "text": "diabetes",
+                "label": "DISEASE",
+                "start": 235,
+                "end": 243
+            },
+            {
+                "text": "120",
+                "label": "SAMPLE_SIZE",
+                "start": 254,
+                "end": 257
+            },
+            {
+                "text": "hawthorn vinegar",
+                "label": "INTERVENTION",
+                "start": 302,
+                "end": 318
+            },
+            {
+                "text": "black mulberry syrup",
+                "label": "INTERVENTION",
+                "start": 320,
+                "end": 340
+            },
+            {
+                "text": "green tea",
+                "label": "INTERVENTION",
+                "start": 342,
+                "end": 351
+            },
+            {
+                "text": "hawthorn vinegar",
+                "label": "INTERVENTION",
+                "start": 379,
+                "end": 395
+            },
+            {
+                "text": "oral mucositis",
+                "label": "ENDPOINT",
+                "start": 423,
+                "end": 437
+            },
+            {
+                "text": "oral health-related quality of life",
+                "label": "ENDPOINT",
+                "start": 457,
+                "end": 492
+            },
+            {
+                "text": "hawthorn vinegar",
+                "label": "INTERVENTION",
+                "start": 608,
+                "end": 624
+            },
+            {
+                "text": "black mulberry syrup",
+                "label": "INTERVENTION",
+                "start": 629,
+                "end": 649
+            },
+            {
+                "text": "green tea",
+                "label": "INTERVENTION",
+                "start": 693,
+                "end": 702
+            },
+            {
+                "text": "oral mucositis",
+                "label": "ENDPOINT",
+                "start": 715,
+                "end": 729
+            },
+            {
+                "text": "oral health-related quality of life",
+                "label": "ENDPOINT",
+                "start": 744,
+                "end": 779
+            }
+        ]
+    },
+    {
+        "pmid": "42692503",
+        "text": "Despite advances in diabetes care, cardiovascular disease (CVD) remains the leading cause of morbidity and mortality in type 2 diabetes mellitus (T2DM), with significant residual risk despite optimal glycaemic control. Targeting upstream vascular mechanisms beyond metabolic endpoints is therefore essential through more holistic and integrative approaches to effectively prevent cardiovascular complications in T2DM. Endothelial dysfunction plays a central role in accelerating atherosclerosis and premature vascular ageing in T2DM, thereby increasing the cardiovascular risk, making it a key therapeutic target. This study aims to rigorously evaluate the effect of a structured yoga-based lifestyle programme on endothelial function, markers of vascular ageing and quality of life in individuals with T2DM and to elucidate potential mechanisms of action through assessment of autonomic, inflammatory, oxidative and metabolic pathways. A prospective, four-arm, parallel-group, randomised, open-label, blinded end-point study will be conducted at a tertiary care hospital on a total of 248 (62 per arm) adults aged between 30 and 70 years and have a confirmed diagnosis of T2DM for at least 1 year. Three yoga-based intervention groups will receive different components of yoga-based lifestyle intervention in addition to standard medical care, and the control group will receive standard medical care alone. The yoga intervention will be delivered over 12 weeks, comprising supervised sessions twice weekly, supplemented by guided home practice. The primary outcome is the change in endothelial function assessed by flow-mediated dilatation. Secondary outcomes include arterial stiffness, vascular ageing markers, glycaemic and lipid profiles, autonomic function, oxidative stress, quality of life and cost of care. Outcome assessments will be performed at baseline, 3, 6 and 12 months, with outcome assessors blinded to group allocation. Data will be analysed according to the intention-to-treat principle. Analysis of covariance and mixed-effects models will assess intervention effects, with sensitivity analyses. Effect estimates and their 95% CIs will be reported. The study has received approval from the Institutional Ethics Committee of SDM College of Medical Sciences and Hospital, India (approval no. SDMIEC/2025/1075). The study findings will be disseminated through peer-reviewed scientific publications, presentations at national and international conferences and stakeholder meetings, with the aim of informing integrative strategies for effectively preventing cardiovascular complications in T2DM. CTRI/2024/10/075712.",
+        "entities": [
+            {
+                "text": "cardiovascular disease",
+                "label": "DISEASE",
+                "start": 35,
+                "end": 57
+            },
+            {
+                "text": "type 2 diabetes mellitus",
+                "label": "DISEASE",
+                "start": 120,
+                "end": 144
+            },
+            {
+                "text": "structured yoga-based lifestyle programme",
+                "label": "INTERVENTION",
+                "start": 669,
+                "end": 710
+            },
+            {
+                "text": "endothelial function",
+                "label": "ENDPOINT",
+                "start": 714,
+                "end": 734
+            },
+            {
+                "text": "quality of life",
+                "label": "ENDPOINT",
+                "start": 767,
+                "end": 782
+            },
+            {
+                "text": "248",
+                "label": "SAMPLE_SIZE",
+                "start": 1086,
+                "end": 1089
+            },
+            {
+                "text": "yoga-based intervention",
+                "label": "INTERVENTION",
+                "start": 1205,
+                "end": 1228
+            },
+            {
+                "text": "yoga-based lifestyle intervention",
+                "label": "INTERVENTION",
+                "start": 1273,
+                "end": 1306
+            },
+            {
+                "text": "endothelial function",
+                "label": "ENDPOINT",
+                "start": 1584,
+                "end": 1604
+            },
+            {
+                "text": "flow-mediated dilatation",
+                "label": "ENDPOINT",
+                "start": 1617,
+                "end": 1641
+            },
+            {
+                "text": "arterial stiffness",
+                "label": "ENDPOINT",
+                "start": 1670,
+                "end": 1688
+            },
+            {
+                "text": "vascular ageing markers",
+                "label": "ENDPOINT",
+                "start": 1690,
+                "end": 1713
+            },
+            {
+                "text": "glycaemic and lipid profiles",
+                "label": "ENDPOINT",
+                "start": 1715,
+                "end": 1743
+            },
+            {
+                "text": "autonomic function",
+                "label": "ENDPOINT",
+                "start": 1745,
+                "end": 1763
+            },
+            {
+                "text": "oxidative stress",
+                "label": "ENDPOINT",
+                "start": 1765,
+                "end": 1781
+            },
+            {
+                "text": "quality of life",
+                "label": "ENDPOINT",
+                "start": 1783,
+                "end": 1798
+            },
+            {
+                "text": "cost of care",
+                "label": "ENDPOINT",
+                "start": 1803,
+                "end": 1815
+            }
+        ]
+    },
+    {
+        "pmid": "42687658",
+        "text": "This study examined the effects of continuous glucose monitoring (CGM)-guided personalized lifestyle coaching on glycemic outcomes and glycemic variability in patients with type 2 diabetes mellitus (T2DM). This three-arm randomized controlled trial was conducted in South Korea from June 2023 to November 2024. Participants were assigned to CGM alone (Intervention I, n=34), CGM-guided personalized lifestyle coaching (Intervention II, n=34), or standard diabetes education (control, n=34). The intervention lasted 3 months, with assessments at baseline and at 3, 6, and 12 months. Data were analyzed using generalized estimating equations. At 3 months, glycated hemoglobin (HbA1c) and fasting plasma glucose (FPG) levels were significantly lower in both intervention groups than in the control group. Compared with the control group, HbA1c was lower by 0.78 percentage points in Intervention I (p=.008) and by 1.12 percentage points in Intervention II (p<.001). At 3 months, FPG was lower than in the control group by 34.05 mg/dL in Intervention I (p=.001) and by 34.77 mg/dL in Intervention II (p<.001). At 6 months, TBR70 (time below range <70 mg/dL) was lower in Intervention I than in Intervention II (adjusted mean difference=-2.18, p=.010), whereas TAR180 (time above range >180 mg/dL) was lower in Intervention II than in the control group and Intervention I by 7.85 and 8.28 percentage points, respectively (both p=.004). CGM-guided personalized lifestyle coaching improved glycemic control and reduced hyperglycemic exposure in patients with T2DM. Real-time glucose data may support individualized lifestyle counseling and sustained diabetes self-management. This study was retrospectively registered with the Clinical Research Information Service (CRIS) of the Republic of Korea (KCT0008872) on 16 October 2023.",
+        "entities": [
+            {
+                "text": "continuous glucose monitoring",
+                "label": "INTERVENTION",
+                "start": 35,
+                "end": 64
+            },
+            {
+                "text": "glycemic outcomes",
+                "label": "ENDPOINT",
+                "start": 113,
+                "end": 130
+            },
+            {
+                "text": "glycemic variability",
+                "label": "ENDPOINT",
+                "start": 135,
+                "end": 155
+            },
+            {
+                "text": "type 2 diabetes mellitus",
+                "label": "DISEASE",
+                "start": 173,
+                "end": 197
+            },
+            {
+                "text": "CGM alone",
+                "label": "INTERVENTION",
+                "start": 341,
+                "end": 350
+            },
+            {
+                "text": "n=34",
+                "label": "SAMPLE_SIZE",
+                "start": 368,
+                "end": 372
+            },
+            {
+                "text": "CGM-guided personalized lifestyle coaching",
+                "label": "INTERVENTION",
+                "start": 375,
+                "end": 417
+            },
+            {
+                "text": "n=34",
+                "label": "SAMPLE_SIZE",
+                "start": 436,
+                "end": 440
+            },
+            {
+                "text": "standard diabetes education",
+                "label": "INTERVENTION",
+                "start": 446,
+                "end": 473
+            },
+            {
+                "text": "n=34",
+                "label": "SAMPLE_SIZE",
+                "start": 484,
+                "end": 488
+            },
+            {
+                "text": "HbA1c",
+                "label": "ENDPOINT",
+                "start": 675,
+                "end": 680
+            },
+            {
+                "text": "fasting plasma glucose",
+                "label": "ENDPOINT",
+                "start": 686,
+                "end": 708
+            },
+            {
+                "text": "FPG",
+                "label": "ENDPOINT",
+                "start": 710,
+                "end": 713
+            },
+            {
+                "text": "HbA1c",
+                "label": "ENDPOINT",
+                "start": 835,
+                "end": 840
+            },
+            {
+                "text": "FPG",
+                "label": "ENDPOINT",
+                "start": 976,
+                "end": 979
+            },
+            {
+                "text": "TBR70",
+                "label": "ENDPOINT",
+                "start": 1119,
+                "end": 1124
+            },
+            {
+                "text": "TAR180",
+                "label": "ENDPOINT",
+                "start": 1256,
+                "end": 1262
+            },
+            {
+                "text": "CGM-guided personalized lifestyle coaching",
+                "label": "INTERVENTION",
+                "start": 1431,
+                "end": 1473
+            },
+            {
+                "text": "glycemic control",
+                "label": "ENDPOINT",
+                "start": 1483,
+                "end": 1499
+            },
+            {
+                "text": "hyperglycemic exposure",
+                "label": "ENDPOINT",
+                "start": 1512,
+                "end": 1534
+            }
+        ]
+    },
+    {
+        "pmid": "42685343",
+        "text": "Prediabetes is highly prevalent and increasing globally, yet lifestyle interventions remain underused. AI-driven mobile health (mHealth) tools can help scale diabetes prevention efforts, but the key factors driving their success are not well understood. This post hoc secondary analysis of a randomized controlled trial (RCT) aimed to characterize the most valued features and the role of user engagement in outcomes of a fully automated mHealth intervention for diabetes prevention. Data from 151 participants with prediabetes and overweight or obesity who were assigned to an AI-based diabetes prevention program (Sweetch) in a parent RCT (NCT05056376) were analyzed. Engagement (defined as the total number of days the app was used) was categorized into tertiles (low, medium, and high). Baseline characteristics were compared across engagement groups using ANOVA, Kruskal-Wallis, and chi-square tests, and regression models assessed the association between engagement and achievement of diabetes risk reduction outcomes (≥5% weight loss, ≥4% weight loss with ≥150 min/week of physical activity, or ≥0.2 percentage point reduction in hemoglobin A Median engagement was 98 (IQR 34-232) days. Older age (P<.001) and lower baseline BMI (P=.04) were significantly associated with higher engagement. Compared with low engagement, high engagement was associated with greater odds of achieving the composite diabetes risk reduction outcome (odds ratio [OR] 2.59, 95% CI 1.11-6.01; P=.03), ≥5% weight loss (OR 3.31, 95% CI 1.16-9.42; P=.03), and ≥0.2 percentage point reduction in HbA Higher engagement with an AI-driven intervention requiring no human intervention was associated with improved diabetes risk reduction. Contrary to concerns about lower digital literacy, older adults engaged with the intervention more than younger adults. Features related to weight and physical activity tracking were most valued by patients in the program. ClinicalTrials.gov NCT05056376; https://clinicaltrials.gov/study/NCT05056376.",
+        "entities": [
+            {
+                "text": "Prediabetes",
+                "label": "DISEASE",
+                "start": 0,
+                "end": 11
+            },
+            {
+                "text": "fully automated mHealth intervention",
+                "label": "INTERVENTION",
+                "start": 422,
+                "end": 458
+            },
+            {
+                "text": "151",
+                "label": "SAMPLE_SIZE",
+                "start": 494,
+                "end": 497
+            },
+            {
+                "text": "prediabetes",
+                "label": "DISEASE",
+                "start": 516,
+                "end": 527
+            },
+            {
+                "text": "obesity",
+                "label": "DISEASE",
+                "start": 546,
+                "end": 553
+            },
+            {
+                "text": "AI-based diabetes prevention program",
+                "label": "INTERVENTION",
+                "start": 578,
+                "end": 614
+            },
+            {
+                "text": "diabetes risk reduction",
+                "label": "ENDPOINT",
+                "start": 991,
+                "end": 1014
+            },
+            {
+                "text": "weight loss",
+                "label": "ENDPOINT",
+                "start": 1029,
+                "end": 1040
+            },
+            {
+                "text": "weight loss",
+                "label": "ENDPOINT",
+                "start": 1046,
+                "end": 1057
+            },
+            {
+                "text": "physical activity",
+                "label": "ENDPOINT",
+                "start": 1080,
+                "end": 1097
+            },
+            {
+                "text": "diabetes risk reduction",
+                "label": "ENDPOINT",
+                "start": 1404,
+                "end": 1427
+            },
+            {
+                "text": "weight loss",
+                "label": "ENDPOINT",
+                "start": 1489,
+                "end": 1500
+            },
+            {
+                "text": "diabetes risk reduction",
+                "label": "ENDPOINT",
+                "start": 1690,
+                "end": 1713
+            },
+            {
+                "text": "physical activity",
+                "label": "ENDPOINT",
+                "start": 1866,
+                "end": 1883
+            }
+        ]
+    },
+    {
+        "pmid": "42682442",
+        "text": "Effective type 2 diabetes (T2D) management extends beyond pharmacotherapy to include structured lifestyle interventions and continuous digital support. Accordingly, this study aimed to evaluate the effectiveness of an integrated, multicomponent 90-day healthcoach-assisted lifestyle intervention program in improving glycemic and related metabolic outcomes among patients with T2D, with assessment of benefits across adherence levels. This prospective, multicenter randomized controlled trial (RCT) included 149 participants with T2D allocated to intervention (n=87) and control (n=62) groups, with subgroup stratification of intervention participants into high-adherence (≥35%; n=62) and low-adherence (<35%; n=25) groups based on median composite adherence scores. The intervention group received a structured lifestyle intervention on diet, exercise, and mental wellness alongside standard of care (SOC), while controls received SOC alone for 90 days. Glycemic, anthropometric, and diabetes distress outcomes were compared between groups and across adherence subgroups. Statistical significance was assessed for all outcomes. The intervention group demonstrated statistically significantly greater reductions (p<0.001) compared with the control group in glycated hemoglobin (HbA1c) (1.46 ± 1.82 vs. -0.07 ± 1.22%), fasting blood sugar (FBS) (18.83 ± 60.46 vs. -10.84 ± 55.20 mg/dL), body mass index (BMI) (0.55 ± 4.32 vs. 0.18 ± 0.78 kg/m This digitally delivered lifestyle intervention program produced clinically meaningful improvements in glycemic control, anthropometric measures, and diabetes related distress compared with standard care alone, with greater benefit among high adherence participants. These findings support integrating structured, coach guided digital lifestyle programs into routine T2D care, particularly in resource limited, real-world settings such as India. https://ctri.nic.in/Clinicaltrials/pmaindet2.php?EncHid=MTA2NDAx&Enc=&userName=, identifier CTRI/2024/05/068043.",
+        "entities": [
+            {
+                "text": "type 2 diabetes",
+                "label": "DISEASE",
+                "start": 10,
+                "end": 25
+            },
+            {
+                "text": "healthcoach-assisted lifestyle intervention program",
+                "label": "INTERVENTION",
+                "start": 252,
+                "end": 303
+            },
+            {
+                "text": "149",
+                "label": "SAMPLE_SIZE",
+                "start": 508,
+                "end": 511
+            },
+            {
+                "text": "n=87",
+                "label": "SAMPLE_SIZE",
+                "start": 561,
+                "end": 565
+            },
+            {
+                "text": "n=62",
+                "label": "SAMPLE_SIZE",
+                "start": 580,
+                "end": 584
+            },
+            {
+                "text": "n=62",
+                "label": "SAMPLE_SIZE",
+                "start": 679,
+                "end": 683
+            },
+            {
+                "text": "n=25",
+                "label": "SAMPLE_SIZE",
+                "start": 710,
+                "end": 714
+            },
+            {
+                "text": "structured lifestyle intervention",
+                "label": "INTERVENTION",
+                "start": 801,
+                "end": 834
+            },
+            {
+                "text": "diabetes distress",
+                "label": "ENDPOINT",
+                "start": 985,
+                "end": 1002
+            },
+            {
+                "text": "HbA1c",
+                "label": "ENDPOINT",
+                "start": 1278,
+                "end": 1283
+            },
+            {
+                "text": "fasting blood sugar",
+                "label": "ENDPOINT",
+                "start": 1318,
+                "end": 1337
+            },
+            {
+                "text": "body mass index",
+                "label": "ENDPOINT",
+                "start": 1386,
+                "end": 1401
+            },
+            {
+                "text": "BMI",
+                "label": "ENDPOINT",
+                "start": 1403,
+                "end": 1406
+            },
+            {
+                "text": "glycemic control",
+                "label": "ENDPOINT",
+                "start": 1545,
+                "end": 1561
+            },
+            {
+                "text": "anthropometric measures",
+                "label": "ENDPOINT",
+                "start": 1563,
+                "end": 1586
+            }
+        ]
+    },
+    {
+        "pmid": "42681636",
+        "text": "Pregnant women with gestational diabetes mellitus (GDM) frequently experience delayed onset of lactogenesis, insufficient breastfeeding self-efficacy, and low rates of early exclusive breastfeeding, highlighting the need for effective interventions. To investigate the effects of antenatal milk expression (AME) on prenatal breastfeeding self-efficacy, lactogenesis onset, and early exclusive breastfeeding in pregnant women with GDM. In this single-center randomized controlled trial conducted at Hangzhou Women's Hospital (Hangzhou Maternity and Child Health Care Hospital) in China, 240 women with GDM in late pregnancy were enrolled and randomly assigned in a 1:1 ratio to an intervention group or a control group. The control group received routine prenatal care, whereas the intervention group received routine care plus AME. Prenatal breastfeeding self-efficacy, time to lactogenesis onset, incidence of delayed onset of lactogenesis II, exclusive breastfeeding rates at 24 h postpartum and before hospital discharge, as well as social support and breastfeeding behavior prediction indicators, were compared between the two groups. A total of 233 participants completed the study. Compared with the control group, the intervention group showed significantly higher total and domain scores for prenatal breastfeeding self-efficacy; a significantly shorter time to lactogenesis onset [(41.15 ± 21.94) h vs. (55.74 ± 23.29) h]; a significantly lower incidence of delayed onset of lactogenesis II (8.6% vs. 24.8%); and significantly higher exclusive breastfeeding rates at 24 h postpartum and before discharge (81.9% vs. 66.7%, 43.1% vs. 28.2%). In addition, improvements in social support and breastfeeding behavior prediction indicators were more pronounced in the intervention group. No statistically significant differences in maternal or neonatal outcomes were observed between the groups, and no AME-related maternal or neonatal adverse events were identified during safety monitoring throughout the study period. AME improved prenatal breastfeeding self-efficacy in women with GDM, was associated with earlier lactogenesis onset and a lower incidence of delayed onset of lactogenesis II, and increased early in-hospital exclusive breastfeeding rates. These breastfeeding findings should be interpreted as early postpartum outcomes rather than evidence of sustained exclusive breastfeeding beyond discharge. When implemented with standardized instruction and safety monitoring in eligible women with GDM, AME may serve as a useful antenatal component of perinatal breastfeeding support.",
+        "entities": [
+            {
+                "text": "gestational diabetes mellitus",
+                "label": "DISEASE",
+                "start": 20,
+                "end": 49
+            },
+            {
+                "text": "GDM",
+                "label": "DISEASE",
+                "start": 51,
+                "end": 54
+            },
+            {
+                "text": "breastfeeding self-efficacy",
+                "label": "ENDPOINT",
+                "start": 122,
+                "end": 149
+            },
+            {
+                "text": "early exclusive breastfeeding",
+                "label": "ENDPOINT",
+                "start": 168,
+                "end": 197
+            },
+            {
+                "text": "antenatal milk expression",
+                "label": "INTERVENTION",
+                "start": 280,
+                "end": 305
+            },
+            {
+                "text": "AME",
+                "label": "INTERVENTION",
+                "start": 307,
+                "end": 310
+            },
+            {
+                "text": "prenatal breastfeeding self-efficacy",
+                "label": "ENDPOINT",
+                "start": 315,
+                "end": 351
+            },
+            {
+                "text": "lactogenesis onset",
+                "label": "ENDPOINT",
+                "start": 353,
+                "end": 371
+            },
+            {
+                "text": "early exclusive breastfeeding",
+                "label": "ENDPOINT",
+                "start": 377,
+                "end": 406
+            },
+            {
+                "text": "GDM",
+                "label": "DISEASE",
+                "start": 430,
+                "end": 433
+            },
+            {
+                "text": "240",
+                "label": "SAMPLE_SIZE",
+                "start": 586,
+                "end": 589
+            },
+            {
+                "text": "GDM",
+                "label": "DISEASE",
+                "start": 601,
+                "end": 604
+            },
+            {
+                "text": "AME",
+                "label": "INTERVENTION",
+                "start": 827,
+                "end": 830
+            },
+            {
+                "text": "Prenatal breastfeeding self-efficacy",
+                "label": "ENDPOINT",
+                "start": 832,
+                "end": 868
+            },
+            {
+                "text": "time to lactogenesis onset",
+                "label": "ENDPOINT",
+                "start": 870,
+                "end": 896
+            },
+            {
+                "text": "delayed onset of lactogenesis II",
+                "label": "ENDPOINT",
+                "start": 911,
+                "end": 943
+            },
+            {
+                "text": "exclusive breastfeeding rates",
+                "label": "ENDPOINT",
+                "start": 945,
+                "end": 974
+            },
+            {
+                "text": "social support",
+                "label": "ENDPOINT",
+                "start": 1036,
+                "end": 1050
+            },
+            {
+                "text": "breastfeeding behavior prediction indicators",
+                "label": "ENDPOINT",
+                "start": 1055,
+                "end": 1099
+            },
+            {
+                "text": "233",
+                "label": "SAMPLE_SIZE",
+                "start": 1150,
+                "end": 1153
+            },
+            {
+                "text": "prenatal breastfeeding self-efficacy",
+                "label": "ENDPOINT",
+                "start": 1300,
+                "end": 1336
+            },
+            {
+                "text": "time to lactogenesis onset",
+                "label": "ENDPOINT",
+                "start": 1362,
+                "end": 1388
+            },
+            {
+                "text": "delayed onset of lactogenesis II",
+                "label": "ENDPOINT",
+                "start": 1467,
+                "end": 1499
+            },
+            {
+                "text": "exclusive breastfeeding rates",
+                "label": "ENDPOINT",
+                "start": 1543,
+                "end": 1572
+            },
+            {
+                "text": "social support",
+                "label": "ENDPOINT",
+                "start": 1678,
+                "end": 1692
+            },
+            {
+                "text": "breastfeeding behavior prediction indicators",
+                "label": "ENDPOINT",
+                "start": 1697,
+                "end": 1741
+            },
+            {
+                "text": "neonatal outcomes",
+                "label": "ENDPOINT",
+                "start": 1846,
+                "end": 1863
+            },
+            {
+                "text": "AME",
+                "label": "INTERVENTION",
+                "start": 1905,
+                "end": 1908
+            },
+            {
+                "text": "adverse events",
+                "label": "ENDPOINT",
+                "start": 1938,
+                "end": 1952
+            },
+            {
+                "text": "AME",
+                "label": "INTERVENTION",
+                "start": 2023,
+                "end": 2026
+            },
+            {
+                "text": "prenatal breastfeeding self-efficacy",
+                "label": "ENDPOINT",
+                "start": 2036,
+                "end": 2072
+            },
+            {
+                "text": "GDM",
+                "label": "DISEASE",
+                "start": 2087,
+                "end": 2090
+            },
+            {
+                "text": "lactogenesis onset",
+                "label": "ENDPOINT",
+                "start": 2120,
+                "end": 2138
+            },
+            {
+                "text": "delayed onset of lactogenesis II",
+                "label": "ENDPOINT",
+                "start": 2164,
+                "end": 2196
+            },
+            {
+                "text": "exclusive breastfeeding rates",
+                "label": "ENDPOINT",
+                "start": 2230,
+                "end": 2259
+            },
+            {
+                "text": "GDM",
+                "label": "DISEASE",
+                "start": 2509,
+                "end": 2512
+            },
+            {
+                "text": "AME",
+                "label": "INTERVENTION",
+                "start": 2514,
+                "end": 2517
+            }
+        ]
+    },
+    {
+        "pmid": "42709983",
+        "text": "Prediabetes is a critical window for preventing progression to type 2 diabetes mellitus (T2DM). Both vitamin D deficiency and physical inactivity are associated with impaired glucose metabolism. This study compared the effects of Traditional Chinese Exercise (TCE) and Kuanle Equipment Exercise (KEE) on glycaemic measures, lipid profiles, body composition and serum 25-hydroxyvitamin D We conducted a 12-week, single-centre, randomised controlled trial involving 62 participants with prediabetes (mean age 55.2 ± 8.4 years; 88.7% female). Participants were randomly assigned to control (usual care, n = 21), TCE (n = 20), or KEE (n = 21). Primary outcomes included fasting plasma glucose (FPG), 2-h OGTT glucose, glycated haemoglobin (HbA1c) and serum 25(OH)D At baseline, mean serum 25(OH)D Both TCE and KEE improved glycaemic outcomes and increased serum 25(OH)D",
+        "entities": [
+            {
+                "text": "Prediabetes",
+                "label": "DISEASE",
+                "start": 0,
+                "end": 11
+            },
+            {
+                "text": "type 2 diabetes mellitus",
+                "label": "DISEASE",
+                "start": 63,
+                "end": 87
+            },
+            {
+                "text": "Traditional Chinese Exercise",
+                "label": "INTERVENTION",
+                "start": 230,
+                "end": 258
+            },
+            {
+                "text": "Kuanle Equipment Exercise",
+                "label": "INTERVENTION",
+                "start": 269,
+                "end": 294
+            },
+            {
+                "text": "62",
+                "label": "SAMPLE_SIZE",
+                "start": 464,
+                "end": 466
+            },
+            {
+                "text": "prediabetes",
+                "label": "DISEASE",
+                "start": 485,
+                "end": 496
+            },
+            {
+                "text": "21",
+                "label": "SAMPLE_SIZE",
+                "start": 604,
+                "end": 606
+            },
+            {
+                "text": "20",
+                "label": "SAMPLE_SIZE",
+                "start": 618,
+                "end": 620
+            },
+            {
+                "text": "21",
+                "label": "SAMPLE_SIZE",
+                "start": 635,
+                "end": 637
+            },
+            {
+                "text": "fasting plasma glucose",
+                "label": "ENDPOINT",
+                "start": 666,
+                "end": 688
+            },
+            {
+                "text": "FPG",
+                "label": "ENDPOINT",
+                "start": 690,
+                "end": 693
+            },
+            {
+                "text": "2-h OGTT glucose",
+                "label": "ENDPOINT",
+                "start": 696,
+                "end": 712
+            },
+            {
+                "text": "HbA1c",
+                "label": "ENDPOINT",
+                "start": 736,
+                "end": 741
+            },
+            {
+                "text": "serum 25(OH)D",
+                "label": "ENDPOINT",
+                "start": 747,
+                "end": 760
+            },
+            {
+                "text": "serum 25(OH)D",
+                "label": "ENDPOINT",
+                "start": 779,
+                "end": 792
+            },
+            {
+                "text": "serum 25(OH)D",
+                "label": "ENDPOINT",
+                "start": 852,
+                "end": 865
+            }
+        ]
+    },
+    {
+        "pmid": "42706409",
+        "text": "This study investigated gingival crevicular fluid (GCF) levels of prolactin hormone (PRL) in stage III periodontitis (P) patients with type 2 diabetes mellitus (T2DM) before and 3 months after non-surgical periodontal treatment (NSPT). In this case-controlled trial, 80 subjects were divided into 4 groups: group I: healthy control; Group II: systemically healthy stage III P patients; Group III: stage III P patients with controlled T2DM; Group IV: stage III P patients with uncontrolled T2DM. All P patients received NSPT. Three months after NSPT, PRL levels were assessed using enzyme-linked immunosorbent assay (ELISA) as a primary outcome. Secondary outcomes were: pocket depth, clinical attachment loss, and gingival index measurements. At baseline, group IV showed the highest mean PRL levels, followed by Groups III and II, whereas group I showed the least mean values (p < 0.001). After 3 months, NSPT significantly improved all tested periodontal parameters except the gingival index (p < 0.001). NSPT reduced the PRL GCF levels in all P groups, with groups II and III showing significantly lower mean PRL levels than group IV (p < 0.001). PRL levels in groups II and III were significantly higher than those observed in group I at baseline. Elevated GCF levels of PRL seem to be linked to the disease process of P associated with T2DM. NSPT significantly reduced these levels. PRL could represent a valuable biomarker for periodontal inflammation associated with T2DM.Trial registration: Clinicaltrials.gov. Identifier NCT06941246.on 23 April 2025.",
+        "entities": [
+            {
+                "text": "stage III periodontitis",
+                "label": "DISEASE",
+                "start": 93,
+                "end": 116
+            },
+            {
+                "text": "type 2 diabetes mellitus",
+                "label": "DISEASE",
+                "start": 135,
+                "end": 159
+            },
+            {
+                "text": "non-surgical periodontal treatment",
+                "label": "INTERVENTION",
+                "start": 193,
+                "end": 227
+            },
+            {
+                "text": "80",
+                "label": "SAMPLE_SIZE",
+                "start": 267,
+                "end": 269
+            },
+            {
+                "text": "PRL levels",
+                "label": "ENDPOINT",
+                "start": 550,
+                "end": 560
+            },
+            {
+                "text": "pocket depth",
+                "label": "ENDPOINT",
+                "start": 670,
+                "end": 682
+            },
+            {
+                "text": "clinical attachment loss",
+                "label": "ENDPOINT",
+                "start": 684,
+                "end": 708
+            },
+            {
+                "text": "gingival index",
+                "label": "ENDPOINT",
+                "start": 714,
+                "end": 728
+            },
+            {
+                "text": "PRL levels",
+                "label": "ENDPOINT",
+                "start": 789,
+                "end": 799
+            },
+            {
+                "text": "gingival index",
+                "label": "ENDPOINT",
+                "start": 979,
+                "end": 993
+            },
+            {
+                "text": "PRL levels",
+                "label": "ENDPOINT",
+                "start": 1112,
+                "end": 1122
+            },
+            {
+                "text": "PRL levels",
+                "label": "ENDPOINT",
+                "start": 1150,
+                "end": 1160
+            }
+        ]
+    },
+    {
+        "pmid": "42704279",
+        "text": "Peyronie's disease (PD) is characterized by fibrotic plaque formation leading to penile curvature. Xiapex's 2020 withdrawal from Europe eliminated validated intralesional therapies. This study evaluated the efficacy and safety of an intralesional hyaluronic acid-enzymatic mix (Fibrorestil: 0.05% sodium hyaluronate + recombinant collagenase/lyase/lipase) added to daily tadalafil and penile traction versus conservative therapy alone in men with stable-phase PD. This prospective, randomized, open-label, multicenter pilot trial (June 2023-March 2025; ClinicalTrials.gov NCT07341529; HUPHM-85-21) enrolled 38 men with stable PD, palpable plaque, and 30°-90° curvature. Group A received three intralesional sessions with plaque tunneling plus Andropenis extender (≥4 hours/day) and tadalafil (2.5-5 mg/day). Group B received traction and tadalafil (conservative therapy) alone. Assessments were performed at baseline and week 28. Analyses used intention-to-treat (n = 38) and per-protocol (n = 34) approaches, with Mann-Whitney U tests. Primary outcomes were absolute and relative curvature change (responders ≥15° improvement). Secondary outcomes included Peyronie's Disease Questionnaire (PDQ) changes; IIEF-EF minimal clinically important difference; satisfaction; and Clavien-Dindo adverse events. Baseline curvatures was higher in Group A (60° [50;70] vs 45° [30;60], P = .037) with Group B showing more diabetes, numerically more hourglass deformity and calcified plaques, and shorter disease duration. Per-protocol curvature change was -15.0° [-20.0; -10.0] (27.3%; 52.9% responders) in Group A versus 0.0° in Group B (P = .001); final curvature was comparable (50° vs 45°, P = .786). ANCOVA adjusting for baseline curvature showed an adjusted between-group difference of 14.1° (P = .001). An exploratory multivariable model additionally adjusting for diabetes, calcification, disease duration, and hourglass deformity attenuated this effect (-6.1°, 95% CI -17.7 to 5.5; P = .288); given the small sample relative to covariates, this estimate is statistically fragile and hypothesis-generating rather than confirmatory. PDQ symptom-bother improved significantly in Group A [-1.5; P = .003], with numerical gains in total [-6.0 vs -2.5; P = .149] and physical-psychological [-3.5 vs -1.0; P = .110] domains. Satisfaction (\"satisfied/very satisfied\") was reported by 70.6% of Group A versus 11.8% of Group B (P = .001). Extender adherence >4 hours/day predicted response (88.9% vs 12.5%; P = .003). Only mild (Clavien-Dindo I) adverse events occurred (36.8% in Group A versus 5.3%). Fibrorestil intralesional therapy demonstrates possible improvements in curvature and patient-reported outcomes versus conservative care in stable-phase PD and appears safe, while conservative care alone showed no meaningful improvement. Given baseline imbalances, small pilot sample size, open-label design, and lack of an equivalent sham injection control, these findings should be considered exploratory and require confirmation in larger randomized trials.",
+        "entities": [
+            {
+                "text": "Peyronie's disease",
+                "label": "DISEASE",
+                "start": 0,
+                "end": 18
+            },
+            {
+                "text": "Fibrorestil",
+                "label": "INTERVENTION",
+                "start": 278,
+                "end": 289
+            },
+            {
+                "text": "tadalafil",
+                "label": "INTERVENTION",
+                "start": 371,
+                "end": 380
+            },
+            {
+                "text": "penile traction",
+                "label": "INTERVENTION",
+                "start": 385,
+                "end": 400
+            },
+            {
+                "text": "38",
+                "label": "SAMPLE_SIZE",
+                "start": 607,
+                "end": 609
+            },
+            {
+                "text": "Andropenis extender",
+                "label": "INTERVENTION",
+                "start": 743,
+                "end": 762
+            },
+            {
+                "text": "tadalafil",
+                "label": "INTERVENTION",
+                "start": 782,
+                "end": 791
+            },
+            {
+                "text": "tadalafil",
+                "label": "INTERVENTION",
+                "start": 838,
+                "end": 847
+            },
+            {
+                "text": "38",
+                "label": "SAMPLE_SIZE",
+                "start": 968,
+                "end": 970
+            },
+            {
+                "text": "34",
+                "label": "SAMPLE_SIZE",
+                "start": 994,
+                "end": 996
+            },
+            {
+                "text": "curvature change",
+                "label": "ENDPOINT",
+                "start": 1081,
+                "end": 1097
+            },
+            {
+                "text": "Peyronie's Disease",
+                "label": "DISEASE",
+                "start": 1157,
+                "end": 1175
+            },
+            {
+                "text": "IIEF-EF",
+                "label": "ENDPOINT",
+                "start": 1205,
+                "end": 1212
+            },
+            {
+                "text": "satisfaction",
+                "label": "ENDPOINT",
+                "start": 1254,
+                "end": 1266
+            },
+            {
+                "text": "adverse events",
+                "label": "ENDPOINT",
+                "start": 1286,
+                "end": 1300
+            },
+            {
+                "text": "diabetes",
+                "label": "DISEASE",
+                "start": 1409,
+                "end": 1417
+            },
+            {
+                "text": "curvature change",
+                "label": "ENDPOINT",
+                "start": 1522,
+                "end": 1538
+            },
+            {
+                "text": "diabetes",
+                "label": "DISEASE",
+                "start": 1859,
+                "end": 1867
+            },
+            {
+                "text": "Satisfaction",
+                "label": "ENDPOINT",
+                "start": 2314,
+                "end": 2326
+            },
+            {
+                "text": "adverse events",
+                "label": "ENDPOINT",
+                "start": 2532,
+                "end": 2546
+            },
+            {
+                "text": "Fibrorestil",
+                "label": "INTERVENTION",
+                "start": 2588,
+                "end": 2599
+            }
+        ]
+    },
+    {
+        "pmid": "42699213",
+        "text": "We evaluated baseline hypertension prevalence and control and risk of major adverse cardiovascular events (MACEs) among people with HIV in REPRIEVE who had low to moderate traditional cardiovascular disease (CVD) risk. Hypertension at baseline was defined by (1) a preexisting diagnosis regardless of antihypertensive treatment or (2) systolic blood pressure ≥140 mm Hg and/or diastolic blood pressure ≥90 mm Hg without a prior diagnosis. We estimated the prevalence of the composite hypertension and control outcomes and calculated adjusted prevalence ratios controlling for traditional CVD risk factors using log binomial regression. We explored the relationship between hypertension and MACE using cause-specific Cox proportional hazards models. Of 7769 participants enrolled from 5 regions, the median age was 50 years, and 2419 (31%) were women. The prevalence of baseline hypertension was 36% (n = 2780) with geographic variation. Among these, 1911 (69%) individuals had a preexisting hypertension diagnosis; the remainder (n = 869, 31%) were undiagnosed. Region and traditional CVD risk factors were associated with hypertension prevalence, with obese and overweight body mass index having the highest adjusted prevalence ratios (1.80 [95% CI, 1.67-1.95] and 1.38 [95% CI, 1.28-1.49], respectively). Among those with preexisting hypertension, 40% were uncontrolled, with regional variation. Hypertension at baseline was associated with an increased hazard of MACE (hazard ratio, 2.00; 95% CI, 1.57-2.55) and key components of MACE, including myocardial infarction and stroke. Approximately 1 in 3 REPRIEVE participants had hypertension at baseline. Hypertension was frequently suboptimally controlled. These findings highlight the need for improved screening and optimized treatment of hypertension in people with HIV.",
+        "entities": [
+            {
+                "text": "hypertension",
+                "label": "DISEASE",
+                "start": 22,
+                "end": 34
+            },
+            {
+                "text": "major adverse cardiovascular events",
+                "label": "ENDPOINT",
+                "start": 70,
+                "end": 105
+            },
+            {
+                "text": "HIV",
+                "label": "DISEASE",
+                "start": 132,
+                "end": 135
+            },
+            {
+                "text": "cardiovascular disease",
+                "label": "DISEASE",
+                "start": 184,
+                "end": 206
+            },
+            {
+                "text": "Hypertension",
+                "label": "DISEASE",
+                "start": 219,
+                "end": 231
+            },
+            {
+                "text": "hypertension",
+                "label": "DISEASE",
+                "start": 484,
+                "end": 496
+            },
+            {
+                "text": "hypertension",
+                "label": "DISEASE",
+                "start": 673,
+                "end": 685
+            },
+            {
+                "text": "7769",
+                "label": "SAMPLE_SIZE",
+                "start": 752,
+                "end": 756
+            },
+            {
+                "text": "hypertension",
+                "label": "DISEASE",
+                "start": 878,
+                "end": 890
+            },
+            {
+                "text": "2780",
+                "label": "SAMPLE_SIZE",
+                "start": 904,
+                "end": 908
+            },
+            {
+                "text": "hypertension",
+                "label": "DISEASE",
+                "start": 991,
+                "end": 1003
+            },
+            {
+                "text": "869",
+                "label": "SAMPLE_SIZE",
+                "start": 1034,
+                "end": 1037
+            },
+            {
+                "text": "hypertension",
+                "label": "DISEASE",
+                "start": 1123,
+                "end": 1135
+            },
+            {
+                "text": "hypertension",
+                "label": "DISEASE",
+                "start": 1336,
+                "end": 1348
+            },
+            {
+                "text": "Hypertension",
+                "label": "DISEASE",
+                "start": 1398,
+                "end": 1410
+            },
+            {
+                "text": "myocardial infarction",
+                "label": "ENDPOINT",
+                "start": 1549,
+                "end": 1570
+            },
+            {
+                "text": "stroke",
+                "label": "ENDPOINT",
+                "start": 1575,
+                "end": 1581
+            },
+            {
+                "text": "hypertension",
+                "label": "DISEASE",
+                "start": 1630,
+                "end": 1642
+            },
+            {
+                "text": "Hypertension",
+                "label": "DISEASE",
+                "start": 1656,
+                "end": 1668
+            },
+            {
+                "text": "hypertension",
+                "label": "DISEASE",
+                "start": 1793,
+                "end": 1805
+            },
+            {
+                "text": "HIV",
+                "label": "DISEASE",
+                "start": 1821,
+                "end": 1824
+            }
+        ]
+    },
+    {
+        "pmid": "42697907",
+        "text": "Chronic kidney disease (CKD) affects approximately 10% of the global population, with limited therapeutic options to slow progression in moderate stages. The gut-kidney axis contributes to CKD progression, and probiotics are being investigated as potential therapeutic modulators. This double-blind, randomized, placebo-controlled trial investigated the effect of probiotic supplementation on CKD progression. Seventy-two patients with CKD stages 3 or 4 received either Lactobacillus plantarum (10",
+        "entities": [
+            {
+                "text": "Chronic kidney disease",
+                "label": "DISEASE",
+                "start": 0,
+                "end": 22
+            },
+            {
+                "text": "Lactobacillus plantarum",
+                "label": "INTERVENTION",
+                "start": 470,
+                "end": 493
+            }
+        ]
+    },
+    {
+        "pmid": "42697856",
+        "text": "In the NEURO-TTRansform clinical trial (NCT04136184), eplontersen improved neuropathy impairment and quality of life (QoL) through Week 66 versus the NEURO-TTR historical placebo in patients with hereditary transthyretin amyloidosis with polyneuropathy (ATTRv-PN). This analysis assessed the impact of baseline ATTRv-PN severity on eplontersen response in patients from NEURO-TTRansform. This post hoc analysis grouped patients into tertiles by baseline Neuropathy Impairment Score (NIS): T1 (least baseline impairment: 3.5 to < 27.5; n = 67), T2 (27.5 to < 55.0; n = 67), and T3 (55.0 to < 127.8; n = 66). Outcomes assessed were neuropathy impairment (modified NIS+7 [mNIS+7] and NIS, Neuropathy Symptom and Change, Polyneuropathy Disability), QoL (Norfolk QoL-Diabetic Neuropathy), physical functioning (36-Item Short-Form Health Survey Physical Component Summary), nutritional status (modified body mass index), and serum transthyretin levels; these were compared with NEURO-TTR historical placebo. Autonomic dysfunction (Composite Autonomic Symptom Score-31), disability (Rasch-built Overall Disability Scale), and walking speed (10-Meter Walk Test) were also assessed. Final assessments were carried out following 65/66 or 81/85 weeks of treatment. Mean mNIS+7 composite scores were maintained over 85 weeks with eplontersen (changes from baseline of -4.5 [T1], -1.3 [T2], and -2.6 [T3] points). Other disease parameter scores were similarly maintained or improved with eplontersen. Patients receiving placebo experienced disease worsening across outcomes. T1 mean disease scores were typically better than in T2 and T3. Consistent, sustained benefits of eplontersen were observed regardless of baseline ATTRv-PN severity. These findings strengthen the importance of early treatment initiation for patients with ATTRv-PN across the disease spectrum.",
+        "entities": [
+            {
+                "text": "eplontersen",
+                "label": "INTERVENTION",
+                "start": 54,
+                "end": 65
+            },
+            {
+                "text": "neuropathy impairment",
+                "label": "ENDPOINT",
+                "start": 75,
+                "end": 96
+            },
+            {
+                "text": "quality of life",
+                "label": "ENDPOINT",
+                "start": 101,
+                "end": 116
+            },
+            {
+                "text": "hereditary transthyretin amyloidosis",
+                "label": "DISEASE",
+                "start": 196,
+                "end": 232
+            },
+            {
+                "text": "polyneuropathy",
+                "label": "DISEASE",
+                "start": 238,
+                "end": 252
+            },
+            {
+                "text": "eplontersen",
+                "label": "INTERVENTION",
+                "start": 332,
+                "end": 343
+            },
+            {
+                "text": "Neuropathy Impairment",
+                "label": "ENDPOINT",
+                "start": 454,
+                "end": 475
+            },
+            {
+                "text": "67",
+                "label": "SAMPLE_SIZE",
+                "start": 539,
+                "end": 541
+            },
+            {
+                "text": "67",
+                "label": "SAMPLE_SIZE",
+                "start": 568,
+                "end": 570
+            },
+            {
+                "text": "66",
+                "label": "SAMPLE_SIZE",
+                "start": 602,
+                "end": 604
+            },
+            {
+                "text": "neuropathy impairment",
+                "label": "ENDPOINT",
+                "start": 630,
+                "end": 651
+            },
+            {
+                "text": "Neuropathy Symptom and Change",
+                "label": "ENDPOINT",
+                "start": 686,
+                "end": 715
+            },
+            {
+                "text": "Polyneuropathy Disability",
+                "label": "ENDPOINT",
+                "start": 717,
+                "end": 742
+            },
+            {
+                "text": "physical functioning",
+                "label": "ENDPOINT",
+                "start": 784,
+                "end": 804
+            },
+            {
+                "text": "nutritional status",
+                "label": "ENDPOINT",
+                "start": 868,
+                "end": 886
+            },
+            {
+                "text": "body mass index",
+                "label": "ENDPOINT",
+                "start": 897,
+                "end": 912
+            },
+            {
+                "text": "serum transthyretin levels",
+                "label": "ENDPOINT",
+                "start": 919,
+                "end": 945
+            },
+            {
+                "text": "Autonomic dysfunction",
+                "label": "ENDPOINT",
+                "start": 1002,
+                "end": 1023
+            },
+            {
+                "text": "disability",
+                "label": "ENDPOINT",
+                "start": 1064,
+                "end": 1074
+            },
+            {
+                "text": "Disability",
+                "label": "ENDPOINT",
+                "start": 1096,
+                "end": 1106
+            },
+            {
+                "text": "walking speed",
+                "label": "ENDPOINT",
+                "start": 1119,
+                "end": 1132
+            },
+            {
+                "text": "eplontersen",
+                "label": "INTERVENTION",
+                "start": 1318,
+                "end": 1329
+            },
+            {
+                "text": "eplontersen",
+                "label": "INTERVENTION",
+                "start": 1475,
+                "end": 1486
+            },
+            {
+                "text": "eplontersen",
+                "label": "INTERVENTION",
+                "start": 1660,
+                "end": 1671
+            }
+        ]
+    },
+    {
+        "pmid": "42695340",
+        "text": "Digital interventions offer scalable alternatives to traditional face-to-face diabetes education, but often face challenges related to inconsistent clinical effectiveness, and declining user engagement. However, whether a digital structured education program integrated with behavioral nudge tools can improve metabolic, behavioral, and psychological outcomes in adults with type 2 diabetes remains unclear. This study aimed to evaluate the effectiveness of a digital structured education program integrated with behavioral nudge tools in improving metabolic, behavioral, and psychological outcomes among adults with type 2 diabetes. This multicenter randomized controlled trial was conducted in the endocrinology departments of 4 hospitals in China. Adults with type 2 diabetes were randomly assigned to an intervention group receiving a digital structured education program integrated with behavioral nudge tools (n=146) or a control group receiving standard digital diabetes education (n=147). Assessments were conducted at baseline and 12-week follow-up. The primary outcome was hemoglobin A Among 293 participants (mean age 49.19, SD 10.02 y), 287 (97.9%) completed follow-up. At 12 weeks, the intervention group demonstrated significantly greater improvements than the control group in HbA Digital structured education integrated with behavioral nudge tools improved metabolic outcomes and strengthened psychological and behavioral determinants of self-management among adults with type 2 diabetes over a 12-week period. These findings suggest that a digital structured education program integrated with behavioral nudge tools may enhance diabetes self-management beyond standard digital diabetes education. Further studies with longer follow-up and real-world implementation are warranted to evaluate the sustainability, generalizability, and long-term clinical impact of this integrated intervention.",
+        "entities": [
+            {
+                "text": "digital structured education program integrated with behavioral nudge tools",
+                "label": "INTERVENTION",
+                "start": 222,
+                "end": 297
+            },
+            {
+                "text": "type 2 diabetes",
+                "label": "DISEASE",
+                "start": 375,
+                "end": 390
+            },
+            {
+                "text": "digital structured education program integrated with behavioral nudge tools",
+                "label": "INTERVENTION",
+                "start": 460,
+                "end": 535
+            },
+            {
+                "text": "type 2 diabetes",
+                "label": "DISEASE",
+                "start": 617,
+                "end": 632
+            },
+            {
+                "text": "type 2 diabetes",
+                "label": "DISEASE",
+                "start": 763,
+                "end": 778
+            },
+            {
+                "text": "digital structured education program integrated with behavioral nudge tools",
+                "label": "INTERVENTION",
+                "start": 839,
+                "end": 914
+            },
+            {
+                "text": "n=146",
+                "label": "SAMPLE_SIZE",
+                "start": 916,
+                "end": 921
+            },
+            {
+                "text": "standard digital diabetes education",
+                "label": "INTERVENTION",
+                "start": 952,
+                "end": 987
+            },
+            {
+                "text": "n=147",
+                "label": "SAMPLE_SIZE",
+                "start": 989,
+                "end": 994
+            },
+            {
+                "text": "293",
+                "label": "SAMPLE_SIZE",
+                "start": 1102,
+                "end": 1105
+            },
+            {
+                "text": "type 2 diabetes",
+                "label": "DISEASE",
+                "start": 1488,
+                "end": 1503
+            },
+            {
+                "text": "digital structured education program integrated with behavioral nudge tools",
+                "label": "INTERVENTION",
+                "start": 1557,
+                "end": 1632
+            },
+            {
+                "text": "standard digital diabetes education",
+                "label": "INTERVENTION",
+                "start": 1677,
+                "end": 1712
+            }
+        ]
+    },
+    {
+        "pmid": "42694165",
+        "text": "This study was designed as a single-blind randomized controlled trial to investigate the effects of hawthorn vinegar, black mulberry syrup, and green tea on oral mucositis and quality of life related to oral health in individuals with diabetes. Total of 120 participants were divided into four groups (hawthorn vinegar, black mulberry syrup, green tea, control;  Patients in the hawthorn vinegar group showed a decrease in oral mucositis and an increase in oral health-related quality of life at the interim measurement (day 7) and final test (day 14) measurements ( Although there was no difference between hawthorn vinegar and black mulberry syrup, they were found to be more effective than green tea in reducing oral mucositis and improving oral health-related quality of life, and all three complementary treatments were found to be effective. identifier [NCT06481254]. https://register.clinicaltrials.gov/prs/beta/studies/S000E5O000000043/recordSummary.",
+        "entities": [
+            {
+                "text": "hawthorn vinegar",
+                "label": "INTERVENTION",
+                "start": 100,
+                "end": 116
+            },
+            {
+                "text": "black mulberry syrup",
+                "label": "INTERVENTION",
+                "start": 118,
+                "end": 138
+            },
+            {
+                "text": "green tea",
+                "label": "INTERVENTION",
+                "start": 144,
+                "end": 153
+            },
+            {
+                "text": "oral mucositis",
+                "label": "ENDPOINT",
+                "start": 157,
+                "end": 171
+            },
+            {
+                "text": "quality of life",
+                "label": "ENDPOINT",
+                "start": 176,
+                "end": 191
+            },
+            {
+                "text": "diabetes",
+                "label": "DISEASE",
+                "start": 235,
+                "end": 243
+            },
+            {
+                "text": "120",
+                "label": "SAMPLE_SIZE",
+                "start": 254,
+                "end": 257
+            },
+            {
+                "text": "hawthorn vinegar",
+                "label": "INTERVENTION",
+                "start": 302,
+                "end": 318
+            },
+            {
+                "text": "black mulberry syrup",
+                "label": "INTERVENTION",
+                "start": 320,
+                "end": 340
+            },
+            {
+                "text": "green tea",
+                "label": "INTERVENTION",
+                "start": 342,
+                "end": 351
+            },
+            {
+                "text": "hawthorn vinegar",
+                "label": "INTERVENTION",
+                "start": 379,
+                "end": 395
+            },
+            {
+                "text": "oral mucositis",
+                "label": "ENDPOINT",
+                "start": 423,
+                "end": 437
+            },
+            {
+                "text": "oral health-related quality of life",
+                "label": "ENDPOINT",
+                "start": 457,
+                "end": 492
+            },
+            {
+                "text": "hawthorn vinegar",
+                "label": "INTERVENTION",
+                "start": 608,
+                "end": 624
+            },
+            {
+                "text": "black mulberry syrup",
+                "label": "INTERVENTION",
+                "start": 629,
+                "end": 649
+            },
+            {
+                "text": "green tea",
+                "label": "INTERVENTION",
+                "start": 693,
+                "end": 702
+            },
+            {
+                "text": "oral mucositis",
+                "label": "ENDPOINT",
+                "start": 715,
+                "end": 729
+            },
+            {
+                "text": "oral health-related quality of life",
+                "label": "ENDPOINT",
+                "start": 744,
+                "end": 779
+            }
+        ]
+    },
+    {
+        "pmid": "42692503",
+        "text": "Despite advances in diabetes care, cardiovascular disease (CVD) remains the leading cause of morbidity and mortality in type 2 diabetes mellitus (T2DM), with significant residual risk despite optimal glycaemic control. Targeting upstream vascular mechanisms beyond metabolic endpoints is therefore essential through more holistic and integrative approaches to effectively prevent cardiovascular complications in T2DM. Endothelial dysfunction plays a central role in accelerating atherosclerosis and premature vascular ageing in T2DM, thereby increasing the cardiovascular risk, making it a key therapeutic target. This study aims to rigorously evaluate the effect of a structured yoga-based lifestyle programme on endothelial function, markers of vascular ageing and quality of life in individuals with T2DM and to elucidate potential mechanisms of action through assessment of autonomic, inflammatory, oxidative and metabolic pathways. A prospective, four-arm, parallel-group, randomised, open-label, blinded end-point study will be conducted at a tertiary care hospital on a total of 248 (62 per arm) adults aged between 30 and 70 years and have a confirmed diagnosis of T2DM for at least 1 year. Three yoga-based intervention groups will receive different components of yoga-based lifestyle intervention in addition to standard medical care, and the control group will receive standard medical care alone. The yoga intervention will be delivered over 12 weeks, comprising supervised sessions twice weekly, supplemented by guided home practice. The primary outcome is the change in endothelial function assessed by flow-mediated dilatation. Secondary outcomes include arterial stiffness, vascular ageing markers, glycaemic and lipid profiles, autonomic function, oxidative stress, quality of life and cost of care. Outcome assessments will be performed at baseline, 3, 6 and 12 months, with outcome assessors blinded to group allocation. Data will be analysed according to the intention-to-treat principle. Analysis of covariance and mixed-effects models will assess intervention effects, with sensitivity analyses. Effect estimates and their 95% CIs will be reported. The study has received approval from the Institutional Ethics Committee of SDM College of Medical Sciences and Hospital, India (approval no. SDMIEC/2025/1075). The study findings will be disseminated through peer-reviewed scientific publications, presentations at national and international conferences and stakeholder meetings, with the aim of informing integrative strategies for effectively preventing cardiovascular complications in T2DM. CTRI/2024/10/075712.",
+        "entities": [
+            {
+                "text": "cardiovascular disease",
+                "label": "DISEASE",
+                "start": 35,
+                "end": 57
+            },
+            {
+                "text": "type 2 diabetes mellitus",
+                "label": "DISEASE",
+                "start": 120,
+                "end": 144
+            },
+            {
+                "text": "structured yoga-based lifestyle programme",
+                "label": "INTERVENTION",
+                "start": 669,
+                "end": 710
+            },
+            {
+                "text": "endothelial function",
+                "label": "ENDPOINT",
+                "start": 714,
+                "end": 734
+            },
+            {
+                "text": "quality of life",
+                "label": "ENDPOINT",
+                "start": 767,
+                "end": 782
+            },
+            {
+                "text": "248",
+                "label": "SAMPLE_SIZE",
+                "start": 1086,
+                "end": 1089
+            },
+            {
+                "text": "yoga-based intervention",
+                "label": "INTERVENTION",
+                "start": 1205,
+                "end": 1228
+            },
+            {
+                "text": "yoga-based lifestyle intervention",
+                "label": "INTERVENTION",
+                "start": 1273,
+                "end": 1306
+            },
+            {
+                "text": "endothelial function",
+                "label": "ENDPOINT",
+                "start": 1584,
+                "end": 1604
+            },
+            {
+                "text": "flow-mediated dilatation",
+                "label": "ENDPOINT",
+                "start": 1617,
+                "end": 1641
+            },
+            {
+                "text": "arterial stiffness",
+                "label": "ENDPOINT",
+                "start": 1670,
+                "end": 1688
+            },
+            {
+                "text": "vascular ageing markers",
+                "label": "ENDPOINT",
+                "start": 1690,
+                "end": 1713
+            },
+            {
+                "text": "glycaemic and lipid profiles",
+                "label": "ENDPOINT",
+                "start": 1715,
+                "end": 1743
+            },
+            {
+                "text": "autonomic function",
+                "label": "ENDPOINT",
+                "start": 1745,
+                "end": 1763
+            },
+            {
+                "text": "oxidative stress",
+                "label": "ENDPOINT",
+                "start": 1765,
+                "end": 1781
+            },
+            {
+                "text": "quality of life",
+                "label": "ENDPOINT",
+                "start": 1783,
+                "end": 1798
+            },
+            {
+                "text": "cost of care",
+                "label": "ENDPOINT",
+                "start": 1803,
+                "end": 1815
+            }
+        ]
+    },
+    {
+        "pmid": "42687658",
+        "text": "This study examined the effects of continuous glucose monitoring (CGM)-guided personalized lifestyle coaching on glycemic outcomes and glycemic variability in patients with type 2 diabetes mellitus (T2DM). This three-arm randomized controlled trial was conducted in South Korea from June 2023 to November 2024. Participants were assigned to CGM alone (Intervention I, n=34), CGM-guided personalized lifestyle coaching (Intervention II, n=34), or standard diabetes education (control, n=34). The intervention lasted 3 months, with assessments at baseline and at 3, 6, and 12 months. Data were analyzed using generalized estimating equations. At 3 months, glycated hemoglobin (HbA1c) and fasting plasma glucose (FPG) levels were significantly lower in both intervention groups than in the control group. Compared with the control group, HbA1c was lower by 0.78 percentage points in Intervention I (p=.008) and by 1.12 percentage points in Intervention II (p<.001). At 3 months, FPG was lower than in the control group by 34.05 mg/dL in Intervention I (p=.001) and by 34.77 mg/dL in Intervention II (p<.001). At 6 months, TBR70 (time below range <70 mg/dL) was lower in Intervention I than in Intervention II (adjusted mean difference=-2.18, p=.010), whereas TAR180 (time above range >180 mg/dL) was lower in Intervention II than in the control group and Intervention I by 7.85 and 8.28 percentage points, respectively (both p=.004). CGM-guided personalized lifestyle coaching improved glycemic control and reduced hyperglycemic exposure in patients with T2DM. Real-time glucose data may support individualized lifestyle counseling and sustained diabetes self-management. This study was retrospectively registered with the Clinical Research Information Service (CRIS) of the Republic of Korea (KCT0008872) on 16 October 2023.",
+        "entities": [
+            {
+                "text": "continuous glucose monitoring",
+                "label": "INTERVENTION",
+                "start": 35,
+                "end": 64
+            },
+            {
+                "text": "glycemic outcomes",
+                "label": "ENDPOINT",
+                "start": 113,
+                "end": 130
+            },
+            {
+                "text": "glycemic variability",
+                "label": "ENDPOINT",
+                "start": 135,
+                "end": 155
+            },
+            {
+                "text": "type 2 diabetes mellitus",
+                "label": "DISEASE",
+                "start": 173,
+                "end": 197
+            },
+            {
+                "text": "CGM alone",
+                "label": "INTERVENTION",
+                "start": 341,
+                "end": 350
+            },
+            {
+                "text": "n=34",
+                "label": "SAMPLE_SIZE",
+                "start": 368,
+                "end": 372
+            },
+            {
+                "text": "CGM-guided personalized lifestyle coaching",
+                "label": "INTERVENTION",
+                "start": 375,
+                "end": 417
+            },
+            {
+                "text": "n=34",
+                "label": "SAMPLE_SIZE",
+                "start": 436,
+                "end": 440
+            },
+            {
+                "text": "standard diabetes education",
+                "label": "INTERVENTION",
+                "start": 446,
+                "end": 473
+            },
+            {
+                "text": "n=34",
+                "label": "SAMPLE_SIZE",
+                "start": 484,
+                "end": 488
+            },
+            {
+                "text": "HbA1c",
+                "label": "ENDPOINT",
+                "start": 675,
+                "end": 680
+            },
+            {
+                "text": "fasting plasma glucose",
+                "label": "ENDPOINT",
+                "start": 686,
+                "end": 708
+            },
+            {
+                "text": "FPG",
+                "label": "ENDPOINT",
+                "start": 710,
+                "end": 713
+            },
+            {
+                "text": "HbA1c",
+                "label": "ENDPOINT",
+                "start": 835,
+                "end": 840
+            },
+            {
+                "text": "FPG",
+                "label": "ENDPOINT",
+                "start": 976,
+                "end": 979
+            },
+            {
+                "text": "TBR70",
+                "label": "ENDPOINT",
+                "start": 1119,
+                "end": 1124
+            },
+            {
+                "text": "TAR180",
+                "label": "ENDPOINT",
+                "start": 1256,
+                "end": 1262
+            },
+            {
+                "text": "CGM-guided personalized lifestyle coaching",
+                "label": "INTERVENTION",
+                "start": 1431,
+                "end": 1473
+            },
+            {
+                "text": "glycemic control",
+                "label": "ENDPOINT",
+                "start": 1483,
+                "end": 1499
+            },
+            {
+                "text": "hyperglycemic exposure",
+                "label": "ENDPOINT",
+                "start": 1512,
+                "end": 1534
+            }
+        ]
+    },
+    {
+        "pmid": "42685343",
+        "text": "Prediabetes is highly prevalent and increasing globally, yet lifestyle interventions remain underused. AI-driven mobile health (mHealth) tools can help scale diabetes prevention efforts, but the key factors driving their success are not well understood. This post hoc secondary analysis of a randomized controlled trial (RCT) aimed to characterize the most valued features and the role of user engagement in outcomes of a fully automated mHealth intervention for diabetes prevention. Data from 151 participants with prediabetes and overweight or obesity who were assigned to an AI-based diabetes prevention program (Sweetch) in a parent RCT (NCT05056376) were analyzed. Engagement (defined as the total number of days the app was used) was categorized into tertiles (low, medium, and high). Baseline characteristics were compared across engagement groups using ANOVA, Kruskal-Wallis, and chi-square tests, and regression models assessed the association between engagement and achievement of diabetes risk reduction outcomes (≥5% weight loss, ≥4% weight loss with ≥150 min/week of physical activity, or ≥0.2 percentage point reduction in hemoglobin A Median engagement was 98 (IQR 34-232) days. Older age (P<.001) and lower baseline BMI (P=.04) were significantly associated with higher engagement. Compared with low engagement, high engagement was associated with greater odds of achieving the composite diabetes risk reduction outcome (odds ratio [OR] 2.59, 95% CI 1.11-6.01; P=.03), ≥5% weight loss (OR 3.31, 95% CI 1.16-9.42; P=.03), and ≥0.2 percentage point reduction in HbA Higher engagement with an AI-driven intervention requiring no human intervention was associated with improved diabetes risk reduction. Contrary to concerns about lower digital literacy, older adults engaged with the intervention more than younger adults. Features related to weight and physical activity tracking were most valued by patients in the program. ClinicalTrials.gov NCT05056376; https://clinicaltrials.gov/study/NCT05056376.",
+        "entities": [
+            {
+                "text": "Prediabetes",
+                "label": "DISEASE",
+                "start": 0,
+                "end": 11
+            },
+            {
+                "text": "fully automated mHealth intervention",
+                "label": "INTERVENTION",
+                "start": 422,
+                "end": 458
+            },
+            {
+                "text": "151",
+                "label": "SAMPLE_SIZE",
+                "start": 494,
+                "end": 497
+            },
+            {
+                "text": "prediabetes",
+                "label": "DISEASE",
+                "start": 516,
+                "end": 527
+            },
+            {
+                "text": "obesity",
+                "label": "DISEASE",
+                "start": 546,
+                "end": 553
+            },
+            {
+                "text": "AI-based diabetes prevention program",
+                "label": "INTERVENTION",
+                "start": 578,
+                "end": 614
+            },
+            {
+                "text": "diabetes risk reduction",
+                "label": "ENDPOINT",
+                "start": 991,
+                "end": 1014
+            },
+            {
+                "text": "weight loss",
+                "label": "ENDPOINT",
+                "start": 1029,
+                "end": 1040
+            },
+            {
+                "text": "weight loss",
+                "label": "ENDPOINT",
+                "start": 1046,
+                "end": 1057
+            },
+            {
+                "text": "physical activity",
+                "label": "ENDPOINT",
+                "start": 1080,
+                "end": 1097
+            },
+            {
+                "text": "diabetes risk reduction",
+                "label": "ENDPOINT",
+                "start": 1404,
+                "end": 1427
+            },
+            {
+                "text": "weight loss",
+                "label": "ENDPOINT",
+                "start": 1489,
+                "end": 1500
+            },
+            {
+                "text": "diabetes risk reduction",
+                "label": "ENDPOINT",
+                "start": 1690,
+                "end": 1713
+            },
+            {
+                "text": "physical activity",
+                "label": "ENDPOINT",
+                "start": 1866,
+                "end": 1883
+            }
+        ]
+    },
+    {
+        "pmid": "42682442",
+        "text": "Effective type 2 diabetes (T2D) management extends beyond pharmacotherapy to include structured lifestyle interventions and continuous digital support. Accordingly, this study aimed to evaluate the effectiveness of an integrated, multicomponent 90-day healthcoach-assisted lifestyle intervention program in improving glycemic and related metabolic outcomes among patients with T2D, with assessment of benefits across adherence levels. This prospective, multicenter randomized controlled trial (RCT) included 149 participants with T2D allocated to intervention (n=87) and control (n=62) groups, with subgroup stratification of intervention participants into high-adherence (≥35%; n=62) and low-adherence (<35%; n=25) groups based on median composite adherence scores. The intervention group received a structured lifestyle intervention on diet, exercise, and mental wellness alongside standard of care (SOC), while controls received SOC alone for 90 days. Glycemic, anthropometric, and diabetes distress outcomes were compared between groups and across adherence subgroups. Statistical significance was assessed for all outcomes. The intervention group demonstrated statistically significantly greater reductions (p<0.001) compared with the control group in glycated hemoglobin (HbA1c) (1.46 ± 1.82 vs. -0.07 ± 1.22%), fasting blood sugar (FBS) (18.83 ± 60.46 vs. -10.84 ± 55.20 mg/dL), body mass index (BMI) (0.55 ± 4.32 vs. 0.18 ± 0.78 kg/m This digitally delivered lifestyle intervention program produced clinically meaningful improvements in glycemic control, anthropometric measures, and diabetes related distress compared with standard care alone, with greater benefit among high adherence participants. These findings support integrating structured, coach guided digital lifestyle programs into routine T2D care, particularly in resource limited, real-world settings such as India. https://ctri.nic.in/Clinicaltrials/pmaindet2.php?EncHid=MTA2NDAx&Enc=&userName=, identifier CTRI/2024/05/068043.",
+        "entities": [
+            {
+                "text": "type 2 diabetes",
+                "label": "DISEASE",
+                "start": 10,
+                "end": 25
+            },
+            {
+                "text": "healthcoach-assisted lifestyle intervention program",
+                "label": "INTERVENTION",
+                "start": 252,
+                "end": 303
+            },
+            {
+                "text": "149",
+                "label": "SAMPLE_SIZE",
+                "start": 508,
+                "end": 511
+            },
+            {
+                "text": "n=87",
+                "label": "SAMPLE_SIZE",
+                "start": 561,
+                "end": 565
+            },
+            {
+                "text": "n=62",
+                "label": "SAMPLE_SIZE",
+                "start": 580,
+                "end": 584
+            },
+            {
+                "text": "n=62",
+                "label": "SAMPLE_SIZE",
+                "start": 679,
+                "end": 683
+            },
+            {
+                "text": "n=25",
+                "label": "SAMPLE_SIZE",
+                "start": 710,
+                "end": 714
+            },
+            {
+                "text": "structured lifestyle intervention",
+                "label": "INTERVENTION",
+                "start": 801,
+                "end": 834
+            },
+            {
+                "text": "diabetes distress",
+                "label": "ENDPOINT",
+                "start": 985,
+                "end": 1002
+            },
+            {
+                "text": "HbA1c",
+                "label": "ENDPOINT",
+                "start": 1278,
+                "end": 1283
+            },
+            {
+                "text": "fasting blood sugar",
+                "label": "ENDPOINT",
+                "start": 1318,
+                "end": 1337
+            },
+            {
+                "text": "body mass index",
+                "label": "ENDPOINT",
+                "start": 1386,
+                "end": 1401
+            },
+            {
+                "text": "BMI",
+                "label": "ENDPOINT",
+                "start": 1403,
+                "end": 1406
+            },
+            {
+                "text": "glycemic control",
+                "label": "ENDPOINT",
+                "start": 1545,
+                "end": 1561
+            },
+            {
+                "text": "anthropometric measures",
+                "label": "ENDPOINT",
+                "start": 1563,
+                "end": 1586
+            }
+        ]
+    },
+    {
+        "pmid": "42681636",
+        "text": "Pregnant women with gestational diabetes mellitus (GDM) frequently experience delayed onset of lactogenesis, insufficient breastfeeding self-efficacy, and low rates of early exclusive breastfeeding, highlighting the need for effective interventions. To investigate the effects of antenatal milk expression (AME) on prenatal breastfeeding self-efficacy, lactogenesis onset, and early exclusive breastfeeding in pregnant women with GDM. In this single-center randomized controlled trial conducted at Hangzhou Women's Hospital (Hangzhou Maternity and Child Health Care Hospital) in China, 240 women with GDM in late pregnancy were enrolled and randomly assigned in a 1:1 ratio to an intervention group or a control group. The control group received routine prenatal care, whereas the intervention group received routine care plus AME. Prenatal breastfeeding self-efficacy, time to lactogenesis onset, incidence of delayed onset of lactogenesis II, exclusive breastfeeding rates at 24 h postpartum and before hospital discharge, as well as social support and breastfeeding behavior prediction indicators, were compared between the two groups. A total of 233 participants completed the study. Compared with the control group, the intervention group showed significantly higher total and domain scores for prenatal breastfeeding self-efficacy; a significantly shorter time to lactogenesis onset [(41.15 ± 21.94) h vs. (55.74 ± 23.29) h]; a significantly lower incidence of delayed onset of lactogenesis II (8.6% vs. 24.8%); and significantly higher exclusive breastfeeding rates at 24 h postpartum and before discharge (81.9% vs. 66.7%, 43.1% vs. 28.2%). In addition, improvements in social support and breastfeeding behavior prediction indicators were more pronounced in the intervention group. No statistically significant differences in maternal or neonatal outcomes were observed between the groups, and no AME-related maternal or neonatal adverse events were identified during safety monitoring throughout the study period. AME improved prenatal breastfeeding self-efficacy in women with GDM, was associated with earlier lactogenesis onset and a lower incidence of delayed onset of lactogenesis II, and increased early in-hospital exclusive breastfeeding rates. These breastfeeding findings should be interpreted as early postpartum outcomes rather than evidence of sustained exclusive breastfeeding beyond discharge. When implemented with standardized instruction and safety monitoring in eligible women with GDM, AME may serve as a useful antenatal component of perinatal breastfeeding support.",
+        "entities": [
+            {
+                "text": "gestational diabetes mellitus",
+                "label": "DISEASE",
+                "start": 20,
+                "end": 49
+            },
+            {
+                "text": "GDM",
+                "label": "DISEASE",
+                "start": 51,
+                "end": 54
+            },
+            {
+                "text": "breastfeeding self-efficacy",
+                "label": "ENDPOINT",
+                "start": 122,
+                "end": 149
+            },
+            {
+                "text": "early exclusive breastfeeding",
+                "label": "ENDPOINT",
+                "start": 168,
+                "end": 197
+            },
+            {
+                "text": "antenatal milk expression",
+                "label": "INTERVENTION",
+                "start": 280,
+                "end": 305
+            },
+            {
+                "text": "AME",
+                "label": "INTERVENTION",
+                "start": 307,
+                "end": 310
+            },
+            {
+                "text": "prenatal breastfeeding self-efficacy",
+                "label": "ENDPOINT",
+                "start": 315,
+                "end": 351
+            },
+            {
+                "text": "lactogenesis onset",
+                "label": "ENDPOINT",
+                "start": 353,
+                "end": 371
+            },
+            {
+                "text": "early exclusive breastfeeding",
+                "label": "ENDPOINT",
+                "start": 377,
+                "end": 406
+            },
+            {
+                "text": "GDM",
+                "label": "DISEASE",
+                "start": 430,
+                "end": 433
+            },
+            {
+                "text": "240",
+                "label": "SAMPLE_SIZE",
+                "start": 586,
+                "end": 589
+            },
+            {
+                "text": "GDM",
+                "label": "DISEASE",
+                "start": 601,
+                "end": 604
+            },
+            {
+                "text": "AME",
+                "label": "INTERVENTION",
+                "start": 827,
+                "end": 830
+            },
+            {
+                "text": "Prenatal breastfeeding self-efficacy",
+                "label": "ENDPOINT",
+                "start": 832,
+                "end": 868
+            },
+            {
+                "text": "time to lactogenesis onset",
+                "label": "ENDPOINT",
+                "start": 870,
+                "end": 896
+            },
+            {
+                "text": "delayed onset of lactogenesis II",
+                "label": "ENDPOINT",
+                "start": 911,
+                "end": 943
+            },
+            {
+                "text": "exclusive breastfeeding rates",
+                "label": "ENDPOINT",
+                "start": 945,
+                "end": 974
+            },
+            {
+                "text": "social support",
+                "label": "ENDPOINT",
+                "start": 1036,
+                "end": 1050
+            },
+            {
+                "text": "breastfeeding behavior prediction indicators",
+                "label": "ENDPOINT",
+                "start": 1055,
+                "end": 1099
+            },
+            {
+                "text": "233",
+                "label": "SAMPLE_SIZE",
+                "start": 1150,
+                "end": 1153
+            },
+            {
+                "text": "prenatal breastfeeding self-efficacy",
+                "label": "ENDPOINT",
+                "start": 1300,
+                "end": 1336
+            },
+            {
+                "text": "time to lactogenesis onset",
+                "label": "ENDPOINT",
+                "start": 1362,
+                "end": 1388
+            },
+            {
+                "text": "delayed onset of lactogenesis II",
+                "label": "ENDPOINT",
+                "start": 1467,
+                "end": 1499
+            },
+            {
+                "text": "exclusive breastfeeding rates",
+                "label": "ENDPOINT",
+                "start": 1543,
+                "end": 1572
+            },
+            {
+                "text": "social support",
+                "label": "ENDPOINT",
+                "start": 1678,
+                "end": 1692
+            },
+            {
+                "text": "breastfeeding behavior prediction indicators",
+                "label": "ENDPOINT",
+                "start": 1697,
+                "end": 1741
+            },
+            {
+                "text": "neonatal outcomes",
+                "label": "ENDPOINT",
+                "start": 1846,
+                "end": 1863
+            },
+            {
+                "text": "AME",
+                "label": "INTERVENTION",
+                "start": 1905,
+                "end": 1908
+            },
+            {
+                "text": "adverse events",
+                "label": "ENDPOINT",
+                "start": 1938,
+                "end": 1952
+            },
+            {
+                "text": "AME",
+                "label": "INTERVENTION",
+                "start": 2023,
+                "end": 2026
+            },
+            {
+                "text": "prenatal breastfeeding self-efficacy",
+                "label": "ENDPOINT",
+                "start": 2036,
+                "end": 2072
+            },
+            {
+                "text": "GDM",
+                "label": "DISEASE",
+                "start": 2087,
+                "end": 2090
+            },
+            {
+                "text": "lactogenesis onset",
+                "label": "ENDPOINT",
+                "start": 2120,
+                "end": 2138
+            },
+            {
+                "text": "delayed onset of lactogenesis II",
+                "label": "ENDPOINT",
+                "start": 2164,
+                "end": 2196
+            },
+            {
+                "text": "exclusive breastfeeding rates",
+                "label": "ENDPOINT",
+                "start": 2230,
+                "end": 2259
+            },
+            {
+                "text": "GDM",
+                "label": "DISEASE",
+                "start": 2509,
+                "end": 2512
+            },
+            {
+                "text": "AME",
+                "label": "INTERVENTION",
+                "start": 2514,
+                "end": 2517
+            }
+        ]
+    },
+    {
+        "pmid": "42680257",
+        "text": "Circulating fatty acid profiles are linked to cardiovascular disease risk and mortality. Short-term interventions suggest that low-carbohydrate diets (LCDs) promote cardioprotective shifts in circulating fatty acids in obesity. We examined whether a 6-mo, non-calorie-restricted, LCD high in fat similarly improves circulating fatty acid composition in adults with type 2 diabetes. In an open-label, randomized, controlled trial, 71 individuals with type 2 diabetes were randomly assigned 2:1 to an LCD [maximum of 20 E% (energy per cent) carbohydrates] or a control diet (50-60 E% carbohydrates) for 6 mo with no restriction in energy intake. The prespecified secondary outcomes were the mean difference in change between groups in serum phospholipid fatty acids in weight percentage (wt%) measured by gas chromatography and reported as 95% confidence intervals (CIs) and significance adjusted for multiple comparisons (q value). LCD reduced total saturated [-0.6 (CI: -0.9, -0.2)] and monounsaturated fatty acids [-0.9 (CI: -1.4, -0.3)] and increased total polyunsaturated fatty acids [1.3 (CI: 0.6, 2.0)] compared with the control diet (all q < 0.05). Importantly, LCD reduced palmitoleic acid (16:1n-7) [-0.13 (CI: -0.21, -0.06)], a marker of de novo lipogenesis, by 23% and dihomo-γ-linolenic acid (20:3n-6) [-0.38 (CI: -0.67, -0.09)] by 12%, whereas it increased arachidonic acid (20:4n-6) [1.1 (CI: 0.3, 2.0)] by 9% compared with the control diet (all q < 0.05). Moreover, the LCD improved estimated desaturase activities by lowering stearoyl-coenzyme A desaturase 1 [-0.5 (CI: -0.7, -0.2)] and Δ6 desaturase [-0.6 (CI: -0.9, -0.2)] and increasing Δ5 desaturase [1.05 (CI: 0.3, 1.79)] activities, respectively (all q < 0.01). These changes occurred despite a 2.6-fold higher intake of saturated fatty acids in the LCD group. A 6-mo, non-calorie-restricted LCD modified the circulating composition of fatty acids in adults with type 2 diabetes in a manner consistent with a potentially favorable cardioprotective profile. This trial was registered at www. gov as NCT03068078.",
+        "entities": [
+            {
+                "text": "cardiovascular disease",
+                "label": "DISEASE",
+                "start": 46,
+                "end": 68
+            },
+            {
+                "text": "low-carbohydrate diets",
+                "label": "INTERVENTION",
+                "start": 127,
+                "end": 149
+            },
+            {
+                "text": "LCDs",
+                "label": "INTERVENTION",
+                "start": 151,
+                "end": 155
+            },
+            {
+                "text": "LCDs",
+                "label": "INTERVENTION",
+                "start": 151,
+                "end": 155
+            },
+            {
+                "text": "LCDs",
+                "label": "INTERVENTION",
+                "start": 151,
+                "end": 155
+            },
+            {
+                "text": "LCDs",
+                "label": "INTERVENTION",
+                "start": 151,
+                "end": 155
+            },
+            {
+                "text": "LCDs",
+                "label": "INTERVENTION",
+                "start": 151,
+                "end": 155
+            },
+            {
+                "text": "LCDs",
+                "label": "INTERVENTION",
+                "start": 151,
+                "end": 155
+            },
+            {
+                "text": "LCDs",
+                "label": "INTERVENTION",
+                "start": 151,
+                "end": 155
+            },
+            {
+                "text": "LCDs",
+                "label": "INTERVENTION",
+                "start": 151,
+                "end": 155
+            },
+            {
+                "text": "obesity",
+                "label": "DISEASE",
+                "start": 219,
+                "end": 226
+            },
+            {
+                "text": "type 2 diabetes",
+                "label": "DISEASE",
+                "start": 365,
+                "end": 380
+            },
+            {
+                "text": "71",
+                "label": "SAMPLE_SIZE",
+                "start": 430,
+                "end": 432
+            },
+            {
+                "text": "type 2 diabetes",
+                "label": "DISEASE",
+                "start": 450,
+                "end": 465
+            },
+            {
+                "text": "control diet",
+                "label": "INTERVENTION",
+                "start": 559,
+                "end": 571
+            },
+            {
+                "text": "serum phospholipid fatty acids",
+                "label": "ENDPOINT",
+                "start": 733,
+                "end": 763
+            },
+            {
+                "text": "monounsaturated fatty acids",
+                "label": "ENDPOINT",
+                "start": 987,
+                "end": 1014
+            },
+            {
+                "text": "polyunsaturated fatty acids",
+                "label": "ENDPOINT",
+                "start": 1059,
+                "end": 1086
+            },
+            {
+                "text": "polyunsaturated fatty acids",
+                "label": "ENDPOINT",
+                "start": 1059,
+                "end": 1086
+            },
+            {
+                "text": "control diet",
+                "label": "INTERVENTION",
+                "start": 1126,
+                "end": 1138
+            },
+            {
+                "text": "control diet",
+                "label": "INTERVENTION",
+                "start": 1441,
+                "end": 1453
+            },
+            {
+                "text": "desaturase activities",
+                "label": "ENDPOINT",
+                "start": 1507,
+                "end": 1528
+            },
+            {
+                "text": "type 2 diabetes",
+                "label": "DISEASE",
+                "start": 1934,
+                "end": 1949
+            }
+        ]
+    },
+    {
+        "pmid": "42679726",
+        "text": "The endothelium maintains vascular health by regulating blood flow and protecting against inflammatory damage. In type 2 diabetes (T2DM), however, hyperglycemia, hypertension, and hyperlipidemia place a significant burden on the endothelium, potentially leading to atherosclerosis and cardiovascular disease (CVD). While semaglutide and empagliflozin have been shown to reduce CVD risk in T2DM, it remains unclear whether these benefits are mediated by improved endothelial function. This post-hoc analysis explores the effects of these agents on markers of endothelial function, i.e. the reactive hyperaemic index (RHI) and the endothelial-derived cell adhesion molecules (CAMs) E-Selectin, ICAM-1, P-Selectin, and VCAM-1. This was a post-hoc analysis of a 32-week randomized trial evaluating the separate and combined effects of semaglutide and empagliflozin on cardio-renal organ damage. One hundred and twenty participants with type 2 diabetes, age ≥ 50 were randomized to four groups (semaglutide, empagliflozin, the combination or placebo). An increase in RHI and/or a decrease in CAMs were considered beneficial. RHI increased compared to baseline (0.11, 95%CI [0.008;0.21], p = 0.03) but not compared to placebo in the semaglutide group (0.11, 95%CI [-0.04;0.24], p = 0.16). There was no effect on RHI in the empagliflozin group. Compared to placebo, E-Selectin decreased significantly in the semaglutide and combination groups (-9, 95%CI [-14.1;-5.1] p < 0.01 and - 9, 95%CI [-14.3; -5.2] p < 0.01, respectively). VCAM-1 increased in the same groups, compared to placebo (12.3, 95%CI[2.8;20.8] p = 0.01 and 16.2, 95%CI [7.2;24.3], p < 0.01, respectively).P-Selectin and ICAM-1 was not significantly affected in any of the groups, compared to placebo (p ≥ 0.11 and p ≥ 0.09, respectively). Semaglutide improved endothelial function compared to baseline, but not significantly versus placebo, which likely is due to limited power. CAM responses were heterogeneous, suggesting distinct roles in endothelial dysfunction and atherosclerosis. ClinicalTrialsRegister.eu: EudraCT 2019-000781-38.",
+        "entities": [
+            {
+                "text": "type 2 diabetes",
+                "label": "DISEASE",
+                "start": 114,
+                "end": 129
+            },
+            {
+                "text": "hypertension",
+                "label": "DISEASE",
+                "start": 162,
+                "end": 174
+            },
+            {
+                "text": "cardiovascular disease",
+                "label": "DISEASE",
+                "start": 285,
+                "end": 307
+            },
+            {
+                "text": "semaglutide",
+                "label": "INTERVENTION",
+                "start": 321,
+                "end": 332
+            },
+            {
+                "text": "empagliflozin",
+                "label": "INTERVENTION",
+                "start": 337,
+                "end": 350
+            },
+            {
+                "text": "endothelial function",
+                "label": "ENDPOINT",
+                "start": 462,
+                "end": 482
+            },
+            {
+                "text": "endothelial function",
+                "label": "ENDPOINT",
+                "start": 558,
+                "end": 578
+            },
+            {
+                "text": "RHI",
+                "label": "ENDPOINT",
+                "start": 616,
+                "end": 619
+            },
+            {
+                "text": "E-Selectin",
+                "label": "ENDPOINT",
+                "start": 680,
+                "end": 690
+            },
+            {
+                "text": "ICAM-1",
+                "label": "ENDPOINT",
+                "start": 692,
+                "end": 698
+            },
+            {
+                "text": "P-Selectin",
+                "label": "ENDPOINT",
+                "start": 700,
+                "end": 710
+            },
+            {
+                "text": "P-Selectin",
+                "label": "ENDPOINT",
+                "start": 700,
+                "end": 710
+            },
+            {
+                "text": "VCAM-1",
+                "label": "ENDPOINT",
+                "start": 716,
+                "end": 722
+            },
+            {
+                "text": "semaglutide",
+                "label": "INTERVENTION",
+                "start": 831,
+                "end": 842
+            },
+            {
+                "text": "empagliflozin",
+                "label": "INTERVENTION",
+                "start": 847,
+                "end": 860
+            },
+            {
+                "text": "One hundred and twenty",
+                "label": "SAMPLE_SIZE",
+                "start": 891,
+                "end": 913
+            },
+            {
+                "text": "type 2 diabetes",
+                "label": "DISEASE",
+                "start": 932,
+                "end": 947
+            },
+            {
+                "text": "semaglutide",
+                "label": "INTERVENTION",
+                "start": 990,
+                "end": 1001
+            },
+            {
+                "text": "empagliflozin",
+                "label": "INTERVENTION",
+                "start": 1003,
+                "end": 1016
+            },
+            {
+                "text": "RHI",
+                "label": "ENDPOINT",
+                "start": 1062,
+                "end": 1065
+            },
+            {
+                "text": "RHI",
+                "label": "ENDPOINT",
+                "start": 1120,
+                "end": 1123
+            },
+            {
+                "text": "semaglutide",
+                "label": "INTERVENTION",
+                "start": 1227,
+                "end": 1238
+            },
+            {
+                "text": "RHI",
+                "label": "ENDPOINT",
+                "start": 1306,
+                "end": 1309
+            },
+            {
+                "text": "empagliflozin",
+                "label": "INTERVENTION",
+                "start": 1317,
+                "end": 1330
+            },
+            {
+                "text": "E-Selectin",
+                "label": "ENDPOINT",
+                "start": 1359,
+                "end": 1369
+            },
+            {
+                "text": "semaglutide",
+                "label": "INTERVENTION",
+                "start": 1401,
+                "end": 1412
+            },
+            {
+                "text": "VCAM-1",
+                "label": "ENDPOINT",
+                "start": 1523,
+                "end": 1529
+            },
+            {
+                "text": "ICAM-1",
+                "label": "ENDPOINT",
+                "start": 1679,
+                "end": 1685
+            },
+            {
+                "text": "Semaglutide",
+                "label": "INTERVENTION",
+                "start": 1798,
+                "end": 1809
+            },
+            {
+                "text": "endothelial function",
+                "label": "ENDPOINT",
+                "start": 1819,
+                "end": 1839
+            }
+        ]
+    },
+    {
+        "pmid": "42679373",
+        "text": "Melatonin plays a crucial role in regulating sleep and has potent antioxidant properties. However, the relationship between melatonin supplementation and metabolic factors related to diabetes and lipid profiles-which are associated with increased mortality in kidney transplant recipients has not yet been fully clarified. This randomized, double-blind, placebo-controlled trial was conducted at Labbafinejad Hospital, Tehran, Iran. Adult kidney transplant recipients (≥6 months post-transplant) received either 6 mg/day melatonin or placebo for three months. A modified intention-to-treat analysis included 42 patients per group. The primary outcomes were changes in fasting blood sugar (FBS) and HbA1c levels, while secondary outcomes included blood pressure and lipid profile parameters. Between-group effects were estimated using linear regression adjusted for baseline values and confounders. In the melatonin group, FBS decreased by a median of 6.5 mg/dL (P < .001) and HbA1c by 0.25 units (P < .001), whereas both parameters increased in the placebo group. The adjusted between-group effect favored melatonin for HbA1c (β = -0.30%; 95% CI: -0.59 to -0.01; P < .001) but not for FBS (β = -2.61 mg/dL; 95% CI: -17.93 to 12.71; P = .283). Triglyceride levels decreased by 16 mg/dL in the melatonin group compared with an increase of 13.5 mg/dL in the placebo group (adjusted β = -23.77 mg/dL; 95% CI: -45.50 to -2.04; P = .032). No significant differences were observed in blood pressure and renal function. Melatonin supplementation for three months modestly improved glycemic control and lowered serum triglyceride levels in kidney transplant recipients, with no effects on blood pressure or kidney function. These results support melatonin's potential as an adjunct therapy for metabolic dysregulation in this population, warranting further investigation into its long-term benefits.",
+        "entities": [
+            {
+                "text": "Melatonin",
+                "label": "INTERVENTION",
+                "start": 0,
+                "end": 9
+            },
+            {
+                "text": "melatonin",
+                "label": "INTERVENTION",
+                "start": 124,
+                "end": 133
+            },
+            {
+                "text": "diabetes",
+                "label": "DISEASE",
+                "start": 183,
+                "end": 191
+            },
+            {
+                "text": "lipid profiles",
+                "label": "ENDPOINT",
+                "start": 196,
+                "end": 210
+            },
+            {
+                "text": "lipid profiles",
+                "label": "ENDPOINT",
+                "start": 196,
+                "end": 210
+            },
+            {
+                "text": "melatonin",
+                "label": "INTERVENTION",
+                "start": 521,
+                "end": 530
+            },
+            {
+                "text": "42",
+                "label": "SAMPLE_SIZE",
+                "start": 608,
+                "end": 610
+            },
+            {
+                "text": "fasting blood sugar",
+                "label": "ENDPOINT",
+                "start": 668,
+                "end": 687
+            },
+            {
+                "text": "HbA1c",
+                "label": "ENDPOINT",
+                "start": 698,
+                "end": 703
+            },
+            {
+                "text": "blood pressure",
+                "label": "ENDPOINT",
+                "start": 746,
+                "end": 760
+            },
+            {
+                "text": "melatonin",
+                "label": "INTERVENTION",
+                "start": 905,
+                "end": 914
+            },
+            {
+                "text": "HbA1c",
+                "label": "ENDPOINT",
+                "start": 976,
+                "end": 981
+            },
+            {
+                "text": "melatonin",
+                "label": "INTERVENTION",
+                "start": 1106,
+                "end": 1115
+            },
+            {
+                "text": "HbA1c",
+                "label": "ENDPOINT",
+                "start": 1120,
+                "end": 1125
+            },
+            {
+                "text": "Triglyceride levels",
+                "label": "ENDPOINT",
+                "start": 1243,
+                "end": 1262
+            },
+            {
+                "text": "melatonin",
+                "label": "INTERVENTION",
+                "start": 1292,
+                "end": 1301
+            },
+            {
+                "text": "blood pressure",
+                "label": "ENDPOINT",
+                "start": 1477,
+                "end": 1491
+            },
+            {
+                "text": "renal function",
+                "label": "ENDPOINT",
+                "start": 1496,
+                "end": 1510
+            },
+            {
+                "text": "Melatonin",
+                "label": "INTERVENTION",
+                "start": 1512,
+                "end": 1521
+            },
+            {
+                "text": "glycemic control",
+                "label": "ENDPOINT",
+                "start": 1573,
+                "end": 1589
+            },
+            {
+                "text": "triglyceride levels",
+                "label": "ENDPOINT",
+                "start": 1608,
+                "end": 1627
+            },
+            {
+                "text": "blood pressure",
+                "label": "ENDPOINT",
+                "start": 1680,
+                "end": 1694
+            },
+            {
+                "text": "melatonin",
+                "label": "INTERVENTION",
+                "start": 1737,
+                "end": 1746
+            }
+        ]
+    },
+    {
+        "pmid": "42675283",
+        "text": "To evaluate the radiographic and functional outcomes of closed reduction and percutaneous fixation (CRPF) compared to open reduction and internal fixation (ORIF) in the treatment of isolated displaced medial malleolar fractures. This randomized controlled trial included 50 adult patients with isolated displaced medial malleolar fractures, Herscovici classification type B and C, across two hospitals. Participants were randomly assigned (1:1) to either CRPF (Group A, n = 25) or ORIF (Group B, n = 25). The principal objectives were radiological union and clinical function evaluated by the American Orthopedic Foot and Ankle Society (AOFAS) score at a 6-month follow-up. Secondary outcomes included the incidence of postoperative complications and correlations with patient demographics and mechanism of injury. At 6 months, there was no significant difference between groups (p > 0.05); in Group A, 13 patients rated as \"Good,\" 11 as \"Fair,\" and 1 as \"Poor,\" while in Group B, 15 were \"Good,\" 9 \"Fair,\" and 1 \"Poor.\" AOFAS outcomes showed 13 excellent, 7 good, 4 fair, and 1 poor in Group A, versus 12 excellent, 9 good, 3 fair, and 1 poor in Group B, with no significant difference (p > 0.05). Complication rates were similar: wound infection (CRPF 4% vs. ORIF 12%), malunion/non-union (8% vs. 4%), hardware discomfort (12% vs. 20%), and deep venous thrombosis (4% vs. 12%). Comorbidities like diabetes and hypertension were significantly associated with increased sequelae risk (p < 0.05). In this randomized study, CRPF and ORIF demonstrated comparable observed clinical and radiological outcomes at six months. However, because no formal sample size calculation or equivalence margin was prespecified, these findings should not be interpreted as evidence of statistical equivalence. Larger adequately powered trials with longer follow-up are required.",
+        "entities": [
+            {
+                "text": "closed reduction and percutaneous fixation",
+                "label": "INTERVENTION",
+                "start": 56,
+                "end": 98
+            },
+            {
+                "text": "CRPF",
+                "label": "INTERVENTION",
+                "start": 100,
+                "end": 104
+            },
+            {
+                "text": "open reduction and internal fixation",
+                "label": "INTERVENTION",
+                "start": 118,
+                "end": 154
+            },
+            {
+                "text": "ORIF",
+                "label": "INTERVENTION",
+                "start": 156,
+                "end": 160
+            },
+            {
+                "text": "50",
+                "label": "SAMPLE_SIZE",
+                "start": 271,
+                "end": 273
+            },
+            {
+                "text": "CRPF",
+                "label": "INTERVENTION",
+                "start": 455,
+                "end": 459
+            },
+            {
+                "text": "25",
+                "label": "SAMPLE_SIZE",
+                "start": 474,
+                "end": 476
+            },
+            {
+                "text": "ORIF",
+                "label": "INTERVENTION",
+                "start": 481,
+                "end": 485
+            },
+            {
+                "text": "25",
+                "label": "SAMPLE_SIZE",
+                "start": 500,
+                "end": 502
+            },
+            {
+                "text": "radiological union",
+                "label": "ENDPOINT",
+                "start": 535,
+                "end": 553
+            },
+            {
+                "text": "clinical function",
+                "label": "ENDPOINT",
+                "start": 558,
+                "end": 575
+            },
+            {
+                "text": "postoperative complications",
+                "label": "ENDPOINT",
+                "start": 719,
+                "end": 746
+            },
+            {
+                "text": "wound infection",
+                "label": "ENDPOINT",
+                "start": 1232,
+                "end": 1247
+            },
+            {
+                "text": "CRPF",
+                "label": "INTERVENTION",
+                "start": 1249,
+                "end": 1253
+            },
+            {
+                "text": "ORIF",
+                "label": "INTERVENTION",
+                "start": 1261,
+                "end": 1265
+            },
+            {
+                "text": "malunion",
+                "label": "ENDPOINT",
+                "start": 1272,
+                "end": 1280
+            },
+            {
+                "text": "non-union",
+                "label": "ENDPOINT",
+                "start": 1281,
+                "end": 1290
+            },
+            {
+                "text": "hardware discomfort",
+                "label": "ENDPOINT",
+                "start": 1304,
+                "end": 1323
+            },
+            {
+                "text": "deep venous thrombosis",
+                "label": "ENDPOINT",
+                "start": 1343,
+                "end": 1365
+            },
+            {
+                "text": "diabetes",
+                "label": "DISEASE",
+                "start": 1399,
+                "end": 1407
+            },
+            {
+                "text": "hypertension",
+                "label": "DISEASE",
+                "start": 1412,
+                "end": 1424
+            },
+            {
+                "text": "CRPF",
+                "label": "INTERVENTION",
+                "start": 1522,
+                "end": 1526
+            },
+            {
+                "text": "ORIF",
+                "label": "INTERVENTION",
+                "start": 1531,
+                "end": 1535
+            }
+        ]
+    },
+    {
+        "pmid": "42672944",
+        "text": "Previous studies indicate that sports drinks may improve rehydration, compared to water, an effect likely achieved by manufacturing sports drinks to contain carbohydrates and sodium. However, there is a growing preference for natural products and a \"food first\" approach to sports nutrition. Fruit juices naturally contain similar concentrations of carbohydrates to sports drinks, but fruit juices may produce a more stable blood glucose profile. Fruit juices also naturally contain electrolytes, particularly potassium, but their potential as effective rehydration alternatives to sports drinks, which have higher sodium concentrations, is not well understood. This study compared the rehydration efficacy and glucose responses following consumption of a 100% fruit juice (Raw Hydrate®; FRU), a glucose-based sports drink (SPO), and water (WAT) after exercise-induced hypohydration. Importantly, rehydration beverages were matched for water volume, rather than total volume, to ensure that any potential differences in water balance were not due to unequal water volumes between trials, a limitation affecting previous rehydration research. After familiarization, 17 adults (age: 28 ± 8  years; BMI: 23.8 ± 2.9 kg/m During the 5 h rehydration period, there was no effect of trial on total urine volume (FRU: 1266 ± 403 mL, SPO: 1338 ± 361 mL, WAT: 1394 ± 360 mL;  Rehydration efficacy was similar between all beverages, but each elicited a distinct glycemic response. For sports drink consumers seeking a natural alternative or implementing a \"food first\" nutritional strategy, switching to a 100% fruit juice will not compromise rehydration effectiveness, but may elicit a lower blood glucose response. Although, it should be noted that an additional three participants were withdrawn from the study because of gastrointestinal issues after consuming the 100% fruit juice. This was likely a product of the present study's design, where a large volume of 100% fruit juice (average ~2,300 mL) was consumed in a short period of time (1 h). Whilst this is a commonly used study design to robustly assess the rehydration efficacy of different beverages, future studies should distribute fluid intake over a longer duration, in order to improve ecological validity and reduce the risk of gastrointestinal issues.",
+        "entities": [
+            {
+                "text": "water",
+                "label": "INTERVENTION",
+                "start": 82,
+                "end": 87
+            },
+            {
+                "text": "blood glucose",
+                "label": "ENDPOINT",
+                "start": 424,
+                "end": 437
+            },
+            {
+                "text": "rehydration efficacy",
+                "label": "ENDPOINT",
+                "start": 686,
+                "end": 706
+            },
+            {
+                "text": "glucose responses",
+                "label": "ENDPOINT",
+                "start": 711,
+                "end": 728
+            },
+            {
+                "text": "100% fruit juice",
+                "label": "INTERVENTION",
+                "start": 756,
+                "end": 772
+            },
+            {
+                "text": "glucose-based sports drink",
+                "label": "INTERVENTION",
+                "start": 796,
+                "end": 822
+            },
+            {
+                "text": "water",
+                "label": "INTERVENTION",
+                "start": 834,
+                "end": 839
+            },
+            {
+                "text": "water",
+                "label": "INTERVENTION",
+                "start": 936,
+                "end": 941
+            },
+            {
+                "text": "water",
+                "label": "INTERVENTION",
+                "start": 1020,
+                "end": 1025
+            },
+            {
+                "text": "water",
+                "label": "INTERVENTION",
+                "start": 1058,
+                "end": 1063
+            },
+            {
+                "text": "17",
+                "label": "SAMPLE_SIZE",
+                "start": 1165,
+                "end": 1167
+            },
+            {
+                "text": "total urine volume",
+                "label": "ENDPOINT",
+                "start": 1284,
+                "end": 1302
+            },
+            {
+                "text": "Rehydration efficacy",
+                "label": "ENDPOINT",
+                "start": 1365,
+                "end": 1385
+            },
+            {
+                "text": "100% fruit juice",
+                "label": "INTERVENTION",
+                "start": 1594,
+                "end": 1610
+            },
+            {
+                "text": "blood glucose",
+                "label": "ENDPOINT",
+                "start": 1681,
+                "end": 1694
+            },
+            {
+                "text": "100% fruit juice",
+                "label": "INTERVENTION",
+                "start": 1857,
+                "end": 1873
+            },
+            {
+                "text": "100% fruit juice",
+                "label": "INTERVENTION",
+                "start": 1956,
+                "end": 1972
+            },
+            {
+                "text": "rehydration efficacy",
+                "label": "ENDPOINT",
+                "start": 2106,
+                "end": 2126
+            }
+        ]
+    },
+    {
+        "pmid": "42671087",
+        "text": "The Omnipod 5 Automated Insulin Delivery (AID) System is safe and effective for individuals managing Type 1 diabetes (T1D). Longer-term studies may provide additional evidence of sustained effectiveness and safety of AID system use in T1D. This 12-month extension study was conducted following a multicenter randomized controlled trial (RCT) where participants used either AID (Omnipod 5) or standard therapy (current non-automated pump therapy) for 13 weeks. Participants in France (n = 76) could transition to or continue with AID for an additional 12 months. Glycemic, safety, and psychosocial outcomes during or at the end of the extension phase were compared with baseline or end of RCT, as appropriate. Seventy-five participants enrolled in the extension phase. From RCT baseline to the end of the extension phase, time in range 70-180 mg/dL increased by 17.9% (p < 0.0001) or 4.3 h/day to 62.3%. Time above range > 180 mg/dL and mean sensor glucose decreased by 17.7% and 27.8 mg/dL (both p < 0.0001), respectively. HbA1c decreased from 8.33% to 7.18% (-1.14%; p < 0.0001). Glycemic improvements were maintained for those continuing with AID from the RCT intervention group and for those transitioning to AID from standard therapy. Diabetes Quality of Life-brief and Hypoglycemia Confidence Scale scores were maintained or improved at 6 and 12 months compared to RCT baseline. Adverse events were infrequent (12 per 100 person-years). Findings support the RCT results, demonstrating safety and sustained improvements in glycemic and psychosocial outcomes with the Omnipod 5 System in adults in France with T1D over 12 months. ClinicalTrials.gov NCT05409131.",
+        "entities": [
+            {
+                "text": "Omnipod 5 Automated Insulin Delivery (AID) System",
+                "label": "INTERVENTION",
+                "start": 4,
+                "end": 53
+            },
+            {
+                "text": "Type 1 diabetes",
+                "label": "DISEASE",
+                "start": 101,
+                "end": 116
+            },
+            {
+                "text": "AID",
+                "label": "INTERVENTION",
+                "start": 217,
+                "end": 220
+            },
+            {
+                "text": "AID",
+                "label": "INTERVENTION",
+                "start": 373,
+                "end": 376
+            },
+            {
+                "text": "76",
+                "label": "SAMPLE_SIZE",
+                "start": 488,
+                "end": 490
+            },
+            {
+                "text": "AID",
+                "label": "INTERVENTION",
+                "start": 529,
+                "end": 532
+            },
+            {
+                "text": "time in range",
+                "label": "ENDPOINT",
+                "start": 821,
+                "end": 834
+            },
+            {
+                "text": "Time above range",
+                "label": "ENDPOINT",
+                "start": 903,
+                "end": 919
+            },
+            {
+                "text": "mean sensor glucose",
+                "label": "ENDPOINT",
+                "start": 936,
+                "end": 955
+            },
+            {
+                "text": "HbA1c",
+                "label": "ENDPOINT",
+                "start": 1023,
+                "end": 1028
+            },
+            {
+                "text": "AID",
+                "label": "INTERVENTION",
+                "start": 1145,
+                "end": 1148
+            },
+            {
+                "text": "AID",
+                "label": "INTERVENTION",
+                "start": 1212,
+                "end": 1215
+            },
+            {
+                "text": "Diabetes Quality of Life-brief",
+                "label": "ENDPOINT",
+                "start": 1239,
+                "end": 1269
+            },
+            {
+                "text": "Hypoglycemia Confidence Scale",
+                "label": "ENDPOINT",
+                "start": 1274,
+                "end": 1303
+            },
+            {
+                "text": "Adverse events",
+                "label": "ENDPOINT",
+                "start": 1384,
+                "end": 1398
+            }
+        ]
+    },
+    {
+        "pmid": "42669711",
+        "text": "Patients with end-stage kidney disease (ESKD) receiving maintenance dialysis have a high burden of heart failure (HF), with cardiovascular disease the leading cause of death, yet are largely excluded from randomized trials. Using the TriNetX federated electronic health record network, we emulate a target trial comparing initiation of glucagon-like peptide-1 receptor agonists (GLP-1RAs) versus dipeptidyl peptidase-4 inhibitors (DPP-4is) in diabetic ESKD patients with HF, undergoing maintenance dialysis. We identify a primary ESKD-HF population and a confirmatory dialysis-dependence-coded HF subset, and apply a new-user, active-comparator design and use propensity score matching to balance baseline characteristics. In the primary ESKD-HF population, GLP-1RAs use is associated with a lower risk of the primary composite ischemic cardiovascular events plus HF exacerbations, than DPP-4i initiation (31.7% vs. 41.4%; HR 0.72[0.64-0.82], P < 0.0001), with concordance reductions in ischemic events (HR 0.74), HF exacerbations (HR 0.76), all-cause mortality (HR 0.68), and a death-inclusive composite (HR 0.72). Results are consistent in multivariable models, across prespecified subgroups, and in extensive sensitivity analyses, and are corroborated in the confirmatory dialysis-dependence-coded HF subset HR (0.71[0.60-0.85]). These findings provide real-world evidence suggesting GLP-1RAs may improve cardiovascular outcomes in dialysis-dependent diabetic ESKD with HF and support prospective randomized evaluation.",
+        "entities": [
+            {
+                "text": "end-stage kidney disease",
+                "label": "DISEASE",
+                "start": 14,
+                "end": 38
+            },
+            {
+                "text": "heart failure",
+                "label": "DISEASE",
+                "start": 99,
+                "end": 112
+            },
+            {
+                "text": "cardiovascular disease",
+                "label": "DISEASE",
+                "start": 124,
+                "end": 146
+            },
+            {
+                "text": "GLP-1RAs",
+                "label": "INTERVENTION",
+                "start": 379,
+                "end": 387
+            },
+            {
+                "text": "DPP-4is",
+                "label": "INTERVENTION",
+                "start": 431,
+                "end": 438
+            },
+            {
+                "text": "GLP-1RAs",
+                "label": "INTERVENTION",
+                "start": 758,
+                "end": 766
+            },
+            {
+                "text": "cardiovascular events",
+                "label": "ENDPOINT",
+                "start": 837,
+                "end": 858
+            },
+            {
+                "text": "mortality",
+                "label": "ENDPOINT",
+                "start": 1052,
+                "end": 1061
+            },
+            {
+                "text": "death-inclusive composite",
+                "label": "ENDPOINT",
+                "start": 1079,
+                "end": 1104
+            },
+            {
+                "text": "GLP-1RAs",
+                "label": "INTERVENTION",
+                "start": 1387,
+                "end": 1395
+            }
+        ]
+    }
+]

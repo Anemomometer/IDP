@@ -1,18 +1,18 @@
 {
   "entity_types": [
-    "Disease",
-    "Drug",
-    "Sample Size",
-    "Endpoint"
+    "DISEASE",
+    "DRUG",
+    "SAMPLE_SIZE",
+    "ENDPOINT"
   ],
   "relation_types": [
-    "Drug→Disease",
-    "Drug→Cohort",
-    "Outcome-link"
+    "TREATS",
+    "TESTED_IN",
+    "MEASURED_BY"
   ],
   "assertion_types": [
-    "Positive",
-    "Negated",
-    "Conditional"
+    "PRESENT_POSITIVE",
+    "ABSENT_NEGATED",
+    "CONDITIONAL"
   ]
 }

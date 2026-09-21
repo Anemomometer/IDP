@@ -86,10 +86,10 @@ export function AbstractDetail({ abstractId }) {
       }
 
       // Map entity type to CSS class
-      let typeClass = 'entity-disease';
-      if (ent.entity_type === 'Drug') typeClass = 'entity-drug';
-      else if (ent.entity_type === 'Sample Size') typeClass = 'entity-sample';
-      else if (ent.entity_type === 'Endpoint') typeClass = 'entity-endpoint';
+      let typeClass = 'entity-DISEASE';
+      if (ent.entity_type === 'DRUG') typeClass = 'entity-DRUG';
+      else if (ent.entity_type === 'SAMPLE_SIZE') typeClass = 'entity-SAMPLE_SIZE';
+      else if (ent.entity_type === 'ENDPOINT') typeClass = 'entity-ENDPOINT';
 
       // Find relations & assertions linked to this entity
       const linkedRel = data.relations.find(
@@ -99,8 +99,8 @@ export function AbstractDetail({ abstractId }) {
 
       let assertionClass = 'assertion-overlay-positive';
       if (linkedAssertion) {
-        if (linkedAssertion.assertion_type === 'Negated') assertionClass = 'assertion-overlay-negated';
-        else if (linkedAssertion.assertion_type === 'Conditional') assertionClass = 'assertion-overlay-conditional';
+        if (linkedAssertion.assertion_type === 'ABSENT_NEGATED') assertionClass = 'assertion-overlay-negated';
+        else if (linkedAssertion.assertion_type === 'CONDITIONAL') assertionClass = 'assertion-overlay-conditional';
       }
 
       const isPopoverOpen = activePopover === ent.entity_id;
@@ -144,7 +144,7 @@ export function AbstractDetail({ abstractId }) {
                 <button
                   className="popover-btn"
                   onClick={() => {
-                    const newType = prompt('Enter corrected Entity Type (Disease, Drug, Sample Size, Endpoint):', ent.entity_type);
+                    const newType = prompt('Enter corrected Entity Type (DISEASE, DRUG, SAMPLE_SIZE, ENDPOINT):', ent.entity_type);
                     if (newType) handleReview('entities', ent.entity_id, 'corrected', newType);
                   }}
                 >
@@ -177,8 +177,13 @@ export function AbstractDetail({ abstractId }) {
     <div onClick={() => setActivePopover(null)}>
       <div className="screen-header">
         <div>
-          <h1 className="screen-title">Screen 2: Abstract Detail & Inline Highlighting</h1>
-          <p className="screen-subtitle">PMID: {data.abstract_id} — {data.title}</p>
+          <h1 className="screen-title">Step 2: View AI Highlights</h1>
+          <p className="screen-subtitle">
+            {data ? `PMID: ${data.abstract_id} — ${data.title}` : 'See exactly what the AI found inside the research paper.'}
+          </p>
+          <div style={{ marginTop: '0.75rem', padding: '0.75rem', background: 'var(--bg-surface)', borderRadius: 'var(--radius-sm)', borderLeft: '4px solid var(--accent-teal)', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+            <strong>How it works:</strong> The AI highlights important medical terms (like Diseases and Drugs) and draws connections between them. Hover over any highlighted text to see how confident the AI is, or click to fix any mistakes.
+          </div>
         </div>
       </div>
 
@@ -230,8 +235,8 @@ export function AbstractDetail({ abstractId }) {
                       {r.subject_entity ? r.subject_entity.text_span : 'Subj'} → {r.relation_type} → {r.object_entity ? r.object_entity.text_span : 'Obj'}
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '4px', fontSize: '0.75rem' }}>
-                      <span style={{ color: ass?.assertion_type === 'Negated' ? '#ef4444' : ass?.assertion_type === 'Conditional' ? '#f59e0b' : '#10b981' }}>
-                        Assertion: {ass ? ass.assertion_type : 'Positive'}
+                      <span style={{ color: ass?.assertion_type === 'ABSENT_NEGATED' ? '#ef4444' : ass?.assertion_type === 'CONDITIONAL' ? '#f59e0b' : '#10b981' }}>
+                        Assertion: {ass ? ass.assertion_type : 'PRESENT_POSITIVE'}
                       </span>
                       <span>{(r.confidence_score * 100).toFixed(0)}%</span>
                     </div>

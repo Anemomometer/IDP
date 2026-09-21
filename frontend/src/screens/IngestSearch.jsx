@@ -52,10 +52,13 @@ export function IngestSearch({ onSelectAbstract }) {
     <div>
       <div className="screen-header">
         <div>
-          <h1 className="screen-title">Screen 1: Ingest & Search PubMed</h1>
+          <h1 className="screen-title">Step 1: Find Medical Papers</h1>
           <p className="screen-subtitle">
-            Pull live clinical trial abstracts directly from NCBI E-utilities API and execute joint multi-task extraction.
+            Search for clinical trials and our AI will automatically read them to find key medical facts.
           </p>
+          <div style={{ marginTop: '0.75rem', padding: '0.75rem', background: 'var(--bg-surface)', borderRadius: 'var(--radius-sm)', borderLeft: '4px solid var(--accent-teal)', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+            <strong>How it works:</strong> Type a disease or drug (like 'melanoma' or 'pembrolizumab'). The system will download recent research papers from the internet and the AI will read them for you.
+          </div>
         </div>
       </div>
 
@@ -88,7 +91,7 @@ export function IngestSearch({ onSelectAbstract }) {
             onKeyDown={(e) => e.key === 'Enter' && handleIngest()}
           />
           <button className="btn" disabled={loading} onClick={() => handleIngest()}>
-            {loading ? '⏳ Fetching NCBI...' : '🚀 Fetch Abstracts'}
+            {loading ? '⏳ Reading...' : '🚀 Find & Read Papers'}
           </button>
         </div>
 

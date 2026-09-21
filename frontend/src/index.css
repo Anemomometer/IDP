@@ -317,25 +317,25 @@ body {
   filter: brightness(1.2);
 }
 
-.entity-Disease {
+.entity-DISEASE {
   background-color: var(--entity-disease-bg);
   border-color: var(--entity-disease-border);
   color: var(--entity-disease-text);
 }
 
-.entity-Drug {
+.entity-DRUG {
   background-color: var(--entity-drug-bg);
   border-color: var(--entity-drug-border);
   color: var(--entity-drug-text);
 }
 
-.entity-Sample-Size, .entity-Sample_Size {
+.entity-SAMPLE_SIZE {
   background-color: var(--entity-sample-bg);
   border-color: var(--entity-sample-border);
   color: var(--entity-sample-text);
 }
 
-.entity-Endpoint {
+.entity-ENDPOINT {
   background-color: var(--entity-endpoint-bg);
   border-color: var(--entity-endpoint-border);
   color: var(--entity-endpoint-text);
